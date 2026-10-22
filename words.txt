@@ -1,0 +1,43 @@
+# Danh sách từ cần tải (mỗi dòng 1 từ, đúng tên thư mục trên Kaggle). Dòng bắt đầu bằng # bị bỏ qua.
+# Danh sách chính
+Ban ngày
+Buổi sáng
+Buổi trưa
+Buổi tối
+Bàn phím
+Bình minh
+Bắt buộc
+Bế mạc
+Bố
+Cao (người)
+Cao (đồ vật)
+Chào
+Chân
+Chạy
+Chậm chạp
+Chật
+Chị
+Chủ tịch
+Con chó
+Con dê
+Con gà
+Con gấu
+Con heo
+Con mèo
+Con rùa
+Con thỏ
+Con vịt
+Cần
+Cắm trại
+Cục tẩy
+Cứu
+Dài
+# Dự phòng
+Báo cáo
+Bút bi
+Bệnh nhân
+Chiều
+Cung cấp
+Cà phê
+Công viên
+Cầu lông
