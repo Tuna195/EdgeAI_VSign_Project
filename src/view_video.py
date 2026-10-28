@@ -10,6 +10,7 @@ Phím: Space dừng/chạy   A/D lùi/tiến 1 frame (khi dừng)   N/P video sa
 
 Hình vẽ lại đúng dữ liệu đã lưu trong data/raw (thứ sẽ đưa vào model), không chạy lại MediaPipe.
   tay trái = xanh dương, tay phải = cam, thân = xanh lá, tay xám = điểm nội suy (fill_gaps)
+  chữ Left/Right ở cổ tay = nhãn MediaPipe Hand trả về (đỏ = nghi gán nhầm)
 Thanh thời gian bên dưới, mỗi cột là 1 frame:
   Trái / Phải  có màu = thấy tay, xám = nội suy, tối = mất tay, đỏ = nghi gán nhầm trái/phải
   Giữ lại      xanh = đoạn trim_idle giữ lại, vạch trắng = 30 frame được chọn cho model
@@ -114,6 +115,19 @@ def draw_skeleton(img, part, connections, color):
         cv2.circle(img, p, 3, color, -1)
 
 
+def draw_side_labels(img, vec, info, i):
+    """Ghi nhãn MediaPipe Hand trả về ("Left"/"Right") cạnh cổ tay của mỗi bàn tay thấy được ở frame i.
+    Nhãn là tay thật của người ký: người ký quay mặt vào camera nên "Left" thường ở bên PHẢI hình.
+    """
+    h, w = img.shape[:2]
+    for side, start, name, color in (("L", 0, "Left", LEFT_COLOR), ("R", HAND_DIM, "Right", RIGHT_COLOR)):
+        if not info["seen"][side][i]:
+            continue   # không thấy tay hoặc chỉ là điểm nội suy -> model không trả nhãn ở frame này
+        x, y = vec[start] * w, vec[start + 1] * h   # điểm 0 của bàn tay = cổ tay
+        cv2.putText(img, name, (int(x) - 25, int(y) + 25), cv2.FONT_HERSHEY_SIMPLEX, 0.7,
+                    SWAP_COLOR if info["swap"][side][i] else color, 2)
+
+
 def put_text(img, xy, text, size=16, color=(0, 0, 0)):
     """Viết chữ có dấu lên ảnh OpenCV (qua PIL). color theo thứ tự RGB."""
     pil = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
@@ -130,6 +144,7 @@ def render_body(info, i, scale=SCALE):
     for side, start, color in (("L", 0, LEFT_COLOR), ("R", HAND_DIM, RIGHT_COLOR)):
         c = FILLED_COLOR if info["interp"][side][i] else (SWAP_COLOR if info["swap"][side][i] else color)
         draw_skeleton(img, vec[start:start + HAND_DIM], HAND_CONNECTIONS, c)
+    draw_side_labels(img, vec, info, i)
     W = img.shape[1]
 
     # Thanh thời gian: 3 hàng (Trái, Phải, Giữ lại)

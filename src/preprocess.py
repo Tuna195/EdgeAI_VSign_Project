@@ -10,6 +10,8 @@ Pipeline cho mỗi video:
   4. resample    chọn N_FRAMES frame cách đều -> (N_FRAMES, 227)
 """
 import csv
+import unicodedata
+from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
@@ -20,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "raw"
 OUT_FILE = ROOT / "data" / "processed" / "dataset.npz"
 EXCLUDE_FILE = ROOT / "data" / "exclude.txt"   # video loại sau khi xem bằng mắt, mỗi dòng: train/<từ>/<id>
+WORDS_FILE = ROOT / "words.txt"   # chỉ dùng danh sách chính (các dòng trước "# Dự phòng")
 
 N_FRAMES = 30        # một số video trong dataset chỉ có đúng 30 frame -> lấy 30, không lấy 60
 NUM_POINTS = 75      # 21 tay trái + 21 tay phải + 33 thân
@@ -28,6 +31,7 @@ L_WRIST, R_WRIST = 15, 16
 MAX_GAP = 4          # chỉ lấp khoảng mất tay <= 4 frame; dài hơn coi như tay thật sự vắng mặt
 REST_Y = 1.2         # cổ tay thấp hơn vai > 1.2 lần độ rộng vai = tay đang buông (gần hông)
 MARGIN = 2           # giữ thêm 2 frame trước và sau đoạn ký hiệu
+MIN_VIDEOS = 20      # từ còn < 20 video (sau khi loại) thì bỏ cả từ: quá ít để augmentation bù lại
 
 
 def fill_gaps(raw, max_gap=MAX_GAP):
@@ -113,29 +117,54 @@ def raw_to_sample(raw):
     return resample(seq)
 
 
-def build_dataset():
-    exclude = set()
-    if EXCLUDE_FILE.exists():
-        exclude = {line.strip() for line in EXCLUDE_FILE.read_text(encoding="utf-8").splitlines()
-                   if line.strip() and not line.startswith("#")}
+def load_exclude():
+    if not EXCLUDE_FILE.exists():
+        return set()
+    return {line.strip() for line in EXCLUDE_FILE.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.startswith("#")}
 
-    words = sorted({p.name for p in RAW_DIR.glob("*/*") if p.is_dir()})
+
+def main_words():
+    """Từ trong danh sách chính của words.txt, dừng ở dòng "# Dự phòng" (từ dự phòng không dùng)."""
+    words = []
+    for line in WORDS_FILE.read_text(encoding="utf-8").splitlines():
+        if line.startswith("# Dự phòng"):
+            break
+        if line.strip() and not line.startswith("#"):
+            words.append(unicodedata.normalize("NFC", line.strip()))
+    return words
+
+
+def usable_videos():
+    """Trả về ({từ: ['split/từ/id', ...]}, [từ bị bỏ]). Chỉ từ trong danh sách chính, đã trừ exclude.txt,
+    bỏ từ còn < MIN_VIDEOS video."""
+    words, exclude = main_words(), load_exclude()
+    by_word = defaultdict(list)
+    for npy in sorted(RAW_DIR.glob("*/*/*.npy")):
+        word = unicodedata.normalize("NFC", npy.parent.name)
+        key = f"{npy.parent.parent.name}/{npy.parent.name}/{npy.stem}"
+        if word in words and key not in exclude:
+            by_word[word].append(key)
+    kept = {w: by_word[w] for w in words if len(by_word[w]) >= MIN_VIDEOS}
+    return kept, [w for w in words if w not in kept]
+
+
+def build_dataset():
+    videos, dropped = usable_videos()
+    words = sorted(videos)
     X, y, splits, ids, lengths = [], [], [], [], []
     skipped = []
-    for npy in sorted(RAW_DIR.glob("*/*/*.npy")):
-        split, word = npy.parent.parent.name, npy.parent.name
-        key = f"{split}/{word}/{npy.stem}"
-        if key in exclude:
-            continue
-        raw = np.load(npy)
+    for label, key in ((i, k) for i, w in enumerate(words) for k in videos[w]):
+        split, folder, vid = key.split("/")
+        raw = np.load(RAW_DIR / split / folder / f"{vid}.npy")
         sample = raw_to_sample(raw)
         if sample is None:
             skipped.append(key)
             continue
         X.append(sample)
-        y.append(words.index(word))
+        y.append(label)
         splits.append(split)
-        ids.append(npy.stem)
+        ids.append(vid)
         lengths.append(len(raw))
 
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -145,7 +174,9 @@ def build_dataset():
         csv.writer(f).writerows([[i, w] for i, w in enumerate(words)])
 
     print(f"Xong: {len(X)} mẫu, {len(words)} từ, X.shape = {np.stack(X).shape}")
-    print(f"  train {splits.count('train')}, test {splits.count('test')}, loại {len(exclude)}, bỏ qua {len(skipped)}")
+    print(f"  train {splits.count('train')}, test {splits.count('test')}, loại {len(load_exclude())}, bỏ qua {len(skipped)}")
+    if dropped:
+        print(f"  bỏ {len(dropped)} từ còn < {MIN_VIDEOS} video:", ", ".join(dropped))
     for k in skipped[:20]:
         print("  bỏ qua:", k)
 
