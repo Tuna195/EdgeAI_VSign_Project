@@ -1,7 +1,7 @@
 """Trích landmark thô cho mọi video trong data/videos -> data/raw (mỗi video 1 file .npy).
 
-Chạy: python src/extract_dataset.py            (8 tiến trình song song)
-      python src/extract_dataset.py --workers 4
+Chạy: python -m src.dataset.extract_dataset            (8 tiến trình song song)
+      python -m src.dataset.extract_dataset --workers 4
 
 data/videos/<train|test>/<từ>/<id>.mp4  ->  data/raw/<train|test>/<từ>/<id>.npy  (T, 225) float32
 Lưu dữ liệu THÔ (chưa chuẩn hoá): MediaPipe là bước chậm nhất, sau này đổi cách chuẩn hoá
@@ -11,15 +11,10 @@ File .npy đã có thì bỏ qua -> bị ngắt giữa chừng thì chạy lại
 import argparse
 import time
 from concurrent.futures import ProcessPoolExecutor
-from pathlib import Path
-
 import numpy as np
 
-from landmarks import video_to_raw
-
-ROOT = Path(__file__).resolve().parent.parent
-VIDEO_DIR = ROOT / "data" / "videos"
-RAW_DIR = ROOT / "data" / "raw"
+from src.core.landmarks import video_to_raw
+from src.core.paths import RAW_DIR, VIDEO_DIR
 
 
 def extract_one(paths):

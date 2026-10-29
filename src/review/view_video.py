@@ -1,9 +1,9 @@
 """Xem video dataset kèm landmark để duyệt bằng mắt.
 
-Chạy: python src/view_video.py "Bố"                     (mọi video của 1 từ)
-      python src/view_video.py "test/Bố/012339"         (1 video)
-      python src/view_video.py --list data/reports/review_list.txt   (danh sách có ghi chú)
-      python src/view_video.py "Bố" --snapshot out.jpg  (không mở cửa sổ, lưu ảnh 8 frame/video)
+Chạy: python -m src.review.view_video "Bố"                     (mọi video của 1 từ)
+      python -m src.review.view_video "test/Bố/012339"         (1 video)
+      python -m src.review.view_video --list data/reports/review_list.txt   (danh sách có ghi chú)
+      python -m src.review.view_video "Bố" --snapshot out.jpg  (không mở cửa sổ, lưu ảnh 8 frame/video)
 
 Phím: Space dừng/chạy   A/D lùi/tiến 1 frame (khi dừng)   N/P video sau/trước
       +/- tốc độ        Q hoặc Esc thoát
@@ -22,16 +22,11 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
 
-from landmarks import HAND_DIM, video_to_raw
-from live_demo import HAND_CONNECTIONS, LEFT_COLOR, POSE_COLOR, POSE_CONNECTIONS, RIGHT_COLOR
-from preprocess import active_range, fill_gaps, normalize, sample_indices
-
-ROOT = Path(__file__).resolve().parent.parent
-VIDEO_DIR = ROOT / "data" / "videos"
-RAW_DIR = ROOT / "data" / "raw"
-FONT = ImageFont.truetype("arial.ttf", 16)   # PIL vẽ được chữ có dấu, cv2.putText thì không
+from src.core.drawing import HAND_CONNECTIONS, LEFT_COLOR, POSE_COLOR, POSE_CONNECTIONS, RIGHT_COLOR, put_text
+from src.core.landmarks import HAND_DIM, video_to_raw
+from src.core.paths import RAW_DIR, VIDEO_DIR
+from src.core.preprocess import active_range, fill_gaps, normalize, sample_indices
 
 SCALE = 3                 # video 224x224 -> phóng to 672x672 cho dễ nhìn
 HEADER_H, STRIP_H = 70, 14
@@ -126,13 +121,6 @@ def draw_side_labels(img, vec, info, i):
         x, y = vec[start] * w, vec[start + 1] * h   # điểm 0 của bàn tay = cổ tay
         cv2.putText(img, name, (int(x) - 25, int(y) + 25), cv2.FONT_HERSHEY_SIMPLEX, 0.7,
                     SWAP_COLOR if info["swap"][side][i] else color, 2)
-
-
-def put_text(img, xy, text, size=16, color=(0, 0, 0)):
-    """Viết chữ có dấu lên ảnh OpenCV (qua PIL). color theo thứ tự RGB."""
-    pil = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-    ImageDraw.Draw(pil).text(xy, text, font=ImageFont.truetype("arial.ttf", size), fill=color)
-    img[:] = cv2.cvtColor(np.array(pil), cv2.COLOR_RGB2BGR)
 
 
 def render_body(info, i, scale=SCALE):

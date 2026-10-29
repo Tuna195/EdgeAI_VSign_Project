@@ -1,6 +1,6 @@
 """Kiểm tra chất lượng dữ liệu đã trích (data/raw) để hỗ trợ việc lọc video bằng mắt.
 
-Chạy: python src/check_dataset.py   (sau khi đã chạy extract_dataset.py)
+Chạy: python -m src.review.check_dataset   (sau khi đã chạy extract_dataset)
 
 Ghi ra data/reports/:
   videos.csv      mỗi video 1 dòng: số frame, FPS, tỉ lệ frame thấy tay/thân, tay nào cử động nhiều hơn,
@@ -12,18 +12,11 @@ Ghi ra data/reports/:
 import csv
 import hashlib
 from collections import defaultdict
-from pathlib import Path
-
 import cv2
 import numpy as np
 
-from landmarks import HAND_DIM
-from preprocess import active_range, fill_gaps, normalize
-
-ROOT = Path(__file__).resolve().parent.parent
-VIDEO_DIR = ROOT / "data" / "videos"
-RAW_DIR = ROOT / "data" / "raw"
-REPORT_DIR = ROOT / "data" / "reports"
+from src.core.paths import RAW_DIR, REPORT_DIR, VIDEO_DIR
+from src.core.preprocess import HAND_DIM, active_range, fill_gaps, normalize
 
 POSE_START = 2 * HAND_DIM   # vector 225 = [tay trái 63 | tay phải 63 | thân 99]
 UPPER_BODY = 25             # Pose điểm 0..24: đầu, vai, tay, hông (bỏ chân)
@@ -230,7 +223,7 @@ def main():
             suggested.append(f"{split}/{word}/{vid}")
     no_hand = [f'{r["split"]}/{r["word"]}/{r["id"]}' for r in rows if r["active_hand_rate"] < MIN_ACTIVE_HAND]
     with open(REPORT_DIR / "suggested_exclude.txt", "w", encoding="utf-8") as f:
-        f.write("# Gợi ý loại. Xem lại bằng mắt (src/view_video.py) rồi chép dòng đồng ý sang data/exclude.txt\n")
+        f.write("# Gợi ý loại. Xem lại bằng mắt (src/review/view_video.py) rồi chép dòng đồng ý sang data/exclude.txt\n")
         f.write("# --- Nghi là bản copy / augmentation của video khác ---\n")
         f.writelines(line + "\n" for line in sorted(suggested))
         f.write(f"# --- Trong đoạn ký hiệu thấy tay < {MIN_ACTIVE_HAND:.0%} số frame ---\n")

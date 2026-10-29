@@ -1,0 +1,9 @@
+# Python 3.11. Phiên bản đang dùng trên máy Windows (ghim để kết quả lặp lại được).
+# Torch bản CPU: pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+# Chỉ train (vd. Colab, đã có sẵn numpy + torch): không cần mediapipe, opencv, kaggle.
+numpy==2.4.6
+torch==2.15.0
+mediapipe==1.0.1
+opencv-python==5.0.0.93
+pillow==12.3.0
+kaggle==2.2.4

@@ -1,35 +1,13 @@
 """Demo trực tiếp: mở webcam, trích vector 225 chiều mỗi frame và vẽ lại các điểm lên hình.
 
-Chạy: python src/live_demo.py   (nhấn q để thoát)
+Chạy: python -m src.deploy.live_demo   (nhấn q để thoát)
 """
 import time
 
 import cv2
 
-from landmarks import HAND_DIM, create_landmarkers, frame_to_vector
-
-# Các cặp điểm nối thành khung xương bàn tay (21 điểm)
-HAND_CONNECTIONS = [
-    (0, 1), (1, 2), (2, 3), (3, 4),          # ngón cái
-    (0, 5), (5, 6), (6, 7), (7, 8),          # ngón trỏ
-    (5, 9), (9, 10), (10, 11), (11, 12),     # ngón giữa
-    (9, 13), (13, 14), (14, 15), (15, 16),   # ngón áp út
-    (13, 17), (0, 17), (17, 18), (18, 19), (19, 20),  # ngón út + lòng bàn tay
-]
-
-# Phần thân trên của Pose (33 điểm) - đủ dùng cho ngôn ngữ ký hiệu
-POSE_CONNECTIONS = [
-    (11, 12),                      # hai vai
-    (11, 13), (13, 15),            # tay trái: vai - khuỷu - cổ tay
-    (12, 14), (14, 16),            # tay phải
-    (11, 23), (12, 24), (23, 24),  # thân
-    (0, 9), (0, 10), (9, 10),      # mũi - miệng
-]
-
-LEFT_COLOR = (255, 128, 0)    # xanh dương (BGR)
-RIGHT_COLOR = (0, 128, 255)   # cam
-POSE_COLOR = (0, 255, 0)      # xanh lá
-
+from src.core.drawing import HAND_CONNECTIONS, LEFT_COLOR, POSE_COLOR, POSE_CONNECTIONS, RIGHT_COLOR
+from src.core.landmarks import HAND_DIM, create_landmarkers, frame_to_vector
 
 def draw_part(frame, part, connections, color):
     """Vẽ một phần của vector (tay hoặc thân). part là mảng phẳng (N*3,), bỏ qua nếu toàn 0."""

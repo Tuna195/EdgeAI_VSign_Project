@@ -1,13 +1,11 @@
-from pathlib import Path
-
 import cv2
 import mediapipe as mp
 import numpy as np
 
+from src.core.paths import MODELS_DIR
+
 vision = mp.tasks.vision
 BaseOptions = mp.tasks.BaseOptions
-# Thư mục models/ nằm cạnh src/ -> tính theo vị trí file này, chạy từ đâu cũng đúng
-MODELS = Path(__file__).resolve().parent.parent / "models"
 
 NUM_HAND_POINTS = 21   # mỗi bàn tay 21 điểm
 NUM_POSE_POINTS = 33   # thân người 33 điểm
@@ -19,13 +17,13 @@ VECTOR_DIM = HAND_DIM * 2 + POSE_DIM   # 225
 def create_landmarkers(use_pose=True):
     """Tạo Hand (tối đa 2 tay) và Pose ở chế độ VIDEO. Trả về (hand, pose); pose = None nếu use_pose=False."""
     hand = vision.HandLandmarker.create_from_options(vision.HandLandmarkerOptions(
-        base_options=BaseOptions(model_asset_path=str(MODELS / "hand_landmarker.task")),
+        base_options=BaseOptions(model_asset_path=str(MODELS_DIR / "hand_landmarker.task")),
         running_mode=vision.RunningMode.VIDEO,
         num_hands=2,
     ))
     if use_pose:
         pose = vision.PoseLandmarker.create_from_options(vision.PoseLandmarkerOptions(
-            base_options=BaseOptions(model_asset_path=str(MODELS / "pose_landmarker_lite.task")),
+            base_options=BaseOptions(model_asset_path=str(MODELS_DIR / "pose_landmarker_lite.task")),
             running_mode=vision.RunningMode.VIDEO,
         ))
     else:
@@ -130,4 +128,4 @@ if __name__ == "__main__":
     cap.release()
     hand.close()
     if pose is not None:
-    	pose.close()
+        pose.close()

@@ -1,7 +1,7 @@
 """Tải video của các từ đã chọn từ bộ Kaggle VSL v2 (chỉ thư mục frame_splited, không tải cả 82 GB).
 
-Chạy: python src/download_dataset.py                 (đọc danh sách từ trong words.txt)
-      python src/download_dataset.py "Con bò" "Chợ"  (tải thêm vài từ, không cần sửa words.txt)
+Chạy: python -m src.dataset.download_dataset                 (đọc danh sách từ trong words.txt)
+      python -m src.dataset.download_dataset "Con bò" "Chợ"  (tải thêm vài từ, không cần sửa words.txt)
 
 Kết quả: data/videos/train/<từ>/*.mp4 và data/videos/test/<từ>/*.mp4 (file đã có thì giữ nguyên).
 Cần token Kaggle trong C:\\Users\\<tên>\\.kaggle\\access_token.
@@ -20,11 +20,11 @@ from pathlib import Path
 
 from kaggle.api.kaggle_api_extended import KaggleApi
 
+from src.core.paths import VIDEO_DIR, WORDS_FILE
+
 DATASET = "nguyenanfms/vsl-vietnamese-sign-language-v2"
 KERNEL_SLUG = "vsign-download-words"   # tên notebook trên Kaggle, chạy lại sẽ tạo phiên bản mới
-ROOT = Path(__file__).resolve().parent.parent
-OUT_DIR = ROOT / "data" / "videos"
-WORDS_FILE = ROOT / "words.txt"
+OUT_DIR = VIDEO_DIR
 
 # Code chạy TRÊN Kaggle: dataset được gắn sẵn ở /kaggle/input, không phải tải
 KERNEL_CODE = '''

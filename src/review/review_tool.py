@@ -1,34 +1,31 @@
 """Duyệt video bằng mắt, bấm nút để quyết định giữ / loại. Quyết định lưu ngay, tắt giữa chừng vẫn giữ.
 
 Chạy (sau check_dataset.py):
-  python src/review_tool.py copy     cặp nghi bản sao: 2 video phát cạnh nhau
-  python src/review_tool.py blank    video có frame trống (vd. train/Chào/140605)
-  python src/review_tool.py swap     video bị gán nhầm trái/phải nhiều
-  python src/review_tool.py gap      video mất tay liên tiếp lâu trong đoạn ký hiệu
-  python src/review_tool.py nohand   video gần như không thấy tay (đã TỰ ĐỘNG loại, xem lại nếu muốn)
-  python src/review_tool.py          in tóm tắt: mỗi nhóm đã duyệt bao nhiêu, mỗi từ còn bao nhiêu video
+  python -m src.review.review_tool copy     cặp nghi bản sao: 2 video phát cạnh nhau
+  python -m src.review.review_tool blank    video có frame trống (vd. train/Chào/140605)
+  python -m src.review.review_tool swap     video bị gán nhầm trái/phải nhiều
+  python -m src.review.review_tool gap      video mất tay liên tiếp lâu trong đoạn ký hiệu
+  python -m src.review.review_tool nohand   video gần như không thấy tay (đã TỰ ĐỘNG loại, xem lại nếu muốn)
+  python -m src.review.review_tool          in tóm tắt: mỗi nhóm đã duyệt bao nhiêu, mỗi từ còn bao nhiêu video
 
 Mở lại sẽ nhảy tới mục đầu tiên chưa duyệt. Bấm nút bằng chuột hoặc phím 1/2/3.
 Phím khác: Space dừng/chạy   A/D lùi/tiến 1 frame   N/P mục sau/trước   Q thoát
 
 Kết quả: data/reports/review_decisions.csv (mọi quyết định) và data/exclude.txt (tạo lại sau mỗi lần bấm,
-preprocess.py đọc file này). Đừng sửa tay exclude.txt: lần bấm sau sẽ ghi đè.
+usable_videos() trong src/core/preprocess.py đọc file này). Đừng sửa tay exclude.txt: lần bấm sau sẽ ghi đè.
 """
 import csv
 import sys
 import time
 from collections import Counter
-from pathlib import Path
-
 import cv2
 import numpy as np
 
-from view_video import load, put_text, render_body
+from src.core.drawing import put_text
+from src.core.paths import EXCLUDE_FILE, REPORT_DIR
+from src.review.view_video import load, render_body
 
-ROOT = Path(__file__).resolve().parent.parent
-REPORT_DIR = ROOT / "data" / "reports"
 DECISIONS_FILE = REPORT_DIR / "review_decisions.csv"
-EXCLUDE_FILE = ROOT / "data" / "exclude.txt"
 
 NO_HAND = 0.3       # active_hand_rate < 0.3 -> tự động loại (giống MIN_ACTIVE_HAND ở check_dataset.py)
 SWAP_RATE = 0.2     # >= 20% frame có tay bị gán nhầm trái/phải -> đưa vào nhóm swap
@@ -107,7 +104,7 @@ def save(decisions):
         for v in filter(None, d["excluded"].split(";")):
             by_queue.setdefault(d["queue"], set()).add(v)
     with open(EXCLUDE_FILE, "w", encoding="utf-8") as f:
-        f.write("# Tạo tự động bởi src/review_tool.py từ data/reports/review_decisions.csv. Đừng sửa tay.\n")
+        f.write("# Tạo tự động bởi src/review/review_tool.py từ data/reports/review_decisions.csv. Đừng sửa tay.\n")
         for q, videos in by_queue.items():
             f.write(f"# --- {QUEUES[q]} ---\n")
             f.writelines(v + "\n" for v in sorted(videos))

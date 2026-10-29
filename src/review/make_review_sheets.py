@@ -1,21 +1,18 @@
 """Tạo ảnh tổng hợp để duyệt video bằng mắt: mỗi từ 1 ảnh, mỗi video 1 hàng gồm 8 frame cách đều.
 
-Chạy: python src/make_review_sheets.py            (tất cả các từ)
-      python src/make_review_sheets.py "Chào"     (1 từ)
+Chạy: python -m src.review.make_review_sheets            (tất cả các từ)
+      python -m src.review.make_review_sheets "Chào"     (1 từ)
 
 Kết quả: data/reports/sheets/<từ>.jpg. Đầu mỗi hàng ghi train/test + id video, hàng nghi trùng
 (theo data/reports/duplicates.csv) có viền đỏ -> mở ảnh lên là thấy ngay video nào giống nhau.
 """
 import csv
 import sys
-from pathlib import Path
-
 import cv2
 import numpy as np
 
-ROOT = Path(__file__).resolve().parent.parent
-VIDEO_DIR = ROOT / "data" / "videos"
-REPORT_DIR = ROOT / "data" / "reports"
+from src.core.paths import REPORT_DIR, VIDEO_DIR
+
 OUT_DIR = REPORT_DIR / "sheets"
 N_FRAMES, SIZE, LABEL_W = 8, 96, 110
 

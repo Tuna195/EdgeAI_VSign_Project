@@ -1,6 +1,8 @@
 """Tiền xử lý: landmark thô (T, 225) -> mẫu cho model (N_FRAMES, 227), và tạo dataset.npz.
 
-Chạy: python src/preprocess.py   (đọc data/raw, ghi data/processed/dataset.npz)
+Chạy: python -m src.core.preprocess   (đọc data/raw, ghi data/processed/dataset.npz)
+Đây là bản tiền xử lý CŨ, giữ lại vì các tool duyệt dùng các hàm ở đây. Train dùng bản mới:
+src/dataset/build_sequences.py + src/core/features.py.
 
 Pipeline cho mỗi video:
   1. fill_gaps   lấp chỗ MediaPipe mất tay vài frame giữa chừng (tay chuyển động nhanh bị nhoè)
@@ -12,17 +14,13 @@ Pipeline cho mỗi video:
 import csv
 import unicodedata
 from collections import defaultdict
-from pathlib import Path
-
 import numpy as np
 
-from landmarks import HAND_DIM
+from src.core.paths import EXCLUDE_FILE, PROCESSED_DIR, RAW_DIR, WORDS_FILE
 
-ROOT = Path(__file__).resolve().parent.parent
-RAW_DIR = ROOT / "data" / "raw"
-OUT_FILE = ROOT / "data" / "processed" / "dataset.npz"
-EXCLUDE_FILE = ROOT / "data" / "exclude.txt"   # video loại sau khi xem bằng mắt, mỗi dòng: train/<từ>/<id>
-WORDS_FILE = ROOT / "words.txt"   # chỉ dùng danh sách chính (các dòng trước "# Dự phòng")
+OUT_FILE = PROCESSED_DIR / "dataset.npz"
+# = landmarks.HAND_DIM. Không import landmarks.py: file đó cần mediapipe, mà train trên Colab không cài mediapipe
+HAND_DIM = 21 * 3
 
 N_FRAMES = 30        # một số video trong dataset chỉ có đúng 30 frame -> lấy 30, không lấy 60
 NUM_POINTS = 75      # 21 tay trái + 21 tay phải + 33 thân

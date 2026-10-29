@@ -1,9 +1,9 @@
 """Gắn nhãn người ký cho từng video, làm theo TỪNG TỪ (mỗi từ có thể do 1 nhóm người khác nhau ký).
 Dùng để chia lại train/test theo người ký: cùng 1 người không được vừa ở train vừa ở test của cùng 1 từ.
 
-Chạy: python src/label_signers.py              mở từ đầu tiên chưa xác nhận
-      python src/label_signers.py "Bố"         mở 1 từ
-      python src/label_signers.py --summary    tóm tắt: số người ký mỗi từ, gợi ý tự động đúng bao nhiêu
+Chạy: python -m src.review.label_signers              mở từ đầu tiên chưa xác nhận
+      python -m src.review.label_signers "Bố"         mở 1 từ
+      python -m src.review.label_signers --summary    tóm tắt: số người ký mỗi từ, gợi ý tự động đúng bao nhiêu
 
 Mỗi từ hiện 1 lưới ảnh, mỗi ô 1 video (frame đầu tiên thấy người: lúc chưa ký nên áo không bị tay che).
 Tool tự gợi ý nhóm theo màu áo (S1, S2, ...). Bạn sửa lại cho đúng NGƯỜI:
@@ -21,19 +21,14 @@ Cột suggested giữ gợi ý ban đầu để đo độ chính xác của gợ
 import csv
 import sys
 from itertools import combinations
-from pathlib import Path
-
 import cv2
 import numpy as np
 
-from landmarks import HAND_DIM
-from preprocess import usable_videos
-from view_video import put_text
+from src.core.drawing import put_text
+from src.core.paths import RAW_DIR, REPORT_DIR, VIDEO_DIR
+from src.core.preprocess import HAND_DIM, usable_videos
 
-ROOT = Path(__file__).resolve().parent.parent
-VIDEO_DIR = ROOT / "data" / "videos"
-RAW_DIR = ROOT / "data" / "raw"
-SIGNERS_FILE = ROOT / "data" / "reports" / "signers.csv"
+SIGNERS_FILE = REPORT_DIR / "signers.csv"
 FIELDS = ["split", "word", "id", "signer", "suggested", "done"]
 
 TILE, COLS, LABEL_H, GAP, HEADER_H = 128, 10, 18, 6, 70
