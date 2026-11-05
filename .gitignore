@@ -1,1 +1,11 @@
 docs
+venv
+.venv
+__pycache__/
+*.mp4
+data/
+test_data/
+notebooks
+*.md
+*.zip
+runs/
