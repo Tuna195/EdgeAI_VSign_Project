@@ -1,0 +1,292 @@
+# Tạo tự động bởi src/review_tool.py từ data/reports/review_decisions.csv. Đừng sửa tay.
+# --- Gần như không thấy tay khi ký (đã tự động loại) ---
+test/Bố/024705
+test/Chiều/399607
+test/Chào/772642
+test/Chạy/024726
+test/Con chó/017523
+test/Con dê/024683
+test/Con rùa/024679
+test/Con thỏ/010229
+test/Con thỏ/014814
+train/Ban ngày/363626
+train/Buổi tối/022581
+train/Bút bi/024308
+train/Chiều/848206
+train/Chào/302511
+train/Chị/022492
+train/Chị/024076
+train/Con chó/012270
+train/Con chó/017522
+train/Con dê/017539
+train/Con heo/024684
+train/Con mèo/024676
+train/Con thỏ/012280
+train/Con thỏ/014815
+train/Con thỏ/017533
+train/Con thỏ/024680
+train/Con vịt/024678
+train/Cầu lông/024174
+train/Dài/024757
+# --- Nghi bản sao: cùng 1 video (copy) hay quay lần 2? ---
+test/Chào/466643
+test/Cứu/736745
+train/Bế mạc/122056
+train/Bế mạc/359947
+train/Bế mạc/716886
+train/Bố/014867
+train/Cao (đồ vật)/009292
+train/Chiều/742412
+train/Chiều/940346
+train/Chào/956253
+train/Chị/005903
+train/Chị/005905
+train/Chị/005906
+train/Chị/005908
+train/Chị/005909
+train/Chị/005910
+train/Chị/011361
+train/Chị/016863
+train/Chị/016865
+train/Con heo/018411
+train/Con rùa/016661
+train/Cục tẩy/008129
+# --- Có frame trống ở đầu/cuối ---
+test/Chào/772642
+train/Chiều/578634
+train/Chiều/800005
+train/Chào/140605
+train/Chào/910891
+train/Chân/735656
+train/Chạy/100425
+train/Chạy/320392
+train/Con gấu/391773
+train/Cứu/121369
+train/Cứu/213349
+# --- Mất tay nhiều frame liền khi đang ký (vùng tối trong đoạn Giữ lại) ---
+test/Ban ngày/813328
+test/Buổi sáng/017939
+test/Buổi tối/013553
+test/Buổi tối/013554
+test/Bàn phím/018038
+test/Bình minh/017077
+test/Bình minh/022576
+test/Bắt buộc/024737
+test/Cao (đồ vật)/024528
+test/Chiều/350867
+test/Chậm chạp/024531
+test/Chủ tịch/020074
+test/Con chó/002347
+test/Con chó/003204
+test/Con chó/009387
+test/Con chó/011133
+test/Con chó/012271
+test/Con chó/021506
+test/Con chó/022991
+test/Con thỏ/001507
+test/Con thỏ/003215
+test/Con thỏ/005699
+test/Con thỏ/007597
+test/Con thỏ/013174
+test/Con thỏ/018402
+test/Công viên/017827
+test/Cầu lông/007143
+test/Cầu lông/024274
+test/Cắm trại/017652
+test/Cắm trại/024734
+test/Cục tẩy/024309
+train/Ban ngày/112038
+train/Buổi sáng/004436
+train/Buổi sáng/011716
+train/Buổi sáng/017082
+train/Buổi sáng/022578
+train/Buổi sáng/024162
+train/Buổi trưa/001897
+train/Buổi trưa/017941
+train/Buổi tối/002745
+train/Buổi tối/004442
+train/Buổi tối/008946
+train/Buổi tối/009786
+train/Buổi tối/014379
+train/Buổi tối/015234
+train/Buổi tối/016211
+train/Buổi tối/017087
+train/Buổi tối/017088
+train/Buổi tối/017944
+train/Buổi tối/017945
+train/Buổi tối/018812
+train/Buổi tối/018813
+train/Buổi tối/019871
+train/Buổi tối/022481
+train/Buổi tối/024165
+train/Bàn phím/024307
+train/Báo cáo/018535
+train/Báo cáo/024738
+train/Bình minh/012702
+train/Bình minh/017934
+train/Bình minh/024160
+train/Bắt buộc/020523
+train/Cao (người)/024758
+train/Chào/172792
+train/Chào/392683
+train/Chân/872840
+train/Chạy/018510
+train/Chạy/810219
+train/Chị/021608
+train/Chủ tịch/004632
+train/Chủ tịch/019002
+train/Chủ tịch/024354
+train/Con chó/000649
+train/Con chó/003203
+train/Con chó/004878
+train/Con chó/004879
+train/Con chó/005689
+train/Con chó/005690
+train/Con chó/006719
+train/Con chó/006720
+train/Con chó/007586
+train/Con chó/007587
+train/Con chó/008529
+train/Con chó/008530
+train/Con chó/010219
+train/Con chó/016653
+train/Con chó/018393
+train/Con chó/019254
+train/Con chó/019255
+train/Con chó/020375
+train/Con chó/021223
+train/Con chó/021464
+train/Con chó/023091
+train/Con chó/023232
+train/Con chó/023274
+train/Con chó/023875
+train/Con chó/024675
+train/Con dê/022999
+train/Con dê/023883
+train/Con gà/018397
+train/Con thỏ/000661
+train/Con thỏ/000662
+train/Con thỏ/001506
+train/Con thỏ/003214
+train/Con thỏ/004047
+train/Con thỏ/004048
+train/Con thỏ/004888
+train/Con thỏ/004889
+train/Con thỏ/006729
+train/Con thỏ/006730
+train/Con thỏ/008539
+train/Con thỏ/008540
+train/Con thỏ/009397
+train/Con thỏ/009398
+train/Con thỏ/010228
+train/Con thỏ/011143
+train/Con thỏ/013173
+train/Con thỏ/015773
+train/Con thỏ/016663
+train/Con thỏ/016664
+train/Con thỏ/017532
+train/Con thỏ/020385
+train/Con thỏ/021228
+train/Con thỏ/021328
+train/Con thỏ/022112
+train/Con thỏ/022212
+train/Con vịt/011139
+train/Cung cấp/024735
+train/Cà phê/013631
+train/Cà phê/019957
+train/Cà phê/024301
+train/Công viên/022528
+train/Cần/002187
+train/Cần/018230
+train/Cần/020182
+train/Cầu lông/001924
+train/Cầu lông/002766
+train/Cầu lông/003620
+train/Cầu lông/006237
+train/Cầu lông/006238
+train/Cầu lông/009806
+train/Cầu lông/014397
+train/Cầu lông/014398
+train/Cầu lông/017105
+train/Cầu lông/017106
+train/Cầu lông/018833
+train/Cầu lông/018834
+train/Cắm trại/018528
+train/Cắm trại/023934
+train/Cục tẩy/019974
+train/Dài/006893
+train/Dài/009563
+train/Dài/010386
+train/Dài/011310
+train/Dài/020577
+train/Dài/024657
+# --- Gán nhầm trái/phải nhiều (khung tay màu đỏ) ---
+test/Buổi trưa/017084
+test/Báo cáo/010346
+test/Báo cáo/023254
+test/Bắt buộc/024737
+test/Cao (đồ vật)/024528
+test/Chạy/023926
+test/Chị/005904
+test/Chị/017739
+test/Dài/018574
+train/Buổi trưa/010633
+train/Buổi trưa/022579
+train/Buổi tối/000196
+train/Buổi tối/002744
+train/Buổi tối/002745
+train/Buổi tối/004442
+train/Buổi tối/016210
+train/Buổi tối/016211
+train/Bàn phím/016300
+train/Báo cáo/018536
+train/Bình minh/016200
+train/Bình minh/017932
+train/Bình minh/017933
+train/Bình minh/017934
+train/Bình minh/021692
+train/Bút bi/016302
+train/Bệnh nhân/107540
+train/Chạy/320392
+train/Chậm chạp/017430
+train/Chậm chạp/017432
+train/Chật/024754
+train/Chị/005903
+train/Chị/005906
+train/Chị/005908
+train/Chị/005909
+train/Chị/005910
+train/Chị/005911
+train/Chị/011359
+train/Chị/011361
+train/Chị/011362
+train/Chị/011366
+train/Chị/017737
+train/Chị/017738
+train/Chủ tịch/016395
+train/Con chó/023274
+train/Con dê/018408
+train/Con gà/011137
+train/Con gà/017527
+train/Con gà/018396
+train/Con gà/018397
+train/Con gà/021225
+train/Con gà/024677
+train/Con heo/023984
+train/Con thỏ/016663
+train/Cà phê/017162
+train/Cà phê/018026
+train/Cà phê/022667
+train/Cà phê/023501
+train/Cà phê/024301
+train/Công viên/016089
+train/Công viên/021644
+train/Cần/008339
+train/Cần/018230
+train/Cầu lông/022590
+train/Cắm trại/023252
+train/Cục tẩy/008130
+train/Cục tẩy/011823
+train/Cục tẩy/018043
+train/Dài/013329
+train/Dài/023957

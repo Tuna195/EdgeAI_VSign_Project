@@ -3,9 +3,13 @@ venv
 .venv
 __pycache__/
 *.mp4
-data/
 test_data/
 notebooks
 *.md
 *.zip
 runs/
+data/**
+!data/**/
+!data/**/.gitkeep
+!data/exclude.txt
+!data/reports/review_decisions.csv

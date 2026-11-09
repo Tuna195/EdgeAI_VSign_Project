@@ -1,0 +1,348 @@
+﻿key,queue,decision,excluded,time
+nohand|test/Bố/024705,nohand,auto_loai,test/Bố/024705,
+nohand|test/Chiều/399607,nohand,auto_loai,test/Chiều/399607,
+nohand|test/Chào/772642,nohand,auto_loai,test/Chào/772642,
+nohand|test/Chạy/024726,nohand,auto_loai,test/Chạy/024726,
+nohand|test/Con chó/017523,nohand,auto_loai,test/Con chó/017523,
+nohand|test/Con dê/024683,nohand,auto_loai,test/Con dê/024683,
+nohand|test/Con rùa/024679,nohand,auto_loai,test/Con rùa/024679,
+nohand|test/Con thỏ/010229,nohand,auto_loai,test/Con thỏ/010229,
+nohand|test/Con thỏ/014814,nohand,auto_loai,test/Con thỏ/014814,
+nohand|train/Ban ngày/363626,nohand,auto_loai,train/Ban ngày/363626,
+nohand|train/Buổi tối/022581,nohand,auto_loai,train/Buổi tối/022581,
+nohand|train/Bút bi/024308,nohand,auto_loai,train/Bút bi/024308,
+nohand|train/Chiều/848206,nohand,auto_loai,train/Chiều/848206,
+nohand|train/Chào/302511,nohand,auto_loai,train/Chào/302511,
+nohand|train/Chị/022492,nohand,auto_loai,train/Chị/022492,
+nohand|train/Chị/024076,nohand,auto_loai,train/Chị/024076,
+nohand|train/Con chó/012270,nohand,auto_loai,train/Con chó/012270,
+nohand|train/Con chó/017522,nohand,auto_loai,train/Con chó/017522,
+nohand|train/Con dê/017539,nohand,auto_loai,train/Con dê/017539,
+nohand|train/Con heo/024684,nohand,auto_loai,train/Con heo/024684,
+nohand|train/Con mèo/024676,nohand,auto_loai,train/Con mèo/024676,
+nohand|train/Con thỏ/012280,nohand,auto_loai,train/Con thỏ/012280,
+nohand|train/Con thỏ/014815,nohand,auto_loai,train/Con thỏ/014815,
+nohand|train/Con thỏ/017533,nohand,auto_loai,train/Con thỏ/017533,
+nohand|train/Con thỏ/024680,nohand,auto_loai,train/Con thỏ/024680,
+nohand|train/Con vịt/024678,nohand,auto_loai,train/Con vịt/024678,
+nohand|train/Cầu lông/024174,nohand,auto_loai,train/Cầu lông/024174,
+nohand|train/Dài/024757,nohand,auto_loai,train/Dài/024757,
+copy|Bàn phím|test/012803|train/012804,copy,giu,,2026-10-22 08:35
+copy|Bút bi|train/008125|train/008126,copy,giu,,2026-10-22 08:39
+copy|Bút bi|train/014466|train/016303,copy,giu,,2026-10-22 08:39
+copy|Bút bi|train/015338|train/016303,copy,giu,,2026-10-22 08:51
+copy|Bế mạc|test/454508|train/122056,copy,loai_b,train/Bế mạc/122056,2026-10-22 08:54
+copy|Bế mạc|test/454508|train/716886,copy,loai_b,train/Bế mạc/716886,2026-10-22 08:53
+copy|Bế mạc|train/122056|train/716886,copy,loai_a,train/Bế mạc/122056,2026-10-22 08:53
+copy|Bế mạc|train/226882|train/359947,copy,loai_b,train/Bế mạc/359947,2026-10-22 08:55
+copy|Bố|test/007655|train/007653,copy,giu,,2026-10-22 08:57
+copy|Bố|test/012339|test/012340,copy,giu,,2026-10-22 08:58
+copy|Bố|test/014052|train/014051,copy,giu,,2026-10-22 08:59
+copy|Bố|test/020445|train/020447,copy,giu,,2026-10-22 08:59
+copy|Bố|train/002408|train/004098,copy,giu,,2026-10-22 08:59
+copy|Bố|train/003267|train/009450,copy,giu,,2026-10-22 09:00
+copy|Bố|train/005752|train/009451,copy,giu,,2026-10-22 09:00
+copy|Bố|train/012341|train/012343,copy,giu,,2026-10-22 09:00
+copy|Bố|train/014866|train/014867,copy,loai_b,train/Bố/014867,2026-10-22 09:03
+copy|Bố|train/015834|train/015836,copy,giu,,2026-10-22 09:03
+copy|Cao (đồ vật)|train/009291|train/009292,copy,loai_b,train/Cao (đồ vật)/009292,2026-10-22 09:04
+copy|Chiều|test/629298|train/742412,copy,loai_b,train/Chiều/742412,2026-10-22 09:06
+copy|Chiều|train/239816|train/940346,copy,loai_b,train/Chiều/940346,2026-10-22 09:07
+copy|Chào|test/466643|train/582662,copy,loai_a,test/Chào/466643,2026-10-22 09:07
+copy|Chào|test/466643|train/956253,copy,loai_b,train/Chào/956253,2026-10-22 09:08
+copy|Chị|test/003417|train/003418,copy,giu,,2026-10-22 09:09
+copy|Bút bi|train/015337|train/016302,copy,giu,,2026-10-22 12:28
+blank|train/Chiều/800005,blank,loai,train/Chiều/800005,2026-10-28 08:00
+blank|train/Chào/140605,blank,loai,train/Chào/140605,2026-10-28 08:00
+blank|train/Chào/910891,blank,loai,train/Chào/910891,2026-10-28 08:00
+blank|train/Chân/735656,blank,loai,train/Chân/735656,2026-10-28 08:00
+blank|train/Chạy/100425,blank,loai,train/Chạy/100425,2026-10-28 08:00
+blank|train/Chạy/320392,blank,loai,train/Chạy/320392,2026-10-28 08:00
+blank|train/Con gấu/391773,blank,loai,train/Con gấu/391773,2026-10-28 08:01
+blank|train/Con gấu/549433,blank,giu,,2026-10-28 08:01
+blank|train/Cứu/121369,blank,loai,train/Cứu/121369,2026-10-28 08:01
+blank|train/Cứu/213349,blank,loai,train/Cứu/213349,2026-10-28 08:01
+blank|train/Ban ngày/680099,blank,giu,,2026-10-28 08:02
+blank|train/Chiều/578634,blank,loai,train/Chiều/578634,2026-10-28 08:02
+gap|test/Ban ngày/813328,gap,loai,test/Ban ngày/813328,2026-10-28 08:03
+gap|test/Buổi sáng/017939,gap,loai,test/Buổi sáng/017939,2026-10-28 08:03
+copy|Chị|test/005904|train/005903,copy,loai_b,train/Chị/005903,2026-10-28 08:38
+copy|Chị|test/005904|train/005905,copy,loai_b,train/Chị/005905,2026-10-28 08:39
+copy|Chị|test/005904|train/005906,copy,loai_b,train/Chị/005906,2026-10-28 08:39
+copy|Chị|test/016864|train/016863,copy,loai_b,train/Chị/016863,2026-10-28 08:39
+copy|Chị|test/016864|train/016865,copy,loai_b,train/Chị/016865,2026-10-28 08:40
+copy|Chị|train/005903|train/005905,copy,loai_b,train/Chị/005905,2026-10-28 08:40
+copy|Chị|train/005903|train/005909,copy,loai_b,train/Chị/005909,2026-10-28 08:40
+copy|Chị|train/005905|train/005906,copy,loai_b,train/Chị/005906,2026-10-28 08:40
+copy|Chị|train/005905|train/005908,copy,loai_b,train/Chị/005908,2026-10-28 08:40
+copy|Chị|train/005906|train/005908,copy,loai_b,train/Chị/005908,2026-10-28 08:40
+copy|Chị|train/005906|train/005910,copy,loai_b,train/Chị/005910,2026-10-28 08:40
+copy|Chị|train/011360|train/011361,copy,loai_b,train/Chị/011361,2026-10-28 08:41
+copy|Chị|train/011361|train/016865,copy,loai_a,train/Chị/011361,2026-10-28 08:41
+copy|Chị|train/016863|train/016865,copy,loai_b,train/Chị/016865,2026-10-28 08:41
+copy|Con heo|test/003222|train/003224,copy,giu,,2026-10-28 08:41
+copy|Con heo|test/003222|train/003225,copy,giu,,2026-10-28 08:42
+copy|Con heo|test/006740|train/006741,copy,giu,,2026-10-28 08:43
+copy|Con heo|test/018410|train/018412,copy,giu,,2026-10-28 08:43
+copy|Con heo|train/001515|train/003225,copy,giu,,2026-10-28 08:43
+copy|Con heo|train/003224|train/003225,copy,giu,,2026-10-28 08:44
+copy|Con heo|train/006737|train/006738,copy,giu,,2026-10-28 08:44
+copy|Con heo|train/006739|train/006741,copy,giu,,2026-10-28 08:44
+copy|Con heo|train/007605|train/007607,copy,giu,,2026-10-28 08:44
+copy|Con heo|train/007605|train/009407,copy,giu,,2026-10-28 08:44
+copy|Con heo|train/007607|train/008547,copy,giu,,2026-10-28 08:44
+copy|Con heo|train/009407|train/009408,copy,giu,,2026-10-28 08:46
+copy|Con heo|train/012292|train/012293,copy,giu,,2026-10-28 08:47
+copy|Con heo|train/018411|train/018412,copy,loai_a,train/Con heo/018411,2026-10-28 08:47
+copy|Con rùa|test/004045|train/004044,copy,giu,,2026-10-28 08:47
+copy|Con rùa|test/016660|train/016661,copy,loai_b,train/Con rùa/016661,2026-10-28 08:49
+copy|Con rùa|train/013171|train/013172,copy,giu,,2026-10-28 08:50
+copy|Con rùa|train/015770|train/015771,copy,giu,,2026-10-28 08:50
+copy|Cần|train/010952|train/010953,copy,giu,,2026-10-28 08:52
+copy|Cục tẩy|train/008128|train/008129,copy,loai_b,train/Cục tẩy/008129,2026-10-28 08:53
+copy|Cứu|test/736745|train/884256,copy,loai_a,test/Cứu/736745,2026-10-28 08:57
+copy|Dài|test/009561|train/009562,copy,giu,,2026-10-28 08:59
+blank|test/Chào/772642,blank,loai,test/Chào/772642,2026-10-28 09:00
+swap|test/Buổi trưa/017084,swap,loai,test/Buổi trưa/017084,2026-10-28 09:01
+swap|test/Báo cáo/010346,swap,loai,test/Báo cáo/010346,2026-10-28 09:01
+swap|test/Báo cáo/023254,swap,loai,test/Báo cáo/023254,2026-10-28 09:01
+swap|test/Bắt buộc/024737,swap,loai,test/Bắt buộc/024737,2026-10-28 09:01
+swap|test/Cao (đồ vật)/024528,swap,loai,test/Cao (đồ vật)/024528,2026-10-28 09:01
+swap|test/Chạy/023926,swap,loai,test/Chạy/023926,2026-10-28 09:01
+swap|test/Chị/005904,swap,loai,test/Chị/005904,2026-10-28 09:01
+swap|test/Chị/017739,swap,loai,test/Chị/017739,2026-10-28 09:01
+swap|test/Con chó/023975,swap,neu_du,,2026-10-28 09:11
+swap|test/Dài/018574,swap,loai,test/Dài/018574,2026-10-28 09:11
+swap|test/Dài/021305,swap,giu,,2026-10-28 09:11
+swap|train/Buổi trưa/010633,swap,loai,train/Buổi trưa/010633,2026-10-28 09:11
+swap|train/Buổi trưa/022579,swap,loai,train/Buổi trưa/022579,2026-10-28 09:11
+swap|train/Buổi tối/000196,swap,loai,train/Buổi tối/000196,2026-10-28 09:11
+swap|train/Buổi tối/002744,swap,loai,train/Buổi tối/002744,2026-10-28 09:12
+swap|train/Buổi tối/002745,swap,loai,train/Buổi tối/002745,2026-10-28 09:12
+swap|train/Buổi tối/004442,swap,loai,train/Buổi tối/004442,2026-10-28 09:12
+swap|train/Buổi tối/014380,swap,neu_du,,2026-10-28 09:13
+swap|train/Buổi tối/016210,swap,loai,train/Buổi tối/016210,2026-10-28 09:13
+swap|train/Buổi tối/016211,swap,loai,train/Buổi tối/016211,2026-10-28 09:13
+swap|train/Bàn phím/016300,swap,loai,train/Bàn phím/016300,2026-10-28 09:13
+swap|train/Báo cáo/018536,swap,loai,train/Báo cáo/018536,2026-10-28 09:13
+swap|train/Báo cáo/024038,swap,giu,,2026-10-28 09:13
+swap|train/Bình minh/016200,swap,loai,train/Bình minh/016200,2026-10-28 09:14
+swap|train/Bình minh/017932,swap,loai,train/Bình minh/017932,2026-10-28 09:14
+swap|train/Bình minh/017933,swap,loai,train/Bình minh/017933,2026-10-28 09:14
+swap|train/Bình minh/017934,swap,loai,train/Bình minh/017934,2026-10-28 09:14
+swap|train/Bình minh/021692,swap,loai,train/Bình minh/021692,2026-10-28 09:14
+swap|train/Bút bi/016302,swap,loai,train/Bút bi/016302,2026-10-28 09:14
+swap|train/Bế mạc/865388,swap,giu,,2026-10-28 09:15
+swap|train/Bệnh nhân/107540,swap,loai,train/Bệnh nhân/107540,2026-10-28 09:15
+swap|train/Bố/016716,swap,giu,,2026-10-28 09:15
+swap|train/Chạy/320392,swap,loai,train/Chạy/320392,2026-10-28 09:15
+swap|train/Chậm chạp/016558,swap,giu,,2026-10-28 09:15
+swap|train/Chậm chạp/017430,swap,loai,train/Chậm chạp/017430,2026-10-28 09:16
+swap|train/Chậm chạp/017432,swap,loai,train/Chậm chạp/017432,2026-10-28 09:16
+swap|train/Chật/024754,swap,loai,train/Chật/024754,2026-10-28 09:16
+swap|train/Chị/005903,swap,loai,train/Chị/005903,2026-10-28 09:16
+swap|train/Chị/005906,swap,loai,train/Chị/005906,2026-10-28 09:16
+swap|train/Chị/005908,swap,loai,train/Chị/005908,2026-10-28 09:16
+swap|train/Chị/005909,swap,loai,train/Chị/005909,2026-10-28 09:16
+swap|train/Chị/005910,swap,loai,train/Chị/005910,2026-10-28 09:16
+swap|train/Chị/005911,swap,loai,train/Chị/005911,2026-10-28 09:20
+swap|train/Chị/011359,swap,loai,train/Chị/011359,2026-10-28 09:20
+swap|train/Chị/011361,swap,loai,train/Chị/011361,2026-10-28 09:20
+swap|train/Chị/011362,swap,loai,train/Chị/011362,2026-10-28 09:20
+swap|train/Chị/011366,swap,loai,train/Chị/011366,2026-10-28 09:20
+swap|train/Chị/017737,swap,loai,train/Chị/017737,2026-10-28 09:20
+swap|train/Chị/017738,swap,loai,train/Chị/017738,2026-10-28 09:20
+swap|train/Chủ tịch/016395,swap,loai,train/Chủ tịch/016395,2026-10-28 09:20
+swap|train/Con chó/023274,swap,loai,train/Con chó/023274,2026-10-28 09:21
+swap|train/Con dê/018408,swap,loai,train/Con dê/018408,2026-10-28 09:21
+swap|train/Con gà/011137,swap,loai,train/Con gà/011137,2026-10-28 09:21
+swap|train/Con gà/017527,swap,loai,train/Con gà/017527,2026-10-28 09:21
+swap|train/Con gà/018396,swap,loai,train/Con gà/018396,2026-10-28 09:21
+swap|train/Con gà/018397,swap,loai,train/Con gà/018397,2026-10-28 09:21
+swap|train/Con gà/021225,swap,loai,train/Con gà/021225,2026-10-28 09:21
+swap|train/Con gà/024677,swap,loai,train/Con gà/024677,2026-10-28 09:21
+swap|train/Con heo/023984,swap,loai,train/Con heo/023984,2026-10-28 09:22
+swap|train/Con thỏ/016663,swap,loai,train/Con thỏ/016663,2026-10-28 09:22
+swap|train/Cà phê/017162,swap,loai,train/Cà phê/017162,2026-10-28 09:22
+swap|train/Cà phê/018026,swap,loai,train/Cà phê/018026,2026-10-28 09:22
+swap|train/Cà phê/022667,swap,loai,train/Cà phê/022667,2026-10-28 09:22
+swap|train/Cà phê/023501,swap,loai,train/Cà phê/023501,2026-10-28 09:22
+swap|train/Cà phê/024301,swap,loai,train/Cà phê/024301,2026-10-28 09:22
+swap|train/Công viên/000078,swap,giu,,2026-10-28 09:23
+swap|train/Công viên/000936,swap,giu,,2026-10-28 09:23
+swap|train/Công viên/011573,swap,giu,,2026-10-28 09:23
+swap|train/Công viên/016089,swap,loai,train/Công viên/016089,2026-10-28 09:23
+swap|train/Công viên/021644,swap,loai,train/Công viên/021644,2026-10-28 09:24
+swap|train/Cần/008339,swap,loai,train/Cần/008339,2026-10-28 09:24
+swap|train/Cần/016483,swap,giu,,2026-10-28 09:24
+swap|train/Cần/018230,swap,loai,train/Cần/018230,2026-10-28 09:24
+swap|train/Cần/256294,swap,giu,,2026-10-28 09:24
+swap|train/Cầu lông/022590,swap,loai,train/Cầu lông/022590,2026-10-28 09:24
+swap|train/Cắm trại/023252,swap,loai,train/Cắm trại/023252,2026-10-28 09:24
+swap|train/Cục tẩy/008130,swap,loai,train/Cục tẩy/008130,2026-10-28 09:25
+swap|train/Cục tẩy/011823,swap,loai,train/Cục tẩy/011823,2026-10-28 09:25
+swap|train/Cục tẩy/018043,swap,loai,train/Cục tẩy/018043,2026-10-28 09:25
+swap|train/Dài/013329,swap,loai,train/Dài/013329,2026-10-28 09:25
+swap|train/Dài/023957,swap,loai,train/Dài/023957,2026-10-28 09:25
+gap|test/Buổi trưa/007117,gap,giu,,2026-10-28 09:25
+gap|test/Buổi tối/013553,gap,loai,test/Buổi tối/013553,2026-10-28 09:26
+gap|test/Buổi tối/013554,gap,loai,test/Buổi tối/013554,2026-10-28 09:26
+gap|test/Bàn phím/018038,gap,loai,test/Bàn phím/018038,2026-10-28 09:26
+gap|test/Bình minh/017077,gap,loai,test/Bình minh/017077,2026-10-28 09:26
+gap|test/Bình minh/022576,gap,loai,test/Bình minh/022576,2026-10-28 09:26
+gap|test/Bắt buộc/024737,gap,loai,test/Bắt buộc/024737,2026-10-28 09:26
+gap|test/Cao (đồ vật)/024528,gap,loai,test/Cao (đồ vật)/024528,2026-10-28 09:26
+gap|test/Chiều/350867,gap,loai,test/Chiều/350867,2026-10-28 09:26
+gap|test/Chậm chạp/024531,gap,loai,test/Chậm chạp/024531,2026-10-28 09:26
+gap|test/Chủ tịch/020074,gap,loai,test/Chủ tịch/020074,2026-10-28 09:27
+gap|test/Con chó/002347,gap,loai,test/Con chó/002347,2026-10-28 09:28
+gap|test/Con chó/003204,gap,loai,test/Con chó/003204,2026-10-28 09:28
+gap|test/Con chó/009387,gap,loai,test/Con chó/009387,2026-10-28 09:28
+gap|test/Con chó/011133,gap,loai,test/Con chó/011133,2026-10-28 09:28
+gap|test/Con chó/012271,gap,loai,test/Con chó/012271,2026-10-28 09:28
+gap|test/Con chó/021506,gap,loai,test/Con chó/021506,2026-10-28 09:28
+gap|test/Con chó/022991,gap,loai,test/Con chó/022991,2026-10-28 09:28
+gap|test/Con thỏ/001507,gap,loai,test/Con thỏ/001507,2026-10-28 09:28
+gap|test/Con thỏ/003215,gap,loai,test/Con thỏ/003215,2026-10-28 09:28
+gap|test/Con thỏ/005699,gap,loai,test/Con thỏ/005699,2026-10-28 09:28
+gap|test/Con thỏ/007597,gap,loai,test/Con thỏ/007597,2026-10-28 09:28
+gap|test/Con thỏ/013174,gap,loai,test/Con thỏ/013174,2026-10-28 09:28
+gap|test/Con thỏ/018402,gap,loai,test/Con thỏ/018402,2026-10-28 09:28
+gap|test/Công viên/017827,gap,loai,test/Công viên/017827,2026-10-28 09:28
+gap|test/Cầu lông/007143,gap,loai,test/Cầu lông/007143,2026-10-28 09:28
+gap|test/Cầu lông/024274,gap,loai,test/Cầu lông/024274,2026-10-28 09:28
+gap|test/Cắm trại/017652,gap,loai,test/Cắm trại/017652,2026-10-28 09:28
+gap|test/Cắm trại/024734,gap,loai,test/Cắm trại/024734,2026-10-28 09:28
+gap|test/Cục tẩy/024309,gap,loai,test/Cục tẩy/024309,2026-10-28 09:28
+gap|test/Dài/016824,gap,giu,,2026-10-28 09:28
+gap|train/Ban ngày/112038,gap,loai,train/Ban ngày/112038,2026-10-28 09:28
+gap|train/Buổi sáng/004436,gap,loai,train/Buổi sáng/004436,2026-10-28 09:29
+gap|train/Buổi sáng/011716,gap,loai,train/Buổi sáng/011716,2026-10-28 09:29
+gap|train/Buổi sáng/017082,gap,loai,train/Buổi sáng/017082,2026-10-28 09:29
+gap|train/Buổi sáng/022578,gap,loai,train/Buổi sáng/022578,2026-10-28 09:29
+gap|train/Buổi sáng/024162,gap,loai,train/Buổi sáng/024162,2026-10-28 09:29
+gap|train/Buổi trưa/001897,gap,loai,train/Buổi trưa/001897,2026-10-28 09:29
+gap|train/Buổi trưa/017941,gap,loai,train/Buổi trưa/017941,2026-10-28 09:29
+gap|train/Buổi tối/002745,gap,loai,train/Buổi tối/002745,2026-10-28 09:29
+gap|train/Buổi tối/004442,gap,loai,train/Buổi tối/004442,2026-10-28 09:29
+gap|train/Buổi tối/008946,gap,loai,train/Buổi tối/008946,2026-10-28 09:29
+gap|train/Buổi tối/009786,gap,loai,train/Buổi tối/009786,2026-10-28 09:29
+gap|train/Buổi tối/014379,gap,loai,train/Buổi tối/014379,2026-10-28 09:29
+gap|train/Buổi tối/015234,gap,loai,train/Buổi tối/015234,2026-10-28 09:29
+gap|train/Buổi tối/016211,gap,loai,train/Buổi tối/016211,2026-10-28 09:29
+gap|train/Buổi tối/017087,gap,loai,train/Buổi tối/017087,2026-10-28 09:29
+gap|train/Buổi tối/017088,gap,loai,train/Buổi tối/017088,2026-10-28 09:29
+gap|train/Buổi tối/017944,gap,loai,train/Buổi tối/017944,2026-10-28 09:29
+gap|train/Buổi tối/017945,gap,loai,train/Buổi tối/017945,2026-10-28 09:29
+gap|train/Buổi tối/018812,gap,loai,train/Buổi tối/018812,2026-10-28 09:29
+gap|train/Buổi tối/018813,gap,loai,train/Buổi tối/018813,2026-10-28 09:29
+gap|train/Buổi tối/019871,gap,loai,train/Buổi tối/019871,2026-10-28 09:29
+gap|train/Buổi tối/022481,gap,loai,train/Buổi tối/022481,2026-10-28 09:29
+gap|train/Buổi tối/024165,gap,loai,train/Buổi tối/024165,2026-10-28 09:29
+gap|train/Bàn phím/024307,gap,loai,train/Bàn phím/024307,2026-10-28 09:29
+gap|train/Báo cáo/018535,gap,loai,train/Báo cáo/018535,2026-10-28 09:29
+gap|train/Báo cáo/024738,gap,loai,train/Báo cáo/024738,2026-10-28 09:30
+gap|train/Bình minh/012702,gap,loai,train/Bình minh/012702,2026-10-28 09:30
+gap|train/Bình minh/017934,gap,loai,train/Bình minh/017934,2026-10-28 09:30
+gap|train/Bình minh/024160,gap,loai,train/Bình minh/024160,2026-10-28 09:30
+gap|train/Bắt buộc/018533,gap,neu_du,,2026-10-28 09:31
+gap|train/Bắt buộc/020523,gap,loai,train/Bắt buộc/020523,2026-10-28 09:31
+gap|train/Bế mạc/559381,gap,giu,,2026-10-28 09:31
+gap|train/Cao (người)/024758,gap,loai,train/Cao (người)/024758,2026-10-28 09:31
+gap|train/Chào/172792,gap,loai,train/Chào/172792,2026-10-28 09:31
+gap|train/Chào/392683,gap,loai,train/Chào/392683,2026-10-28 09:31
+gap|train/Chân/872840,gap,loai,train/Chân/872840,2026-10-28 09:32
+gap|train/Chạy/018510,gap,loai,train/Chạy/018510,2026-10-28 09:32
+gap|train/Chạy/810219,gap,loai,train/Chạy/810219,2026-10-28 09:32
+gap|train/Chật/018568,gap,giu,,2026-10-28 09:32
+gap|train/Chị/021608,gap,loai,train/Chị/021608,2026-10-28 09:32
+gap|train/Chủ tịch/004632,gap,loai,train/Chủ tịch/004632,2026-10-28 09:32
+gap|train/Chủ tịch/019002,gap,loai,train/Chủ tịch/019002,2026-10-28 09:33
+gap|train/Chủ tịch/024354,gap,loai,train/Chủ tịch/024354,2026-10-28 09:33
+gap|train/Con chó/000649,gap,loai,train/Con chó/000649,2026-10-28 09:33
+gap|train/Con chó/003203,gap,loai,train/Con chó/003203,2026-10-28 09:33
+gap|train/Con chó/004878,gap,loai,train/Con chó/004878,2026-10-28 09:33
+gap|train/Con chó/004879,gap,loai,train/Con chó/004879,2026-10-28 09:33
+gap|train/Con chó/005689,gap,loai,train/Con chó/005689,2026-10-28 09:33
+gap|train/Con chó/005690,gap,loai,train/Con chó/005690,2026-10-28 09:33
+gap|train/Con chó/006719,gap,loai,train/Con chó/006719,2026-10-28 09:33
+gap|train/Con chó/006720,gap,loai,train/Con chó/006720,2026-10-28 09:33
+gap|train/Con chó/007586,gap,loai,train/Con chó/007586,2026-10-28 09:33
+gap|train/Con chó/007587,gap,loai,train/Con chó/007587,2026-10-28 09:33
+gap|train/Con chó/008529,gap,loai,train/Con chó/008529,2026-10-28 09:33
+gap|train/Con chó/008530,gap,loai,train/Con chó/008530,2026-10-28 09:33
+gap|train/Con chó/010219,gap,loai,train/Con chó/010219,2026-10-28 09:33
+gap|train/Con chó/013162,gap,giu,,2026-10-28 09:33
+gap|train/Con chó/016653,gap,loai,train/Con chó/016653,2026-10-28 09:33
+gap|train/Con chó/018393,gap,loai,train/Con chó/018393,2026-10-28 09:33
+gap|train/Con chó/019254,gap,loai,train/Con chó/019254,2026-10-28 09:33
+gap|train/Con chó/019255,gap,loai,train/Con chó/019255,2026-10-28 09:33
+gap|train/Con chó/020375,gap,loai,train/Con chó/020375,2026-10-28 09:33
+gap|train/Con chó/021223,gap,loai,train/Con chó/021223,2026-10-28 09:33
+gap|train/Con chó/021464,gap,loai,train/Con chó/021464,2026-10-28 09:33
+gap|train/Con chó/023091,gap,loai,train/Con chó/023091,2026-10-28 09:33
+gap|train/Con chó/023232,gap,loai,train/Con chó/023232,2026-10-28 09:33
+gap|train/Con chó/023274,gap,loai,train/Con chó/023274,2026-10-28 09:33
+gap|train/Con chó/023875,gap,loai,train/Con chó/023875,2026-10-28 09:33
+gap|train/Con chó/024675,gap,loai,train/Con chó/024675,2026-10-28 09:34
+gap|train/Con dê/022999,gap,loai,train/Con dê/022999,2026-10-28 09:34
+gap|train/Con dê/023883,gap,loai,train/Con dê/023883,2026-10-28 09:34
+gap|train/Con gà/018397,gap,loai,train/Con gà/018397,2026-10-28 09:34
+gap|train/Con thỏ/000661,gap,loai,train/Con thỏ/000661,2026-10-28 09:34
+gap|train/Con thỏ/000662,gap,loai,train/Con thỏ/000662,2026-10-28 09:34
+gap|train/Con thỏ/001506,gap,loai,train/Con thỏ/001506,2026-10-28 09:34
+gap|train/Con thỏ/003214,gap,loai,train/Con thỏ/003214,2026-10-28 09:34
+gap|train/Con thỏ/004047,gap,loai,train/Con thỏ/004047,2026-10-28 09:34
+gap|train/Con thỏ/004048,gap,loai,train/Con thỏ/004048,2026-10-28 09:34
+gap|train/Con thỏ/004888,gap,loai,train/Con thỏ/004888,2026-10-28 09:34
+gap|train/Con thỏ/004889,gap,loai,train/Con thỏ/004889,2026-10-28 09:34
+gap|train/Con thỏ/006729,gap,loai,train/Con thỏ/006729,2026-10-28 09:34
+gap|train/Con thỏ/006730,gap,loai,train/Con thỏ/006730,2026-10-28 09:34
+gap|train/Con thỏ/008539,gap,loai,train/Con thỏ/008539,2026-10-28 09:34
+gap|train/Con thỏ/008540,gap,loai,train/Con thỏ/008540,2026-10-28 09:34
+gap|train/Con thỏ/009397,gap,loai,train/Con thỏ/009397,2026-10-28 09:34
+gap|train/Con thỏ/009398,gap,loai,train/Con thỏ/009398,2026-10-28 09:34
+gap|train/Con thỏ/010228,gap,loai,train/Con thỏ/010228,2026-10-28 09:34
+gap|train/Con thỏ/011143,gap,loai,train/Con thỏ/011143,2026-10-28 09:34
+gap|train/Con thỏ/013173,gap,loai,train/Con thỏ/013173,2026-10-28 09:34
+gap|train/Con thỏ/015773,gap,loai,train/Con thỏ/015773,2026-10-28 09:34
+gap|train/Con thỏ/016663,gap,loai,train/Con thỏ/016663,2026-10-28 09:34
+gap|train/Con thỏ/016664,gap,loai,train/Con thỏ/016664,2026-10-28 09:34
+gap|train/Con thỏ/017532,gap,loai,train/Con thỏ/017532,2026-10-28 09:34
+gap|train/Con thỏ/019264,gap,giu,,2026-10-28 09:35
+gap|train/Con thỏ/020385,gap,loai,train/Con thỏ/020385,2026-10-28 09:35
+gap|train/Con thỏ/021228,gap,loai,train/Con thỏ/021228,2026-10-28 09:35
+gap|train/Con thỏ/021328,gap,loai,train/Con thỏ/021328,2026-10-28 09:35
+gap|train/Con thỏ/022112,gap,loai,train/Con thỏ/022112,2026-10-28 09:35
+gap|train/Con thỏ/022212,gap,loai,train/Con thỏ/022212,2026-10-28 09:35
+gap|train/Con vịt/011139,gap,loai,train/Con vịt/011139,2026-10-28 09:35
+gap|train/Cung cấp/024735,gap,loai,train/Cung cấp/024735,2026-10-28 09:35
+gap|train/Cà phê/013631,gap,loai,train/Cà phê/013631,2026-10-28 09:35
+gap|train/Cà phê/019957,gap,loai,train/Cà phê/019957,2026-10-28 09:35
+gap|train/Cà phê/024301,gap,loai,train/Cà phê/024301,2026-10-28 09:35
+gap|train/Công viên/022528,gap,loai,train/Công viên/022528,2026-10-28 09:36
+gap|train/Cần/002187,gap,loai,train/Cần/002187,2026-10-28 09:36
+gap|train/Cần/018230,gap,loai,train/Cần/018230,2026-10-28 09:36
+gap|train/Cần/020182,gap,loai,train/Cần/020182,2026-10-28 09:36
+gap|train/Cầu lông/001924,gap,loai,train/Cầu lông/001924,2026-10-28 09:36
+gap|train/Cầu lông/002766,gap,loai,train/Cầu lông/002766,2026-10-28 09:36
+gap|train/Cầu lông/003620,gap,loai,train/Cầu lông/003620,2026-10-28 09:36
+gap|train/Cầu lông/006237,gap,loai,train/Cầu lông/006237,2026-10-28 09:36
+gap|train/Cầu lông/006238,gap,loai,train/Cầu lông/006238,2026-10-28 09:36
+gap|train/Cầu lông/009806,gap,loai,train/Cầu lông/009806,2026-10-28 09:36
+gap|train/Cầu lông/014397,gap,loai,train/Cầu lông/014397,2026-10-28 09:36
+gap|train/Cầu lông/014398,gap,loai,train/Cầu lông/014398,2026-10-28 09:36
+gap|train/Cầu lông/017105,gap,loai,train/Cầu lông/017105,2026-10-28 09:36
+gap|train/Cầu lông/017106,gap,loai,train/Cầu lông/017106,2026-10-28 09:36
+gap|train/Cầu lông/018833,gap,loai,train/Cầu lông/018833,2026-10-28 09:37
+gap|train/Cầu lông/018834,gap,loai,train/Cầu lông/018834,2026-10-28 09:37
+gap|train/Cắm trại/018528,gap,loai,train/Cắm trại/018528,2026-10-28 09:37
+gap|train/Cắm trại/023934,gap,loai,train/Cắm trại/023934,2026-10-28 09:37
+gap|train/Cục tẩy/019974,gap,loai,train/Cục tẩy/019974,2026-10-28 09:37
+gap|train/Dài/000823,gap,neu_du,,2026-10-28 09:37
+gap|train/Dài/006893,gap,loai,train/Dài/006893,2026-10-28 09:37
+gap|train/Dài/009563,gap,loai,train/Dài/009563,2026-10-28 09:37
+gap|train/Dài/010386,gap,loai,train/Dài/010386,2026-10-28 09:37
+gap|train/Dài/011310,gap,loai,train/Dài/011310,2026-10-28 09:37
+gap|train/Dài/020577,gap,loai,train/Dài/020577,2026-10-28 09:37
+gap|train/Dài/024657,gap,loai,train/Dài/024657,2026-10-28 09:38
