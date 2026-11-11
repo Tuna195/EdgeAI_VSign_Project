@@ -13,3 +13,5 @@ data/**
 !data/**/.gitkeep
 !data/exclude.txt
 !data/reports/review_decisions.csv
+!data/processed/index.csv
+!data/processed/vocab.csv

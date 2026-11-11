@@ -1,0 +1,1478 @@
+﻿key,word,label,signer,source,orig_split,split,frames,fps,width,height
+test/Buổi sáng/002739,Buổi sáng,0,,A,test,train,61,25.0,224,224
+test/Buổi sáng/006211,Buổi sáng,0,,A,test,train,84,25.0,224,224
+test/Buổi sáng/006212,Buổi sáng,0,,A,test,train,78,25.0,224,224
+test/Buổi sáng/008017,Buổi sáng,0,,A,test,train,57,25.0,224,224
+test/Buổi sáng/008018,Buổi sáng,0,,A,test,train,58,25.0,224,224
+test/Buổi sáng/010631,Buổi sáng,0,,A,test,test,66,25.0,224,224
+test/Buổi sáng/012705,Buổi sáng,0,,A,test,train,65,25.0,224,224
+test/Buổi sáng/017938,Buổi sáng,0,,A,test,test,69,25.0,224,224
+test/Buổi sáng/019865,Buổi sáng,0,,A,test,train,66,25.0,224,224
+test/Buổi sáng/024262,Buổi sáng,0,,A,test,train,68,25.0,224,224
+train/Buổi sáng/000190,Buổi sáng,0,,A,train,train,59,25.0,224,224
+train/Buổi sáng/000191,Buổi sáng,0,,A,train,train,60,25.0,224,224
+train/Buổi sáng/001051,Buổi sáng,0,,A,train,train,60,25.0,224,224
+train/Buổi sáng/001052,Buổi sáng,0,,A,train,train,54,25.0,224,224
+train/Buổi sáng/001894,Buổi sáng,0,,A,train,train,68,25.0,224,224
+train/Buổi sáng/001895,Buổi sáng,0,,A,train,train,59,25.0,224,224
+train/Buổi sáng/001896,Buổi sáng,0,,A,train,train,54,25.0,224,224
+train/Buổi sáng/002738,Buổi sáng,0,,A,train,test,64,25.0,224,224
+train/Buổi sáng/003596,Buổi sáng,0,,A,train,val,70,25.0,224,224
+train/Buổi sáng/003597,Buổi sáng,0,,A,train,train,74,25.0,224,224
+train/Buổi sáng/004435,Buổi sáng,0,,A,train,val,68,25.0,224,224
+train/Buổi sáng/005256,Buổi sáng,0,,A,train,train,79,25.0,224,224
+train/Buổi sáng/005257,Buổi sáng,0,,A,train,train,78,25.0,224,224
+train/Buổi sáng/007115,Buổi sáng,0,,A,train,val,66,25.0,224,224
+train/Buổi sáng/007116,Buổi sáng,0,,A,train,val,68,25.0,224,224
+train/Buổi sáng/008940,Buổi sáng,0,,A,train,train,57,25.0,224,224
+train/Buổi sáng/008941,Buổi sáng,0,,A,train,train,58,25.0,224,224
+train/Buổi sáng/009779,Buổi sáng,0,,A,train,test,67,25.0,224,224
+train/Buổi sáng/009780,Buổi sáng,0,,A,train,train,61,25.0,224,224
+train/Buổi sáng/010632,Buổi sáng,0,,A,train,val,65,25.0,224,224
+train/Buổi sáng/011715,Buổi sáng,0,,A,train,train,70,25.0,224,224
+train/Buổi sáng/012706,Buổi sáng,0,,A,train,train,66,25.0,224,224
+train/Buổi sáng/013547,Buổi sáng,0,,A,train,train,58,25.0,224,224
+train/Buổi sáng/013548,Buổi sáng,0,,A,train,train,59,25.0,224,224
+train/Buổi sáng/014372,Buổi sáng,0,,A,train,val,62,25.0,224,224
+train/Buổi sáng/014373,Buổi sáng,0,,A,train,train,65,25.0,224,224
+train/Buổi sáng/015228,Buổi sáng,0,,A,train,train,56,25.0,224,224
+train/Buổi sáng/015229,Buổi sáng,0,,A,train,val,57,25.0,224,224
+train/Buổi sáng/016204,Buổi sáng,0,,A,train,test,74,25.0,224,224
+train/Buổi sáng/016205,Buổi sáng,0,,A,train,val,70,25.0,224,224
+train/Buổi sáng/017081,Buổi sáng,0,,A,train,train,52,25.0,224,224
+train/Buổi sáng/018806,Buổi sáng,0,,A,train,train,50,25.0,224,224
+train/Buổi sáng/018807,Buổi sáng,0,,A,train,train,48,25.0,224,224
+train/Buổi sáng/019866,Buổi sáng,0,,A,train,train,63,25.0,224,224
+train/Buổi sáng/020710,Buổi sáng,0,,A,train,train,68,25.0,224,224
+train/Buổi sáng/020810,Buổi sáng,0,,A,train,train,57,25.0,224,224
+train/Buổi sáng/021594,Buổi sáng,0,,A,train,test,60,25.0,224,224
+train/Buổi sáng/021694,Buổi sáng,0,,A,train,train,69,25.0,224,224
+train/Buổi sáng/022478,Buổi sáng,0,,A,train,test,68,25.0,224,224
+train/Buổi sáng/023362,Buổi sáng,0,,A,train,train,75,25.0,224,224
+train/Buổi sáng/023462,Buổi sáng,0,,A,train,test,63,25.0,224,224
+test/Buổi trưa/000192,Buổi trưa,1,,A,test,test,64,25.0,224,224
+test/Buổi trưa/001053,Buổi trưa,1,,A,test,train,65,25.0,224,224
+test/Buổi trưa/001054,Buổi trưa,1,,A,test,val,58,25.0,224,224
+test/Buổi trưa/001898,Buổi trưa,1,,A,test,val,74,25.0,224,224
+test/Buổi trưa/007117,Buổi trưa,1,,A,test,train,70,25.0,224,224
+test/Buổi trưa/007118,Buổi trưa,1,,A,test,train,65,25.0,224,224
+test/Buổi trưa/008943,Buổi trưa,1,,A,test,train,55,25.0,224,224
+test/Buổi trưa/011718,Buổi trưa,1,,A,test,train,74,25.0,224,224
+test/Buổi trưa/013550,Buổi trưa,1,,A,test,train,59,25.0,224,224
+test/Buổi trưa/014374,Buổi trưa,1,,A,test,train,61,25.0,224,224
+train/Buổi trưa/000193,Buổi trưa,1,,A,train,train,68,25.0,224,224
+train/Buổi trưa/002740,Buổi trưa,1,,A,train,val,60,25.0,224,224
+train/Buổi trưa/002741,Buổi trưa,1,,A,train,train,67,25.0,224,224
+train/Buổi trưa/003598,Buổi trưa,1,,A,train,train,70,25.0,224,224
+train/Buổi trưa/003599,Buổi trưa,1,,A,train,train,72,25.0,224,224
+train/Buổi trưa/004437,Buổi trưa,1,,A,train,train,60,25.0,224,224
+train/Buổi trưa/004438,Buổi trưa,1,,A,train,test,58,25.0,224,224
+train/Buổi trưa/005258,Buổi trưa,1,,A,train,train,70,25.0,224,224
+train/Buổi trưa/005259,Buổi trưa,1,,A,train,train,66,25.0,224,224
+train/Buổi trưa/006213,Buổi trưa,1,,A,train,train,80,25.0,224,224
+train/Buổi trưa/006214,Buổi trưa,1,,A,train,train,80,25.0,224,224
+train/Buổi trưa/008019,Buổi trưa,1,,A,train,train,64,25.0,224,224
+train/Buổi trưa/008020,Buổi trưa,1,,A,train,train,57,25.0,224,224
+train/Buổi trưa/008942,Buổi trưa,1,,A,train,train,60,25.0,224,224
+train/Buổi trưa/009781,Buổi trưa,1,,A,train,train,69,25.0,224,224
+train/Buổi trưa/009782,Buổi trưa,1,,A,train,val,70,25.0,224,224
+train/Buổi trưa/010634,Buổi trưa,1,,A,train,train,80,25.0,224,224
+train/Buổi trưa/011717,Buổi trưa,1,,A,train,test,62,25.0,224,224
+train/Buổi trưa/012707,Buổi trưa,1,,A,train,val,80,25.0,224,224
+train/Buổi trưa/012708,Buổi trưa,1,,A,train,train,65,25.0,224,224
+train/Buổi trưa/013549,Buổi trưa,1,,A,train,train,61,25.0,224,224
+train/Buổi trưa/014375,Buổi trưa,1,,A,train,train,57,25.0,224,224
+train/Buổi trưa/014376,Buổi trưa,1,,A,train,train,62,25.0,224,224
+train/Buổi trưa/015230,Buổi trưa,1,,A,train,train,60,25.0,224,224
+train/Buổi trưa/015231,Buổi trưa,1,,A,train,test,66,25.0,224,224
+train/Buổi trưa/016206,Buổi trưa,1,,A,train,train,96,25.0,224,224
+train/Buổi trưa/016207,Buổi trưa,1,,A,train,train,74,25.0,224,224
+train/Buổi trưa/017083,Buổi trưa,1,,A,train,train,56,25.0,224,224
+train/Buổi trưa/017940,Buổi trưa,1,,A,train,test,75,25.0,224,224
+train/Buổi trưa/018808,Buổi trưa,1,,A,train,train,61,25.0,224,224
+train/Buổi trưa/018809,Buổi trưa,1,,A,train,test,49,25.0,224,224
+train/Buổi trưa/019867,Buổi trưa,1,,A,train,train,84,25.0,224,224
+train/Buổi trưa/019868,Buổi trưa,1,,A,train,train,79,25.0,224,224
+train/Buổi trưa/020711,Buổi trưa,1,,A,train,train,68,25.0,224,224
+train/Buổi trưa/020811,Buổi trưa,1,,A,train,train,54,25.0,224,224
+train/Buổi trưa/021595,Buổi trưa,1,,A,train,train,62,25.0,224,224
+train/Buổi trưa/021695,Buổi trưa,1,,A,train,train,68,25.0,224,224
+train/Buổi trưa/022479,Buổi trưa,1,,A,train,val,69,25.0,224,224
+train/Buổi trưa/023363,Buổi trưa,1,,A,train,val,61,25.0,224,224
+train/Buổi trưa/023463,Buổi trưa,1,,A,train,test,58,25.0,224,224
+train/Buổi trưa/024163,Buổi trưa,1,,A,train,val,60,25.0,224,224
+train/Buổi trưa/024263,Buổi trưa,1,,A,train,test,66,25.0,224,224
+test/Buổi tối/000197,Buổi tối,2,,A,test,train,67,25.0,224,224
+test/Buổi tối/001057,Buổi tối,2,,A,test,train,60,25.0,224,224
+test/Buổi tối/006217,Buổi tối,2,,A,test,val,84,25.0,224,224
+test/Buổi tối/007121,Buổi tối,2,,A,test,train,67,25.0,224,224
+test/Buổi tối/008947,Buổi tối,2,,A,test,val,61,25.0,224,224
+test/Buổi tối/010638,Buổi tối,2,,A,test,train,62,25.0,224,224
+test/Buổi tối/010640,Buổi tối,2,,A,test,train,78,25.0,224,224
+test/Buổi tối/020813,Buổi tối,2,,A,test,train,63,25.0,224,224
+test/Buổi tối/023365,Buổi tối,2,,A,test,train,83,25.0,224,224
+train/Buổi tối/001058,Buổi tối,2,,A,train,train,59,25.0,224,224
+train/Buổi tối/001901,Buổi tối,2,,A,train,train,65,25.0,224,224
+train/Buổi tối/003602,Buổi tối,2,,A,train,val,64,25.0,224,224
+train/Buổi tối/003603,Buổi tối,2,,A,train,train,74,25.0,224,224
+train/Buổi tối/005262,Buổi tối,2,,A,train,train,76,25.0,224,224
+train/Buổi tối/005263,Buổi tối,2,,A,train,train,76,25.0,224,224
+train/Buổi tối/006218,Buổi tối,2,,A,train,test,82,25.0,224,224
+train/Buổi tối/007122,Buổi tối,2,,A,train,val,63,25.0,224,224
+train/Buổi tối/008023,Buổi tối,2,,A,train,val,67,25.0,224,224
+train/Buổi tối/008024,Buổi tối,2,,A,train,train,66,25.0,224,224
+train/Buổi tối/009785,Buổi tối,2,,A,train,train,73,25.0,224,224
+train/Buổi tối/010639,Buổi tối,2,,A,train,test,65,25.0,224,224
+train/Buổi tối/011721,Buổi tối,2,,A,train,train,71,25.0,224,224
+train/Buổi tối/011722,Buổi tối,2,,A,train,train,77,25.0,224,224
+train/Buổi tối/012711,Buổi tối,2,,A,train,train,72,25.0,224,224
+train/Buổi tối/012712,Buổi tối,2,,A,train,train,71,25.0,224,224
+train/Buổi tối/014380,Buổi tối,2,,A,train,train,71,25.0,224,224
+train/Buổi tối/015235,Buổi tối,2,,A,train,train,60,25.0,224,224
+train/Buổi tối/019872,Buổi tối,2,,A,train,train,72,25.0,224,224
+train/Buổi tối/020713,Buổi tối,2,,A,train,train,71,25.0,224,224
+train/Buổi tối/021597,Buổi tối,2,,A,train,train,63,25.0,224,224
+train/Buổi tối/021697,Buổi tối,2,,A,train,test,73,25.0,224,224
+train/Buổi tối/023465,Buổi tối,2,,A,train,test,70,25.0,224,224
+train/Buổi tối/024265,Buổi tối,2,,A,train,test,65,25.0,224,224
+test/Bàn phím/001145,Bàn phím,3,,A,test,train,64,25.0,224,224
+test/Bàn phím/001996,Bàn phím,3,,A,test,val,72,25.0,224,224
+test/Bàn phím/003688,Bàn phím,3,,A,test,train,72,25.0,224,224
+test/Bàn phím/005348,Bàn phím,3,,A,test,train,93,25.0,224,224
+test/Bàn phím/009034,Bàn phím,3,,A,test,train,75,25.0,224,224
+test/Bàn phím/010738,Bàn phím,3,,A,test,train,72,25.0,224,224
+test/Bàn phím/012803,Bàn phím,3,,A,test,test,80,25.0,224,224
+test/Bàn phím/013644,Bàn phím,3,,A,test,val,71,25.0,224,224
+test/Bàn phím/018901,Bàn phím,3,,A,test,train,62,25.0,224,224
+test/Bàn phím/021839,Bàn phím,3,,A,test,train,78,25.0,224,224
+test/Bàn phím/022623,Bàn phím,3,,A,test,train,74,25.0,224,224
+train/Bàn phím/000286,Bàn phím,3,,A,train,train,76,25.0,224,224
+train/Bàn phím/000287,Bàn phím,3,,A,train,train,66,25.0,224,224
+train/Bàn phím/001144,Bàn phím,3,,A,train,train,65,25.0,224,224
+train/Bàn phím/001997,Bàn phím,3,,A,train,test,79,25.0,224,224
+train/Bàn phím/002842,Bàn phím,3,,A,train,train,78,25.0,224,224
+train/Bàn phím/002843,Bàn phím,3,,A,train,train,65,25.0,224,224
+train/Bàn phím/002844,Bàn phím,3,,A,train,train,77,25.0,224,224
+train/Bàn phím/003689,Bàn phím,3,,A,train,train,77,25.0,224,224
+train/Bàn phím/004535,Bàn phím,3,,A,train,train,65,25.0,224,224
+train/Bàn phím/004536,Bàn phím,3,,A,train,test,63,25.0,224,224
+train/Bàn phím/005349,Bàn phím,3,,A,train,train,90,25.0,224,224
+train/Bàn phím/006305,Bàn phím,3,,A,train,val,95,25.0,224,224
+train/Bàn phím/006306,Bàn phím,3,,A,train,train,95,25.0,224,224
+train/Bàn phím/007208,Bàn phím,3,,A,train,train,72,25.0,224,224
+train/Bàn phím/007209,Bàn phím,3,,A,train,val,69,25.0,224,224
+train/Bàn phím/008123,Bàn phím,3,,A,train,val,61,25.0,224,224
+train/Bàn phím/008124,Bàn phím,3,,A,train,train,63,25.0,224,224
+train/Bàn phím/009035,Bàn phím,3,,A,train,train,65,25.0,224,224
+train/Bàn phím/009874,Bàn phím,3,,A,train,train,72,25.0,224,224
+train/Bàn phím/009875,Bàn phím,3,,A,train,train,71,25.0,224,224
+train/Bàn phím/010737,Bàn phím,3,,A,train,train,78,25.0,224,224
+train/Bàn phím/011818,Bàn phím,3,,A,train,train,70,25.0,224,224
+train/Bàn phím/011819,Bàn phím,3,,A,train,train,85,25.0,224,224
+train/Bàn phím/012804,Bàn phím,3,,A,train,test,70,25.0,224,224
+train/Bàn phím/012805,Bàn phím,3,,A,train,train,65,25.0,224,224
+train/Bàn phím/013642,Bàn phím,3,,A,train,train,65,25.0,224,224
+train/Bàn phím/013643,Bàn phím,3,,A,train,test,70,25.0,224,224
+train/Bàn phím/014463,Bàn phím,3,,A,train,test,77,25.0,224,224
+train/Bàn phím/014464,Bàn phím,3,,A,train,val,71,25.0,224,224
+train/Bàn phím/015335,Bàn phím,3,,A,train,train,63,25.0,224,224
+train/Bàn phím/015336,Bàn phím,3,,A,train,test,70,25.0,224,224
+train/Bàn phím/016301,Bàn phím,3,,A,train,val,74,25.0,224,224
+train/Bàn phím/017173,Bàn phím,3,,A,train,val,65,25.0,224,224
+train/Bàn phím/017174,Bàn phím,3,,A,train,train,64,25.0,224,224
+train/Bàn phím/018037,Bàn phím,3,,A,train,train,88,25.0,224,224
+train/Bàn phím/018902,Bàn phím,3,,A,train,test,61,25.0,224,224
+train/Bàn phím/018903,Bàn phím,3,,A,train,train,60,25.0,224,224
+train/Bàn phím/019970,Bàn phím,3,,A,train,test,79,25.0,224,224
+train/Bàn phím/019971,Bàn phím,3,,A,train,train,70,25.0,224,224
+train/Bàn phím/020855,Bàn phím,3,,A,train,train,84,25.0,224,224
+train/Bàn phím/020955,Bàn phím,3,,A,train,train,68,25.0,224,224
+train/Bàn phím/021739,Bàn phím,3,,A,train,val,70,25.0,224,224
+train/Bàn phím/022673,Bàn phím,3,,A,train,train,73,25.0,224,224
+train/Bàn phím/022773,Bàn phím,3,,A,train,train,67,25.0,224,224
+train/Bàn phím/023507,Bàn phím,3,,A,train,train,76,25.0,224,224
+train/Bàn phím/023607,Bàn phím,3,,A,train,train,69,25.0,224,224
+test/Bình minh/001047,Bình minh,4,,A,test,train,69,25.0,224,224
+test/Bình minh/005253,Bình minh,4,,A,test,train,90,25.0,224,224
+test/Bình minh/007111,Bình minh,4,,A,test,train,90,25.0,224,224
+test/Bình minh/012701,Bình minh,4,,A,test,test,83,25.0,224,224
+test/Bình minh/014369,Bình minh,4,,A,test,val,78,25.0,224,224
+test/Bình minh/015224,Bình minh,4,,A,test,train,80,25.0,224,224
+test/Bình minh/018802,Bình minh,4,,A,test,train,92,25.0,224,224
+test/Bình minh/019861,Bình minh,4,,A,test,train,89,25.0,224,224
+test/Bình minh/022476,Bình minh,4,,A,test,train,89,25.0,224,224
+test/Bình minh/023360,Bình minh,4,,A,test,train,82,25.0,224,224
+train/Bình minh/000185,Bình minh,4,,A,train,test,82,25.0,224,224
+train/Bình minh/000186,Bình minh,4,,A,train,val,92,25.0,224,224
+train/Bình minh/000187,Bình minh,4,,A,train,train,85,25.0,224,224
+train/Bình minh/001048,Bình minh,4,,A,train,train,80,25.0,224,224
+train/Bình minh/001890,Bình minh,4,,A,train,train,88,25.0,224,224
+train/Bình minh/001891,Bình minh,4,,A,train,val,102,25.0,224,224
+train/Bình minh/002734,Bình minh,4,,A,train,train,87,25.0,224,224
+train/Bình minh/002735,Bình minh,4,,A,train,test,71,25.0,224,224
+train/Bình minh/003592,Bình minh,4,,A,train,val,84,25.0,224,224
+train/Bình minh/003593,Bình minh,4,,A,train,train,84,25.0,224,224
+train/Bình minh/004431,Bình minh,4,,A,train,train,70,25.0,224,224
+train/Bình minh/004432,Bình minh,4,,A,train,train,67,25.0,224,224
+train/Bình minh/005252,Bình minh,4,,A,train,train,106,25.0,224,224
+train/Bình minh/006206,Bình minh,4,,A,train,train,89,25.0,224,224
+train/Bình minh/006207,Bình minh,4,,A,train,train,89,25.0,224,224
+train/Bình minh/006208,Bình minh,4,,A,train,val,79,25.0,224,224
+train/Bình minh/007112,Bình minh,4,,A,train,train,87,25.0,224,224
+train/Bình minh/008013,Bình minh,4,,A,train,train,72,25.0,224,224
+train/Bình minh/008014,Bình minh,4,,A,train,train,69,25.0,224,224
+train/Bình minh/008936,Bình minh,4,,A,train,train,80,25.0,224,224
+train/Bình minh/008937,Bình minh,4,,A,train,train,83,25.0,224,224
+train/Bình minh/009775,Bình minh,4,,A,train,train,84,25.0,224,224
+train/Bình minh/009776,Bình minh,4,,A,train,train,83,25.0,224,224
+train/Bình minh/010625,Bình minh,4,,A,train,train,83,25.0,224,224
+train/Bình minh/010626,Bình minh,4,,A,train,test,84,25.0,224,224
+train/Bình minh/010627,Bình minh,4,,A,train,val,82,25.0,224,224
+train/Bình minh/011711,Bình minh,4,,A,train,test,102,25.0,224,224
+train/Bình minh/011712,Bình minh,4,,A,train,train,107,25.0,224,224
+train/Bình minh/013543,Bình minh,4,,A,train,train,74,25.0,224,224
+train/Bình minh/013544,Bình minh,4,,A,train,train,65,25.0,224,224
+train/Bình minh/014368,Bình minh,4,,A,train,train,91,25.0,224,224
+train/Bình minh/015223,Bình minh,4,,A,train,train,94,25.0,224,224
+train/Bình minh/015225,Bình minh,4,,A,train,train,95,25.0,224,224
+train/Bình minh/016201,Bình minh,4,,A,train,val,88,25.0,224,224
+train/Bình minh/017076,Bình minh,4,,A,train,test,84,25.0,224,224
+train/Bình minh/018803,Bình minh,4,,A,train,train,63,25.0,224,224
+train/Bình minh/019862,Bình minh,4,,A,train,test,82,25.0,224,224
+train/Bình minh/020708,Bình minh,4,,A,train,val,88,25.0,224,224
+train/Bình minh/020808,Bình minh,4,,A,train,train,92,25.0,224,224
+train/Bình minh/021592,Bình minh,4,,A,train,test,91,25.0,224,224
+train/Bình minh/023460,Bình minh,4,,A,train,train,79,25.0,224,224
+train/Bình minh/024260,Bình minh,4,,A,train,train,63,25.0,224,224
+test/Bắt buộc/001626,Bắt buộc,5,,A,test,train,59,25.0,224,224
+test/Bắt buộc/005815,Bắt buộc,5,,A,test,test,69,25.0,224,224
+test/Bắt buộc/007731,Bắt buộc,5,,A,test,train,59,25.0,224,224
+test/Bắt buộc/008668,Bắt buộc,5,,A,test,train,63,25.0,224,224
+test/Bắt buộc/008669,Bắt buộc,5,,A,test,train,57,25.0,224,224
+test/Bắt buộc/011265,Bắt buộc,5,,A,test,val,63,25.0,224,224
+test/Bắt buộc/013289,Bắt buộc,5,,A,test,train,73,25.0,224,224
+test/Bắt buộc/014118,Bắt buộc,5,,A,test,train,55,25.0,224,224
+test/Bắt buộc/014934,Bắt buộc,5,,A,test,test,60,25.0,224,224
+test/Bắt buộc/022169,Bắt buộc,5,,A,test,train,61,25.0,224,224
+test/Bắt buộc/024637,Bắt buộc,5,,A,test,train,68,25.0,224,224
+train/Bắt buộc/000778,Bắt buộc,5,,A,train,val,57,25.0,224,224
+train/Bắt buộc/000779,Bắt buộc,5,,A,train,train,56,25.0,224,224
+train/Bắt buộc/001627,Bắt buộc,5,,A,train,val,59,25.0,224,224
+train/Bắt buộc/002476,Bắt buộc,5,,A,train,train,54,25.0,224,224
+train/Bắt buộc/002477,Bắt buộc,5,,A,train,train,59,25.0,224,224
+train/Bắt buộc/003335,Bắt buộc,5,,A,train,val,59,25.0,224,224
+train/Bắt buộc/003336,Bắt buộc,5,,A,train,train,64,25.0,224,224
+train/Bắt buộc/004171,Bắt buộc,5,,A,train,train,64,25.0,224,224
+train/Bắt buộc/004172,Bắt buộc,5,,A,train,val,60,25.0,224,224
+train/Bắt buộc/005002,Bắt buộc,5,,A,train,train,63,25.0,224,224
+train/Bắt buộc/005003,Bắt buộc,5,,A,train,train,60,25.0,224,224
+train/Bắt buộc/005816,Bắt buộc,5,,A,train,train,66,25.0,224,224
+train/Bắt buộc/006851,Bắt buộc,5,,A,train,val,70,25.0,224,224
+train/Bắt buộc/006852,Bắt buộc,5,,A,train,train,64,25.0,224,224
+train/Bắt buộc/007732,Bắt buộc,5,,A,train,train,57,25.0,224,224
+train/Bắt buộc/008667,Bắt buộc,5,,A,train,test,60,25.0,224,224
+train/Bắt buộc/009519,Bắt buộc,5,,A,train,train,64,25.0,224,224
+train/Bắt buộc/009520,Bắt buộc,5,,A,train,train,64,25.0,224,224
+train/Bắt buộc/010344,Bắt buộc,5,,A,train,train,70,25.0,224,224
+train/Bắt buộc/010345,Bắt buộc,5,,A,train,train,70,25.0,224,224
+train/Bắt buộc/011266,Bắt buộc,5,,A,train,test,64,25.0,224,224
+train/Bắt buộc/012411,Bắt buộc,5,,A,train,train,58,25.0,224,224
+train/Bắt buộc/012412,Bắt buộc,5,,A,train,val,58,25.0,224,224
+train/Bắt buộc/013288,Bắt buộc,5,,A,train,test,75,25.0,224,224
+train/Bắt buộc/014117,Bắt buộc,5,,A,train,train,55,25.0,224,224
+train/Bắt buộc/014933,Bắt buộc,5,,A,train,train,60,25.0,224,224
+train/Bắt buộc/015908,Bắt buộc,5,,A,train,train,62,25.0,224,224
+train/Bắt buộc/015909,Bắt buộc,5,,A,train,train,59,25.0,224,224
+train/Bắt buộc/016781,Bắt buộc,5,,A,train,train,60,25.0,224,224
+train/Bắt buộc/016782,Bắt buộc,5,,A,train,train,70,25.0,224,224
+train/Bắt buộc/017657,Bắt buộc,5,,A,train,train,64,25.0,224,224
+train/Bắt buộc/017658,Bắt buộc,5,,A,train,train,68,25.0,224,224
+train/Bắt buộc/018533,Bắt buộc,5,,A,train,train,70,25.0,224,224
+train/Bắt buộc/018534,Bắt buộc,5,,A,train,train,69,25.0,224,224
+train/Bắt buộc/019393,Bắt buộc,5,,A,train,val,60,25.0,224,224
+train/Bắt buộc/019394,Bắt buộc,5,,A,train,test,51,25.0,224,224
+train/Bắt buộc/019395,Bắt buộc,5,,A,train,test,60,25.0,224,224
+train/Bắt buộc/020524,Bắt buộc,5,,A,train,train,63,25.0,224,224
+train/Bắt buộc/021285,Bắt buộc,5,,A,train,train,53,25.0,224,224
+train/Bắt buộc/021385,Bắt buộc,5,,A,train,train,50,25.0,224,224
+train/Bắt buộc/022269,Bắt buộc,5,,A,train,train,67,25.0,224,224
+train/Bắt buộc/023053,Bắt buộc,5,,A,train,train,66,25.0,224,224
+train/Bắt buộc/023153,Bắt buộc,5,,A,train,test,59,25.0,224,224
+train/Bắt buộc/023937,Bắt buộc,5,,A,train,train,60,25.0,224,224
+train/Bắt buộc/024037,Bắt buộc,5,,A,train,train,56,25.0,224,224
+test/Bố/003266,Bố,6,,A,test,val,57,25.0,224,224
+test/Bố/003268,Bố,6,,A,test,train,49,25.0,224,224
+test/Bố/004939,Bố,6,,A,test,val,45,25.0,224,224
+test/Bố/007655,Bố,6,,A,test,train,55,25.0,224,224
+test/Bố/007656,Bố,6,,A,test,train,53,25.0,224,224
+test/Bố/010280,Bố,6,,A,test,train,60,25.0,224,224
+test/Bố/011196,Bố,6,,A,test,train,59,25.0,224,224
+test/Bố/012339,Bố,6,,A,test,train,51,25.0,224,224
+test/Bố/012340,Bố,6,,A,test,val,46,25.0,224,224
+test/Bố/014052,Bố,6,,A,test,test,43,25.0,224,224
+test/Bố/018461,Bố,6,,A,test,train,67,25.0,224,224
+test/Bố/019320,Bố,6,,A,test,train,46,25.0,224,224
+test/Bố/020445,Bố,6,,A,test,train,65,25.0,224,224
+test/Bố/020448,Bố,6,,A,test,test,46,25.0,224,224
+train/Bố/000713,Bố,6,,A,train,train,58,25.0,224,224
+train/Bố/000714,Bố,6,,A,train,train,49,25.0,224,224
+train/Bố/000715,Bố,6,,A,train,train,47,25.0,224,224
+train/Bố/001560,Bố,6,,A,train,train,50,25.0,224,224
+train/Bố/001561,Bố,6,,A,train,train,47,25.0,224,224
+train/Bố/002408,Bố,6,,A,train,train,51,25.0,224,224
+train/Bố/002409,Bố,6,,A,train,val,42,25.0,224,224
+train/Bố/003267,Bố,6,,A,train,train,52,25.0,224,224
+train/Bố/004098,Bố,6,,A,train,train,53,25.0,224,224
+train/Bố/004099,Bố,6,,A,train,test,48,25.0,224,224
+train/Bố/004938,Bố,6,,A,train,train,58,25.0,224,224
+train/Bố/005751,Bố,6,,A,train,val,59,25.0,224,224
+train/Bố/005752,Bố,6,,A,train,train,61,25.0,224,224
+train/Bố/006785,Bố,6,,A,train,train,68,25.0,224,224
+train/Bố/006786,Bố,6,,A,train,train,54,25.0,224,224
+train/Bố/007653,Bố,6,,A,train,train,55,25.0,224,224
+train/Bố/007654,Bố,6,,A,train,train,53,25.0,224,224
+train/Bố/008595,Bố,6,,A,train,train,57,25.0,224,224
+train/Bố/008596,Bố,6,,A,train,val,50,25.0,224,224
+train/Bố/009450,Bố,6,,A,train,train,50,25.0,224,224
+train/Bố/009451,Bố,6,,A,train,train,55,25.0,224,224
+train/Bố/010281,Bố,6,,A,train,train,65,25.0,224,224
+train/Bố/011195,Bố,6,,A,train,train,44,25.0,224,224
+train/Bố/012341,Bố,6,,A,train,test,51,25.0,224,224
+train/Bố/012342,Bố,6,,A,train,val,52,25.0,224,224
+train/Bố/012343,Bố,6,,A,train,train,52,25.0,224,224
+train/Bố/013224,Bố,6,,A,train,train,60,25.0,224,224
+train/Bố/013225,Bố,6,,A,train,train,52,25.0,224,224
+train/Bố/014051,Bố,6,,A,train,train,47,25.0,224,224
+train/Bố/014053,Bố,6,,A,train,test,47,25.0,224,224
+train/Bố/014865,Bố,6,,A,train,test,58,25.0,224,224
+train/Bố/014866,Bố,6,,A,train,train,57,25.0,224,224
+train/Bố/015833,Bố,6,,A,train,test,57,25.0,224,224
+train/Bố/015834,Bố,6,,A,train,test,49,25.0,224,224
+train/Bố/015835,Bố,6,,A,train,train,48,25.0,224,224
+train/Bố/015836,Bố,6,,A,train,train,53,25.0,224,224
+train/Bố/016716,Bố,6,,A,train,train,55,25.0,224,224
+train/Bố/016717,Bố,6,,A,train,val,66,25.0,224,224
+train/Bố/017586,Bố,6,,A,train,train,53,25.0,224,224
+train/Bố/017587,Bố,6,,A,train,val,57,25.0,224,224
+train/Bố/018462,Bố,6,,A,train,train,57,25.0,224,224
+train/Bố/019317,Bố,6,,A,train,train,49,25.0,224,224
+train/Bố/019318,Bố,6,,A,train,train,55,25.0,224,224
+train/Bố/019319,Bố,6,,A,train,train,54,25.0,224,224
+train/Bố/019321,Bố,6,,A,train,val,53,25.0,224,224
+train/Bố/020446,Bố,6,,A,train,train,58,25.0,224,224
+train/Bố/020447,Bố,6,,A,train,train,59,25.0,224,224
+train/Bố/020449,Bố,6,,A,train,test,44,25.0,224,224
+train/Bố/021253,Bố,6,,A,train,test,59,25.0,224,224
+train/Bố/021353,Bố,6,,A,train,val,54,25.0,224,224
+train/Bố/022137,Bố,6,,A,train,train,57,25.0,224,224
+train/Bố/022237,Bố,6,,A,train,train,59,25.0,224,224
+train/Bố/023021,Bố,6,,A,train,train,47,25.0,224,224
+train/Bố/023121,Bố,6,,A,train,train,52,25.0,224,224
+train/Bố/023905,Bố,6,,A,train,train,63,25.0,224,224
+train/Bố/024005,Bố,6,,A,train,train,47,25.0,224,224
+train/Bố/024605,Bố,6,,A,train,test,59,25.0,224,224
+test/Cao (người)/000827,Cao (người),7,,A,test,train,53,25.0,224,224
+test/Cao (người)/003381,Cao (người),7,,A,test,train,70,25.0,224,224
+test/Cao (người)/008719,Cao (người),7,,A,test,train,53,25.0,224,224
+test/Cao (người)/009565,Cao (người),7,,A,test,train,68,25.0,224,224
+test/Cao (người)/012466,Cao (người),7,,A,test,val,59,25.0,224,224
+test/Cao (người)/016827,Cao (người),7,,A,test,train,54,25.0,224,224
+test/Cao (người)/017699,Cao (người),7,,A,test,test,58,25.0,224,224
+test/Cao (người)/018575,Cao (người),7,,A,test,train,74,25.0,224,224
+test/Cao (người)/020581,Cao (người),7,,A,test,train,60,25.0,224,224
+test/Cao (người)/020582,Cao (người),7,,A,test,train,63,25.0,224,224
+test/Cao (người)/021406,Cao (người),7,,A,test,train,49,25.0,224,224
+train/Cao (người)/000826,Cao (người),7,,A,train,train,62,25.0,224,224
+train/Cao (người)/001668,Cao (người),7,,A,train,test,62,25.0,224,224
+train/Cao (người)/001669,Cao (người),7,,A,train,train,55,25.0,224,224
+train/Cao (người)/002518,Cao (người),7,,A,train,train,64,25.0,224,224
+train/Cao (người)/002519,Cao (người),7,,A,train,train,71,25.0,224,224
+train/Cao (người)/003380,Cao (người),7,,A,train,test,79,25.0,224,224
+train/Cao (người)/004213,Cao (người),7,,A,train,train,57,25.0,224,224
+train/Cao (người)/004214,Cao (người),7,,A,train,train,46,25.0,224,224
+train/Cao (người)/005044,Cao (người),7,,A,train,test,60,25.0,224,224
+train/Cao (người)/005045,Cao (người),7,,A,train,val,55,25.0,224,224
+train/Cao (người)/005859,Cao (người),7,,A,train,train,77,25.0,224,224
+train/Cao (người)/005860,Cao (người),7,,A,train,train,65,25.0,224,224
+train/Cao (người)/006895,Cao (người),7,,A,train,train,68,25.0,224,224
+train/Cao (người)/006896,Cao (người),7,,A,train,test,69,25.0,224,224
+train/Cao (người)/007779,Cao (người),7,,A,train,test,60,25.0,224,224
+train/Cao (người)/007780,Cao (người),7,,A,train,train,55,25.0,224,224
+train/Cao (người)/008718,Cao (người),7,,A,train,train,60,25.0,224,224
+train/Cao (người)/009564,Cao (người),7,,A,train,train,63,25.0,224,224
+train/Cao (người)/010388,Cao (người),7,,A,train,train,78,25.0,224,224
+train/Cao (người)/010389,Cao (người),7,,A,train,val,82,25.0,224,224
+train/Cao (người)/011313,Cao (người),7,,A,train,val,66,25.0,224,224
+train/Cao (người)/011314,Cao (người),7,,A,train,train,54,25.0,224,224
+train/Cao (người)/012467,Cao (người),7,,A,train,test,62,25.0,224,224
+train/Cao (người)/013330,Cao (người),7,,A,train,val,80,25.0,224,224
+train/Cao (người)/013331,Cao (người),7,,A,train,train,71,25.0,224,224
+train/Cao (người)/014160,Cao (người),7,,A,train,train,65,25.0,224,224
+train/Cao (người)/014161,Cao (người),7,,A,train,train,56,25.0,224,224
+train/Cao (người)/014976,Cao (người),7,,A,train,train,56,25.0,224,224
+train/Cao (người)/014977,Cao (người),7,,A,train,val,54,25.0,224,224
+train/Cao (người)/015966,Cao (người),7,,A,train,val,58,25.0,224,224
+train/Cao (người)/015967,Cao (người),7,,A,train,train,56,25.0,224,224
+train/Cao (người)/016826,Cao (người),7,,A,train,val,57,25.0,224,224
+train/Cao (người)/017700,Cao (người),7,,A,train,train,60,25.0,224,224
+train/Cao (người)/018576,Cao (người),7,,A,train,train,65,25.0,224,224
+train/Cao (người)/019443,Cao (người),7,,A,train,train,58,25.0,224,224
+train/Cao (người)/021306,Cao (người),7,,A,train,train,63,25.0,224,224
+train/Cao (người)/022190,Cao (người),7,,A,train,train,69,25.0,224,224
+train/Cao (người)/022290,Cao (người),7,,A,train,test,66,25.0,224,224
+train/Cao (người)/023074,Cao (người),7,,A,train,train,68,25.0,224,224
+train/Cao (người)/023174,Cao (người),7,,A,train,train,64,25.0,224,224
+train/Cao (người)/023958,Cao (người),7,,A,train,train,67,25.0,224,224
+train/Cao (người)/024058,Cao (người),7,,A,train,train,66,25.0,224,224
+train/Cao (người)/024658,Cao (người),7,,A,train,train,58,25.0,224,224
+test/Cao (đồ vật)/005592,Cao (đồ vật),8,,A,test,train,69,25.0,224,224
+test/Cao (đồ vật)/007477,Cao (đồ vật),8,,A,test,train,64,25.0,224,224
+test/Cao (đồ vật)/013067,Cao (đồ vật),8,,A,test,train,73,25.0,224,224
+test/Cao (đồ vật)/017423,Cao (đồ vật),8,,A,test,train,62,25.0,224,224
+test/Cao (đồ vật)/018294,Cao (đồ vật),8,,A,test,val,69,25.0,224,224
+test/Cao (đồ vật)/019158,Cao (đồ vật),8,,A,test,train,50,25.0,224,224
+test/Cao (đồ vật)/019159,Cao (đồ vật),8,,A,test,train,51,25.0,224,224
+test/Cao (đồ vật)/020261,Cao (đồ vật),8,,A,test,train,66,25.0,224,224
+test/Cao (đồ vật)/021960,Cao (đồ vật),8,,A,test,val,59,25.0,224,224
+test/Cao (đồ vật)/022844,Cao (đồ vật),8,,A,test,test,63,25.0,224,224
+train/Cao (đồ vật)/000547,Cao (đồ vật),8,,A,train,train,63,25.0,224,224
+train/Cao (đồ vật)/000548,Cao (đồ vật),8,,A,train,train,62,25.0,224,224
+train/Cao (đồ vật)/001396,Cao (đồ vật),8,,A,train,val,54,25.0,224,224
+train/Cao (đồ vật)/001397,Cao (đồ vật),8,,A,train,val,47,25.0,224,224
+train/Cao (đồ vật)/002252,Cao (đồ vật),8,,A,train,train,42,25.0,224,224
+train/Cao (đồ vật)/002253,Cao (đồ vật),8,,A,train,train,61,25.0,224,224
+train/Cao (đồ vật)/003102,Cao (đồ vật),8,,A,train,test,64,25.0,224,224
+train/Cao (đồ vật)/003103,Cao (đồ vật),8,,A,train,train,64,25.0,224,224
+train/Cao (đồ vật)/003942,Cao (đồ vật),8,,A,train,train,66,25.0,224,224
+train/Cao (đồ vật)/003943,Cao (đồ vật),8,,A,train,train,55,25.0,224,224
+train/Cao (đồ vật)/004784,Cao (đồ vật),8,,A,train,train,59,25.0,224,224
+train/Cao (đồ vật)/004785,Cao (đồ vật),8,,A,train,train,44,25.0,224,224
+train/Cao (đồ vật)/005593,Cao (đồ vật),8,,A,train,val,87,25.0,224,224
+train/Cao (đồ vật)/006576,Cao (đồ vật),8,,A,train,train,70,25.0,224,224
+train/Cao (đồ vật)/006577,Cao (đồ vật),8,,A,train,train,65,25.0,224,224
+train/Cao (đồ vật)/007478,Cao (đồ vật),8,,A,train,train,59,25.0,224,224
+train/Cao (đồ vật)/008412,Cao (đồ vật),8,,A,train,train,65,25.0,224,224
+train/Cao (đồ vật)/008413,Cao (đồ vật),8,,A,train,test,60,25.0,224,224
+train/Cao (đồ vật)/009290,Cao (đồ vật),8,,A,train,test,61,25.0,224,224
+train/Cao (đồ vật)/009291,Cao (đồ vật),8,,A,train,train,51,25.0,224,224
+train/Cao (đồ vật)/010121,Cao (đồ vật),8,,A,train,test,72,25.0,224,224
+train/Cao (đồ vật)/010122,Cao (đồ vật),8,,A,train,test,75,25.0,224,224
+train/Cao (đồ vật)/011025,Cao (đồ vật),8,,A,train,train,58,25.0,224,224
+train/Cao (đồ vật)/011026,Cao (đồ vật),8,,A,train,train,54,25.0,224,224
+train/Cao (đồ vật)/012116,Cao (đồ vật),8,,A,train,train,59,25.0,224,224
+train/Cao (đồ vật)/012117,Cao (đồ vật),8,,A,train,train,58,25.0,224,224
+train/Cao (đồ vật)/013066,Cao (đồ vật),8,,A,train,train,70,25.0,224,224
+train/Cao (đồ vật)/013892,Cao (đồ vật),8,,A,train,train,63,25.0,224,224
+train/Cao (đồ vật)/013893,Cao (đồ vật),8,,A,train,train,61,25.0,224,224
+train/Cao (đồ vật)/014706,Cao (đồ vật),8,,A,train,train,59,25.0,224,224
+train/Cao (đồ vật)/014707,Cao (đồ vật),8,,A,train,val,60,25.0,224,224
+train/Cao (đồ vật)/015649,Cao (đồ vật),8,,A,train,train,57,25.0,224,224
+train/Cao (đồ vật)/015650,Cao (đồ vật),8,,A,train,train,60,25.0,224,224
+train/Cao (đồ vật)/016551,Cao (đồ vật),8,,A,train,train,65,25.0,224,224
+train/Cao (đồ vật)/016552,Cao (đồ vật),8,,A,train,train,61,25.0,224,224
+train/Cao (đồ vật)/017424,Cao (đồ vật),8,,A,train,train,62,25.0,224,224
+train/Cao (đồ vật)/018295,Cao (đồ vật),8,,A,train,val,64,25.0,224,224
+train/Cao (đồ vật)/020260,Cao (đồ vật),8,,A,train,train,70,25.0,224,224
+train/Cao (đồ vật)/021076,Cao (đồ vật),8,,A,train,test,66,25.0,224,224
+train/Cao (đồ vật)/021176,Cao (đồ vật),8,,A,train,train,54,25.0,224,224
+train/Cao (đồ vật)/022060,Cao (đồ vật),8,,A,train,test,63,25.0,224,224
+train/Cao (đồ vật)/022944,Cao (đồ vật),8,,A,train,train,64,25.0,224,224
+train/Cao (đồ vật)/023728,Cao (đồ vật),8,,A,train,train,60,25.0,224,224
+train/Cao (đồ vật)/023828,Cao (đồ vật),8,,A,train,train,58,25.0,224,224
+train/Cao (đồ vật)/024428,Cao (đồ vật),8,,A,train,val,57,25.0,224,224
+test/Chân/140115,Chân,9,,B,test,train,30,12.42,224,224
+test/Chân/221263,Chân,9,,B,test,val,30,11.91,224,224
+test/Chân/367095,Chân,9,,B,test,train,30,12.85,224,224
+test/Chân/519093,Chân,9,,B,test,train,30,11.61,224,224
+test/Chân/555673,Chân,9,,B,test,test,30,14.39,224,224
+test/Chân/662262,Chân,9,,B,test,train,30,9.48,224,224
+train/Chân/101773,Chân,9,,B,train,train,30,12.33,224,224
+train/Chân/128941,Chân,9,,B,train,test,30,9.01,224,224
+train/Chân/146542,Chân,9,,B,train,test,24,11.79,224,224
+train/Chân/213668,Chân,9,,B,train,val,30,10.12,224,224
+train/Chân/220944,Chân,9,,B,train,train,30,10.95,224,224
+train/Chân/287241,Chân,9,,B,train,train,30,12.59,224,224
+train/Chân/299312,Chân,9,,B,train,val,30,14.52,224,224
+train/Chân/306606,Chân,9,,B,train,test,30,12.0,224,224
+train/Chân/429164,Chân,9,,B,train,train,30,11.11,224,224
+train/Chân/462479,Chân,9,,B,train,train,30,14.36,224,224
+train/Chân/481913,Chân,9,,B,train,train,22,14.06,224,224
+train/Chân/552248,Chân,9,,B,train,train,30,11.39,224,224
+train/Chân/557239,Chân,9,,B,train,train,30,12.3,224,224
+train/Chân/557592,Chân,9,,B,train,train,30,10.82,224,224
+train/Chân/636265,Chân,9,,B,train,train,30,11.9,224,224
+train/Chân/664607,Chân,9,,B,train,train,30,10.35,224,224
+train/Chân/708792,Chân,9,,B,train,train,30,14.32,224,224
+train/Chân/753425,Chân,9,,B,train,train,30,14.06,224,224
+train/Chân/795612,Chân,9,,B,train,train,30,14.06,224,224
+train/Chân/796503,Chân,9,,B,train,train,28,11.54,224,224
+train/Chân/812526,Chân,9,,B,train,val,30,9.84,224,224
+train/Chân/820221,Chân,9,,B,train,train,30,10.0,224,224
+train/Chân/863934,Chân,9,,B,train,train,30,13.27,224,224
+train/Chân/984642,Chân,9,,B,train,train,18,10.06,224,224
+test/Chạy/004150,Chạy,10,,A,test,test,61,25.0,224,224
+test/Chạy/007706,Chạy,10,,A,test,train,57,25.0,224,224
+test/Chạy/008641,Chạy,10,,A,test,train,56,25.0,224,224
+test/Chạy/013267,Chạy,10,,A,test,train,85,25.0,224,224
+test/Chạy/014096,Chạy,10,,A,test,val,49,25.0,224,224
+test/Chạy/016759,Chạy,10,,A,test,train,81,25.0,224,224
+test/Chạy/021274,Chạy,10,,A,test,train,68,25.0,224,224
+test/Chạy/022258,Chạy,10,,A,test,test,73,25.0,224,224
+test/Chạy/023142,Chạy,10,,A,test,train,68,25.0,224,224
+test/Chạy/277934,Chạy,10,,B,test,train,29,9.18,224,224
+test/Chạy/324082,Chạy,10,,B,test,train,30,12.34,224,224
+test/Chạy/418635,Chạy,10,,B,test,train,30,12.01,224,224
+test/Chạy/424308,Chạy,10,,B,test,test,30,13.03,224,224
+test/Chạy/525800,Chạy,10,,B,test,train,30,9.89,224,224
+test/Chạy/563246,Chạy,10,,B,test,test,26,9.48,224,224
+test/Chạy/696750,Chạy,10,,B,test,train,29,9.68,224,224
+test/Chạy/749342,Chạy,10,,B,test,train,30,12.5,224,224
+train/Chạy/000756,Chạy,10,,A,train,train,63,25.0,224,224
+train/Chạy/000757,Chạy,10,,A,train,val,65,25.0,224,224
+train/Chạy/001603,Chạy,10,,A,train,test,57,25.0,224,224
+train/Chạy/001604,Chạy,10,,A,train,train,40,25.0,224,224
+train/Chạy/002452,Chạy,10,,A,train,train,49,25.0,224,224
+train/Chạy/002453,Chạy,10,,A,train,test,51,25.0,224,224
+train/Chạy/003312,Chạy,10,,A,train,train,55,25.0,224,224
+train/Chạy/003313,Chạy,10,,A,train,train,60,25.0,224,224
+train/Chạy/004149,Chạy,10,,A,train,train,64,25.0,224,224
+train/Chạy/004980,Chạy,10,,A,train,train,65,25.0,224,224
+train/Chạy/004981,Chạy,10,,A,train,val,63,25.0,224,224
+train/Chạy/005793,Chạy,10,,A,train,val,68,25.0,224,224
+train/Chạy/005794,Chạy,10,,A,train,train,62,25.0,224,224
+train/Chạy/006829,Chạy,10,,A,train,train,71,25.0,224,224
+train/Chạy/006830,Chạy,10,,A,train,train,75,25.0,224,224
+train/Chạy/007705,Chạy,10,,A,train,train,65,25.0,224,224
+train/Chạy/007707,Chạy,10,,A,train,val,60,25.0,224,224
+train/Chạy/008642,Chạy,10,,A,train,val,58,25.0,224,224
+train/Chạy/009497,Chạy,10,,A,train,train,61,25.0,224,224
+train/Chạy/009498,Chạy,10,,A,train,train,58,25.0,224,224
+train/Chạy/010322,Chạy,10,,A,train,val,67,25.0,224,224
+train/Chạy/010323,Chạy,10,,A,train,train,68,25.0,224,224
+train/Chạy/011241,Chạy,10,,A,train,train,73,25.0,224,224
+train/Chạy/011242,Chạy,10,,A,train,test,73,25.0,224,224
+train/Chạy/012388,Chạy,10,,A,train,train,65,25.0,224,224
+train/Chạy/012389,Chạy,10,,A,train,train,64,25.0,224,224
+train/Chạy/013266,Chạy,10,,A,train,train,69,25.0,224,224
+train/Chạy/014095,Chạy,10,,A,train,train,55,25.0,224,224
+train/Chạy/014910,Chạy,10,,A,train,train,57,25.0,224,224
+train/Chạy/014911,Chạy,10,,A,train,train,53,25.0,224,224
+train/Chạy/015883,Chạy,10,,A,train,test,55,25.0,224,224
+train/Chạy/015884,Chạy,10,,A,train,val,49,25.0,224,224
+train/Chạy/016758,Chạy,10,,A,train,train,80,25.0,224,224
+train/Chạy/017635,Chạy,10,,A,train,train,63,25.0,224,224
+train/Chạy/017636,Chạy,10,,A,train,train,65,25.0,224,224
+train/Chạy/018508,Chạy,10,,A,train,train,76,25.0,224,224
+train/Chạy/018509,Chạy,10,,A,train,test,61,25.0,224,224
+train/Chạy/019368,Chạy,10,,A,train,train,55,25.0,224,224
+train/Chạy/019369,Chạy,10,,A,train,train,60,25.0,224,224
+train/Chạy/020499,Chạy,10,,A,train,train,68,25.0,224,224
+train/Chạy/020500,Chạy,10,,A,train,test,53,25.0,224,224
+train/Chạy/021374,Chạy,10,,A,train,train,63,25.0,224,224
+train/Chạy/022158,Chạy,10,,A,train,train,65,25.0,224,224
+train/Chạy/023042,Chạy,10,,A,train,train,67,25.0,224,224
+train/Chạy/024026,Chạy,10,,A,train,train,51,25.0,224,224
+train/Chạy/024626,Chạy,10,,A,train,train,56,25.0,224,224
+train/Chạy/188914,Chạy,10,,B,train,train,22,9.18,224,224
+train/Chạy/233470,Chạy,10,,B,train,train,30,19.33,224,224
+train/Chạy/282480,Chạy,10,,B,train,train,30,9.68,224,224
+train/Chạy/400850,Chạy,10,,B,train,val,30,12.01,224,224
+train/Chạy/410016,Chạy,10,,B,train,train,30,18.73,224,224
+train/Chạy/415568,Chạy,10,,B,train,test,30,9.89,224,224
+train/Chạy/437902,Chạy,10,,B,train,train,28,12.51,224,224
+train/Chạy/451470,Chạy,10,,B,train,val,27,9.18,224,224
+train/Chạy/497562,Chạy,10,,B,train,train,30,9.58,224,224
+train/Chạy/521947,Chạy,10,,B,train,train,29,12.23,224,224
+train/Chạy/550770,Chạy,10,,B,train,val,30,12.17,224,224
+train/Chạy/587575,Chạy,10,,B,train,train,23,9.58,224,224
+train/Chạy/636004,Chạy,10,,B,train,train,30,12.34,224,224
+train/Chạy/640490,Chạy,10,,B,train,train,30,9.18,224,224
+train/Chạy/674553,Chạy,10,,B,train,val,30,12.68,224,224
+train/Chạy/736130,Chạy,10,,B,train,train,28,12.01,224,224
+train/Chạy/745414,Chạy,10,,B,train,test,30,9.68,224,224
+train/Chạy/763686,Chạy,10,,B,train,train,30,12.5,224,224
+train/Chạy/796101,Chạy,10,,B,train,train,30,12.5,224,224
+train/Chạy/799287,Chạy,10,,B,train,train,23,12.23,224,224
+train/Chạy/884475,Chạy,10,,B,train,test,28,9.68,224,224
+train/Chạy/923927,Chạy,10,,B,train,train,30,9.38,224,224
+train/Chạy/932291,Chạy,10,,B,train,train,30,9.48,224,224
+train/Chạy/974224,Chạy,10,,B,train,val,30,12.68,224,224
+test/Chậm chạp/000554,Chậm chạp,11,,A,test,train,66,25.0,224,224
+test/Chậm chạp/004791,Chậm chạp,11,,A,test,train,58,25.0,224,224
+test/Chậm chạp/006582,Chậm chạp,11,,A,test,val,77,25.0,224,224
+test/Chậm chạp/010128,Chậm chạp,11,,A,test,train,70,25.0,224,224
+test/Chậm chạp/011032,Chậm chạp,11,,A,test,val,61,25.0,224,224
+test/Chậm chạp/016557,Chậm chạp,11,,A,test,train,80,25.0,224,224
+test/Chậm chạp/017429,Chậm chạp,11,,A,test,train,66,25.0,224,224
+test/Chậm chạp/018301,Chậm chạp,11,,A,test,test,66,25.0,224,224
+test/Chậm chạp/020267,Chậm chạp,11,,A,test,train,68,25.0,224,224
+test/Chậm chạp/022847,Chậm chạp,11,,A,test,test,61,25.0,224,224
+test/Chậm chạp/022947,Chậm chạp,11,,A,test,val,66,25.0,224,224
+test/Chậm chạp/023731,Chậm chạp,11,,A,test,train,68,25.0,224,224
+train/Chậm chạp/000553,Chậm chạp,11,,A,train,val,62,25.0,224,224
+train/Chậm chạp/001402,Chậm chạp,11,,A,train,train,55,25.0,224,224
+train/Chậm chạp/001403,Chậm chạp,11,,A,train,train,58,25.0,224,224
+train/Chậm chạp/002258,Chậm chạp,11,,A,train,train,73,25.0,224,224
+train/Chậm chạp/002259,Chậm chạp,11,,A,train,train,61,25.0,224,224
+train/Chậm chạp/003108,Chậm chạp,11,,A,train,val,74,25.0,224,224
+train/Chậm chạp/003109,Chậm chạp,11,,A,train,test,68,25.0,224,224
+train/Chậm chạp/003948,Chậm chạp,11,,A,train,train,71,25.0,224,224
+train/Chậm chạp/003949,Chậm chạp,11,,A,train,train,69,25.0,224,224
+train/Chậm chạp/004790,Chậm chạp,11,,A,train,train,60,25.0,224,224
+train/Chậm chạp/005598,Chậm chạp,11,,A,train,train,80,25.0,224,224
+train/Chậm chạp/005599,Chậm chạp,11,,A,train,train,66,25.0,224,224
+train/Chậm chạp/006583,Chậm chạp,11,,A,train,train,87,25.0,224,224
+train/Chậm chạp/007483,Chậm chạp,11,,A,train,train,66,25.0,224,224
+train/Chậm chạp/007484,Chậm chạp,11,,A,train,train,63,25.0,224,224
+train/Chậm chạp/008418,Chậm chạp,11,,A,train,train,64,25.0,224,224
+train/Chậm chạp/008419,Chậm chạp,11,,A,train,train,68,25.0,224,224
+train/Chậm chạp/008420,Chậm chạp,11,,A,train,train,53,25.0,224,224
+train/Chậm chạp/008421,Chậm chạp,11,,A,train,train,49,25.0,224,224
+train/Chậm chạp/009298,Chậm chạp,11,,A,train,train,62,25.0,224,224
+train/Chậm chạp/009299,Chậm chạp,11,,A,train,train,55,25.0,224,224
+train/Chậm chạp/010127,Chậm chạp,11,,A,train,train,78,25.0,224,224
+train/Chậm chạp/011031,Chậm chạp,11,,A,train,val,73,25.0,224,224
+train/Chậm chạp/011033,Chậm chạp,11,,A,train,val,51,25.0,224,224
+train/Chậm chạp/011034,Chậm chạp,11,,A,train,train,49,25.0,224,224
+train/Chậm chạp/012122,Chậm chạp,11,,A,train,train,62,25.0,224,224
+train/Chậm chạp/012123,Chậm chạp,11,,A,train,train,77,25.0,224,224
+train/Chậm chạp/013072,Chậm chạp,11,,A,train,train,69,25.0,224,224
+train/Chậm chạp/013073,Chậm chạp,11,,A,train,test,70,25.0,224,224
+train/Chậm chạp/013898,Chậm chạp,11,,A,train,train,55,25.0,224,224
+train/Chậm chạp/013899,Chậm chạp,11,,A,train,train,60,25.0,224,224
+train/Chậm chạp/014712,Chậm chạp,11,,A,train,test,65,25.0,224,224
+train/Chậm chạp/014713,Chậm chạp,11,,A,train,train,63,25.0,224,224
+train/Chậm chạp/015657,Chậm chạp,11,,A,train,train,67,25.0,224,224
+train/Chậm chạp/015658,Chậm chạp,11,,A,train,train,64,25.0,224,224
+train/Chậm chạp/016558,Chậm chạp,11,,A,train,val,74,25.0,224,224
+train/Chậm chạp/017431,Chậm chạp,11,,A,train,train,65,25.0,224,224
+train/Chậm chạp/018300,Chậm chạp,11,,A,train,test,69,25.0,224,224
+train/Chậm chạp/019164,Chậm chạp,11,,A,train,test,59,25.0,224,224
+train/Chậm chạp/019165,Chậm chạp,11,,A,train,train,59,25.0,224,224
+train/Chậm chạp/020266,Chậm chạp,11,,A,train,test,68,25.0,224,224
+train/Chậm chạp/020268,Chậm chạp,11,,A,train,train,55,25.0,224,224
+train/Chậm chạp/020269,Chậm chạp,11,,A,train,train,45,25.0,224,224
+train/Chậm chạp/021079,Chậm chạp,11,,A,train,train,71,25.0,224,224
+train/Chậm chạp/021179,Chậm chạp,11,,A,train,train,61,25.0,224,224
+train/Chậm chạp/021963,Chậm chạp,11,,A,train,test,74,25.0,224,224
+train/Chậm chạp/022063,Chậm chạp,11,,A,train,val,74,25.0,224,224
+train/Chậm chạp/023831,Chậm chạp,11,,A,train,train,63,25.0,224,224
+train/Chậm chạp/024431,Chậm chạp,11,,A,train,train,67,25.0,224,224
+test/Chật/000814,Chật,12,,A,test,val,60,25.0,224,224
+test/Chật/002510,Chật,12,,A,test,test,73,25.0,224,224
+test/Chật/004206,Chật,12,,A,test,train,61,25.0,224,224
+test/Chật/011304,Chật,12,,A,test,val,63,25.0,224,224
+test/Chật/012453,Chật,12,,A,test,train,54,25.0,224,224
+test/Chật/013323,Chật,12,,A,test,train,76,25.0,224,224
+test/Chật/014969,Chật,12,,A,test,train,62,25.0,224,224
+test/Chật/018567,Chật,12,,A,test,val,75,25.0,224,224
+test/Chật/019430,Chật,12,,A,test,val,54,25.0,224,224
+test/Chật/019431,Chật,12,,A,test,test,58,25.0,224,224
+test/Chật/021302,Chật,12,,A,test,train,59,25.0,224,224
+test/Chật/022186,Chật,12,,A,test,test,71,25.0,224,224
+train/Chật/000813,Chật,12,,A,train,train,62,25.0,224,224
+train/Chật/000815,Chật,12,,A,train,test,61,25.0,224,224
+train/Chật/001660,Chật,12,,A,train,train,60,25.0,224,224
+train/Chật/001661,Chật,12,,A,train,train,55,25.0,224,224
+train/Chật/002511,Chật,12,,A,train,train,64,25.0,224,224
+train/Chật/003370,Chật,12,,A,train,train,65,25.0,224,224
+train/Chật/003371,Chật,12,,A,train,train,71,25.0,224,224
+train/Chật/004205,Chật,12,,A,train,train,58,25.0,224,224
+train/Chật/005036,Chật,12,,A,train,train,60,25.0,224,224
+train/Chật/005037,Chật,12,,A,train,train,55,25.0,224,224
+train/Chật/005849,Chật,12,,A,train,val,64,25.0,224,224
+train/Chật/005850,Chật,12,,A,train,test,66,25.0,224,224
+train/Chật/006887,Chật,12,,A,train,test,77,25.0,224,224
+train/Chật/006888,Chật,12,,A,train,train,72,25.0,224,224
+train/Chật/007771,Chật,12,,A,train,train,55,25.0,224,224
+train/Chật/007772,Chật,12,,A,train,train,57,25.0,224,224
+train/Chật/008707,Chật,12,,A,train,test,59,25.0,224,224
+train/Chật/008708,Chật,12,,A,train,val,56,25.0,224,224
+train/Chật/009554,Chật,12,,A,train,train,58,25.0,224,224
+train/Chật/009555,Chật,12,,A,train,train,59,25.0,224,224
+train/Chật/010378,Chật,12,,A,train,train,74,25.0,224,224
+train/Chật/010379,Chật,12,,A,train,train,75,25.0,224,224
+train/Chật/011303,Chật,12,,A,train,train,72,25.0,224,224
+train/Chật/012452,Chật,12,,A,train,test,65,25.0,224,224
+train/Chật/012454,Chật,12,,A,train,train,67,25.0,224,224
+train/Chật/013322,Chật,12,,A,train,train,68,25.0,224,224
+train/Chật/014152,Chật,12,,A,train,train,62,25.0,224,224
+train/Chật/014153,Chật,12,,A,train,train,58,25.0,224,224
+train/Chật/014968,Chật,12,,A,train,train,70,25.0,224,224
+train/Chật/015951,Chật,12,,A,train,train,61,25.0,224,224
+train/Chật/015952,Chật,12,,A,train,val,56,25.0,224,224
+train/Chật/015953,Chật,12,,A,train,test,74,25.0,224,224
+train/Chật/016818,Chật,12,,A,train,train,72,25.0,224,224
+train/Chật/016819,Chật,12,,A,train,train,76,25.0,224,224
+train/Chật/017691,Chật,12,,A,train,train,65,25.0,224,224
+train/Chật/017692,Chật,12,,A,train,train,62,25.0,224,224
+train/Chật/018568,Chật,12,,A,train,train,65,25.0,224,224
+train/Chật/020567,Chật,12,,A,train,val,73,25.0,224,224
+train/Chật/020568,Chật,12,,A,train,train,63,25.0,224,224
+train/Chật/021402,Chật,12,,A,train,train,59,25.0,224,224
+train/Chật/022286,Chật,12,,A,train,train,131,25.0,224,224
+train/Chật/023070,Chật,12,,A,train,train,63,25.0,224,224
+train/Chật/023170,Chật,12,,A,train,val,64,25.0,224,224
+train/Chật/023954,Chật,12,,A,train,train,66,25.0,224,224
+train/Chật/024054,Chật,12,,A,train,train,57,25.0,224,224
+train/Chật/024654,Chật,12,,A,train,train,68,25.0,224,224
+test/Chị/003417,Chị,13,,A,test,train,59,25.0,224,224
+test/Chị/006935,Chị,13,,A,test,train,46,25.0,224,224
+test/Chị/010427,Chị,13,,A,test,train,57,25.0,224,224
+test/Chị/010429,Chị,13,,A,test,val,79,25.0,224,224
+test/Chị/011363,Chị,13,,A,test,train,65,25.0,224,224
+test/Chị/011365,Chị,13,,A,test,train,50,25.0,224,224
+test/Chị/012510,Chị,13,,A,test,train,63,25.0,224,224
+test/Chị/014197,Chị,13,,A,test,train,57,25.0,224,224
+test/Chị/015017,Chị,13,,A,test,train,50,25.0,224,224
+test/Chị/016864,Chị,13,,A,test,train,56,25.0,224,224
+test/Chị/018612,Chị,13,,A,test,train,63,25.0,224,224
+test/Chị/019659,Chị,13,,A,test,train,68,25.0,224,224
+test/Chị/022392,Chị,13,,A,test,train,54,25.0,224,224
+test/Chị/023276,Chị,13,,A,test,train,64,25.0,224,224
+train/Chị/000002,Chị,13,,A,train,train,60,25.0,224,224
+train/Chị/000003,Chị,13,,A,train,val,74,25.0,224,224
+train/Chị/000863,Chị,13,,A,train,train,59,25.0,224,224
+train/Chị/000864,Chị,13,,A,train,train,57,25.0,224,224
+train/Chị/001704,Chị,13,,A,train,train,72,25.0,224,224
+train/Chị/001705,Chị,13,,A,train,train,71,25.0,224,224
+train/Chị/002556,Chị,13,,A,train,train,59,25.0,224,224
+train/Chị/002557,Chị,13,,A,train,val,59,25.0,224,224
+train/Chị/003418,Chị,13,,A,train,val,64,25.0,224,224
+train/Chị/003419,Chị,13,,A,train,train,60,25.0,224,224
+train/Chị/004249,Chị,13,,A,train,train,70,25.0,224,224
+train/Chị/004250,Chị,13,,A,train,test,62,25.0,224,224
+train/Chị/005080,Chị,13,,A,train,test,61,25.0,224,224
+train/Chị/005081,Chị,13,,A,train,val,62,25.0,224,224
+train/Chị/005907,Chị,13,,A,train,train,75,25.0,224,224
+train/Chị/006932,Chị,13,,A,train,test,57,25.0,224,224
+train/Chị/006933,Chị,13,,A,train,train,62,25.0,224,224
+train/Chị/006934,Chị,13,,A,train,test,56,25.0,224,224
+train/Chị/007822,Chị,13,,A,train,train,51,25.0,224,224
+train/Chị/007823,Chị,13,,A,train,train,51,25.0,224,224
+train/Chị/008758,Chị,13,,A,train,train,70,25.0,224,224
+train/Chị/008759,Chị,13,,A,train,test,61,25.0,224,224
+train/Chị/009600,Chị,13,,A,train,train,56,25.0,224,224
+train/Chị/009601,Chị,13,,A,train,train,58,25.0,224,224
+train/Chị/010428,Chị,13,,A,train,train,58,25.0,224,224
+train/Chị/011360,Chị,13,,A,train,train,58,25.0,224,224
+train/Chị/011364,Chị,13,,A,train,train,69,25.0,224,224
+train/Chị/012511,Chị,13,,A,train,train,64,25.0,224,224
+train/Chị/013368,Chị,13,,A,train,val,61,25.0,224,224
+train/Chị/013369,Chị,13,,A,train,test,58,25.0,224,224
+train/Chị/014196,Chị,13,,A,train,train,62,25.0,224,224
+train/Chị/015014,Chị,13,,A,train,test,77,25.0,224,224
+train/Chị/015015,Chị,13,,A,train,train,67,25.0,224,224
+train/Chị/015016,Chị,13,,A,train,test,51,25.0,224,224
+train/Chị/016011,Chị,13,,A,train,val,67,25.0,224,224
+train/Chị/016012,Chị,13,,A,train,train,63,25.0,224,224
+train/Chị/018613,Chị,13,,A,train,train,66,25.0,224,224
+train/Chị/019486,Chị,13,,A,train,train,48,25.0,224,224
+train/Chị/019487,Chị,13,,A,train,val,60,25.0,224,224
+train/Chị/019658,Chị,13,,A,train,train,63,25.0,224,224
+train/Chị/019660,Chị,13,,A,train,test,49,25.0,224,224
+train/Chị/019661,Chị,13,,A,train,train,53,25.0,224,224
+train/Chị/020624,Chị,13,,A,train,train,58,25.0,224,224
+train/Chị/020724,Chị,13,,A,train,train,49,25.0,224,224
+train/Chị/021508,Chị,13,,A,train,train,61,25.0,224,224
+train/Chị/023376,Chị,13,,A,train,train,74,25.0,224,224
+train/Chị/024176,Chị,13,,A,train,val,64,25.0,224,224
+test/Chủ tịch/001240,Chủ tịch,14,,A,test,train,61,25.0,224,224
+test/Chủ tịch/001241,Chủ tịch,14,,A,test,val,55,25.0,224,224
+test/Chủ tịch/002097,Chủ tịch,14,,A,test,val,56,25.0,224,224
+test/Chủ tịch/003789,Chủ tịch,14,,A,test,val,69,25.0,224,224
+test/Chủ tịch/006412,Chủ tịch,14,,A,test,train,74,25.0,224,224
+test/Chủ tịch/006413,Chủ tịch,14,,A,test,train,70,25.0,224,224
+test/Chủ tịch/007308,Chủ tịch,14,,A,test,train,58,25.0,224,224
+test/Chủ tịch/010850,Chủ tịch,14,,A,test,train,55,25.0,224,224
+test/Chủ tịch/013738,Chủ tịch,14,,A,test,train,57,25.0,224,224
+test/Chủ tịch/014558,Chủ tịch,14,,A,test,train,58,25.0,224,224
+train/Chủ tịch/000385,Chủ tịch,14,,A,train,test,58,25.0,224,224
+train/Chủ tịch/000386,Chủ tịch,14,,A,train,train,56,25.0,224,224
+train/Chủ tịch/002096,Chủ tịch,14,,A,train,test,58,25.0,224,224
+train/Chủ tịch/002947,Chủ tịch,14,,A,train,train,61,25.0,224,224
+train/Chủ tịch/002948,Chủ tịch,14,,A,train,train,62,25.0,224,224
+train/Chủ tịch/003788,Chủ tịch,14,,A,train,test,68,25.0,224,224
+train/Chủ tịch/004633,Chủ tịch,14,,A,train,train,54,25.0,224,224
+train/Chủ tịch/005440,Chủ tịch,14,,A,train,val,66,25.0,224,224
+train/Chủ tịch/005441,Chủ tịch,14,,A,train,train,71,25.0,224,224
+train/Chủ tịch/007307,Chủ tịch,14,,A,train,val,58,25.0,224,224
+train/Chủ tịch/008236,Chủ tịch,14,,A,train,train,56,25.0,224,224
+train/Chủ tịch/008237,Chủ tịch,14,,A,train,train,57,25.0,224,224
+train/Chủ tịch/008238,Chủ tịch,14,,A,train,test,59,25.0,224,224
+train/Chủ tịch/009131,Chủ tịch,14,,A,train,train,67,25.0,224,224
+train/Chủ tịch/009132,Chủ tịch,14,,A,train,test,60,25.0,224,224
+train/Chủ tịch/009969,Chủ tịch,14,,A,train,train,60,25.0,224,224
+train/Chủ tịch/009970,Chủ tịch,14,,A,train,train,66,25.0,224,224
+train/Chủ tịch/010849,Chủ tịch,14,,A,train,train,53,25.0,224,224
+train/Chủ tịch/011928,Chủ tịch,14,,A,train,train,59,25.0,224,224
+train/Chủ tịch/011929,Chủ tịch,14,,A,train,train,69,25.0,224,224
+train/Chủ tịch/012905,Chủ tịch,14,,A,train,test,65,25.0,224,224
+train/Chủ tịch/012906,Chủ tịch,14,,A,train,train,65,25.0,224,224
+train/Chủ tịch/013739,Chủ tịch,14,,A,train,train,52,25.0,224,224
+train/Chủ tịch/014559,Chủ tịch,14,,A,train,train,54,25.0,224,224
+train/Chủ tịch/015445,Chủ tịch,14,,A,train,train,60,25.0,224,224
+train/Chủ tịch/015446,Chủ tịch,14,,A,train,train,60,25.0,224,224
+train/Chủ tịch/016396,Chủ tịch,14,,A,train,train,65,25.0,224,224
+train/Chủ tịch/017269,Chủ tịch,14,,A,train,train,60,25.0,224,224
+train/Chủ tịch/017270,Chủ tịch,14,,A,train,train,66,25.0,224,224
+train/Chủ tịch/018139,Chủ tịch,14,,A,train,train,54,25.0,224,224
+train/Chủ tịch/018140,Chủ tịch,14,,A,train,train,53,25.0,224,224
+train/Chủ tịch/019001,Chủ tịch,14,,A,train,train,49,25.0,224,224
+train/Chủ tịch/020075,Chủ tịch,14,,A,train,val,62,25.0,224,224
+train/Chủ tịch/020902,Chủ tịch,14,,A,train,test,67,25.0,224,224
+train/Chủ tịch/021002,Chủ tịch,14,,A,train,train,55,25.0,224,224
+train/Chủ tịch/021786,Chủ tịch,14,,A,train,train,61,25.0,224,224
+train/Chủ tịch/021886,Chủ tịch,14,,A,train,val,68,25.0,224,224
+train/Chủ tịch/022720,Chủ tịch,14,,A,train,train,65,25.0,224,224
+train/Chủ tịch/023554,Chủ tịch,14,,A,train,test,71,25.0,224,224
+train/Chủ tịch/023654,Chủ tịch,14,,A,train,val,63,25.0,224,224
+test/Con chó/000651,Con chó,15,,A,test,test,64,25.0,224,224
+test/Con chó/004036,Con chó,15,,A,test,train,66,25.0,224,224
+test/Con chó/022107,Con chó,15,,A,test,train,75,25.0,224,224
+test/Con chó/022390,Con chó,15,,A,test,val,72,25.0,224,224
+test/Con chó/023975,Con chó,15,,A,test,val,65,25.0,224,224
+train/Con chó/000650,Con chó,15,,A,train,train,68,25.0,224,224
+train/Con chó/001496,Con chó,15,,A,train,train,57,25.0,224,224
+train/Con chó/001497,Con chó,15,,A,train,train,60,25.0,224,224
+train/Con chó/004037,Con chó,15,,A,train,train,66,25.0,224,224
+train/Con chó/008528,Con chó,15,,A,train,train,79,25.0,224,224
+train/Con chó/009388,Con chó,15,,A,train,train,56,25.0,224,224
+train/Con chó/010218,Con chó,15,,A,train,train,76,25.0,224,224
+train/Con chó/011134,Con chó,15,,A,train,train,50,25.0,224,224
+train/Con chó/013162,Con chó,15,,A,train,train,72,25.0,224,224
+train/Con chó/013163,Con chó,15,,A,train,test,70,25.0,224,224
+train/Con chó/013990,Con chó,15,,A,train,train,60,25.0,224,224
+train/Con chó/013991,Con chó,15,,A,train,test,59,25.0,224,224
+train/Con chó/014804,Con chó,15,,A,train,train,67,25.0,224,224
+train/Con chó/014805,Con chó,15,,A,train,train,63,25.0,224,224
+train/Con chó/015762,Con chó,15,,A,train,train,64,25.0,224,224
+train/Con chó/015763,Con chó,15,,A,train,train,63,25.0,224,224
+train/Con chó/016651,Con chó,15,,A,train,train,74,25.0,224,224
+train/Con chó/016652,Con chó,15,,A,train,test,75,25.0,224,224
+train/Con chó/018392,Con chó,15,,A,train,train,75,25.0,224,224
+train/Con chó/020376,Con chó,15,,A,train,train,68,25.0,224,224
+train/Con chó/021323,Con chó,15,,A,train,val,56,25.0,224,224
+train/Con chó/022207,Con chó,15,,A,train,train,71,25.0,224,224
+train/Con chó/022348,Con chó,15,,A,train,val,54,25.0,224,224
+train/Con chó/024575,Con chó,15,,A,train,train,62,25.0,224,224
+test/Con dê/000668,Con dê,16,,A,test,train,66,25.0,224,224
+test/Con dê/001513,Con dê,16,,A,test,val,58,25.0,224,224
+test/Con dê/005706,Con dê,16,,A,test,test,77,25.0,224,224
+test/Con dê/007602,Con dê,16,,A,test,train,58,25.0,224,224
+test/Con dê/008545,Con dê,16,,A,test,val,64,25.0,224,224
+test/Con dê/009403,Con dê,16,,A,test,train,62,25.0,224,224
+test/Con dê/012288,Con dê,16,,A,test,train,61,25.0,224,224
+test/Con dê/014006,Con dê,16,,A,test,train,66,25.0,224,224
+test/Con dê/015780,Con dê,16,,A,test,train,62,25.0,224,224
+test/Con dê/021231,Con dê,16,,A,test,train,68,25.0,224,224
+test/Con dê/022115,Con dê,16,,A,test,train,86,25.0,224,224
+train/Con dê/000667,Con dê,16,,A,train,train,68,25.0,224,224
+train/Con dê/001512,Con dê,16,,A,train,val,60,25.0,224,224
+train/Con dê/001514,Con dê,16,,A,train,test,60,25.0,224,224
+train/Con dê/002362,Con dê,16,,A,train,val,54,25.0,224,224
+train/Con dê/002363,Con dê,16,,A,train,train,56,25.0,224,224
+train/Con dê/003220,Con dê,16,,A,train,test,81,25.0,224,224
+train/Con dê/003221,Con dê,16,,A,train,train,73,25.0,224,224
+train/Con dê/004053,Con dê,16,,A,train,val,77,25.0,224,224
+train/Con dê/004054,Con dê,16,,A,train,train,73,25.0,224,224
+train/Con dê/004894,Con dê,16,,A,train,train,63,25.0,224,224
+train/Con dê/004895,Con dê,16,,A,train,train,59,25.0,224,224
+train/Con dê/005705,Con dê,16,,A,train,train,83,25.0,224,224
+train/Con dê/006735,Con dê,16,,A,train,train,70,25.0,224,224
+train/Con dê/006736,Con dê,16,,A,train,train,71,25.0,224,224
+train/Con dê/007603,Con dê,16,,A,train,test,75,25.0,224,224
+train/Con dê/007604,Con dê,16,,A,train,train,70,25.0,224,224
+train/Con dê/008546,Con dê,16,,A,train,train,66,25.0,224,224
+train/Con dê/009404,Con dê,16,,A,train,test,67,25.0,224,224
+train/Con dê/010234,Con dê,16,,A,train,train,69,25.0,224,224
+train/Con dê/010235,Con dê,16,,A,train,train,75,25.0,224,224
+train/Con dê/011149,Con dê,16,,A,train,val,73,25.0,224,224
+train/Con dê/011150,Con dê,16,,A,train,train,63,25.0,224,224
+train/Con dê/012286,Con dê,16,,A,train,train,66,25.0,224,224
+train/Con dê/012287,Con dê,16,,A,train,train,59,25.0,224,224
+train/Con dê/013179,Con dê,16,,A,train,val,82,25.0,224,224
+train/Con dê/013180,Con dê,16,,A,train,train,75,25.0,224,224
+train/Con dê/014007,Con dê,16,,A,train,train,64,25.0,224,224
+train/Con dê/014820,Con dê,16,,A,train,train,64,25.0,224,224
+train/Con dê/014821,Con dê,16,,A,train,train,65,25.0,224,224
+train/Con dê/015779,Con dê,16,,A,train,train,66,25.0,224,224
+train/Con dê/016669,Con dê,16,,A,train,test,79,25.0,224,224
+train/Con dê/016670,Con dê,16,,A,train,train,78,25.0,224,224
+train/Con dê/017538,Con dê,16,,A,train,train,64,25.0,224,224
+train/Con dê/018409,Con dê,16,,A,train,train,69,25.0,224,224
+train/Con dê/019270,Con dê,16,,A,train,val,48,25.0,224,224
+train/Con dê/019271,Con dê,16,,A,train,train,53,25.0,224,224
+train/Con dê/020391,Con dê,16,,A,train,test,70,25.0,224,224
+train/Con dê/020392,Con dê,16,,A,train,train,69,25.0,224,224
+train/Con dê/021331,Con dê,16,,A,train,train,62,25.0,224,224
+train/Con dê/022215,Con dê,16,,A,train,test,78,25.0,224,224
+train/Con dê/023099,Con dê,16,,A,train,train,65,25.0,224,224
+train/Con dê/023983,Con dê,16,,A,train,train,65,25.0,224,224
+train/Con dê/024583,Con dê,16,,A,train,train,59,25.0,224,224
+test/Con gà/000656,Con gà,17,,A,test,train,64,25.0,224,224
+test/Con gà/001501,Con gà,17,,A,test,train,57,25.0,224,224
+test/Con gà/004040,Con gà,17,,A,test,train,68,25.0,224,224
+test/Con gà/004041,Con gà,17,,A,test,val,71,25.0,224,224
+test/Con gà/004883,Con gà,17,,A,test,train,55,25.0,224,224
+test/Con gà/009391,Con gà,17,,A,test,train,60,25.0,224,224
+test/Con gà/009392,Con gà,17,,A,test,train,58,25.0,224,224
+test/Con gà/016657,Con gà,17,,A,test,train,73,25.0,224,224
+test/Con gà/020380,Con gà,17,,A,test,train,69,25.0,224,224
+test/Con gà/023093,Con gà,17,,A,test,train,60,25.0,224,224
+test/Con gà/023877,Con gà,17,,A,test,train,62,25.0,224,224
+train/Con gà/000655,Con gà,17,,A,train,test,63,25.0,224,224
+train/Con gà/001500,Con gà,17,,A,train,train,57,25.0,224,224
+train/Con gà/002350,Con gà,17,,A,train,train,60,25.0,224,224
+train/Con gà/002351,Con gà,17,,A,train,test,54,25.0,224,224
+train/Con gà/003207,Con gà,17,,A,train,train,70,25.0,224,224
+train/Con gà/003208,Con gà,17,,A,train,train,67,25.0,224,224
+train/Con gà/004882,Con gà,17,,A,train,train,62,25.0,224,224
+train/Con gà/005693,Con gà,17,,A,train,train,69,25.0,224,224
+train/Con gà/005694,Con gà,17,,A,train,train,69,25.0,224,224
+train/Con gà/006723,Con gà,17,,A,train,val,76,25.0,224,224
+train/Con gà/006724,Con gà,17,,A,train,train,66,25.0,224,224
+train/Con gà/007590,Con gà,17,,A,train,train,61,25.0,224,224
+train/Con gà/007591,Con gà,17,,A,train,train,64,25.0,224,224
+train/Con gà/008533,Con gà,17,,A,train,test,62,25.0,224,224
+train/Con gà/008534,Con gà,17,,A,train,val,67,25.0,224,224
+train/Con gà/010222,Con gà,17,,A,train,train,70,25.0,224,224
+train/Con gà/010223,Con gà,17,,A,train,train,73,25.0,224,224
+train/Con gà/011138,Con gà,17,,A,train,val,58,25.0,224,224
+train/Con gà/012274,Con gà,17,,A,train,train,61,25.0,224,224
+train/Con gà/012275,Con gà,17,,A,train,val,56,25.0,224,224
+train/Con gà/013166,Con gà,17,,A,train,train,80,25.0,224,224
+train/Con gà/013167,Con gà,17,,A,train,train,74,25.0,224,224
+train/Con gà/013994,Con gà,17,,A,train,val,54,25.0,224,224
+train/Con gà/013995,Con gà,17,,A,train,train,56,25.0,224,224
+train/Con gà/014808,Con gà,17,,A,train,test,55,25.0,224,224
+train/Con gà/014809,Con gà,17,,A,train,val,62,25.0,224,224
+train/Con gà/015766,Con gà,17,,A,train,train,62,25.0,224,224
+train/Con gà/015767,Con gà,17,,A,train,train,59,25.0,224,224
+train/Con gà/016656,Con gà,17,,A,train,train,71,25.0,224,224
+train/Con gà/017526,Con gà,17,,A,train,test,59,25.0,224,224
+train/Con gà/019258,Con gà,17,,A,train,test,63,25.0,224,224
+train/Con gà/019259,Con gà,17,,A,train,test,51,25.0,224,224
+train/Con gà/020379,Con gà,17,,A,train,train,68,25.0,224,224
+train/Con gà/021325,Con gà,17,,A,train,test,57,25.0,224,224
+train/Con gà/022109,Con gà,17,,A,train,val,70,25.0,224,224
+train/Con gà/022209,Con gà,17,,A,train,train,73,25.0,224,224
+train/Con gà/022993,Con gà,17,,A,train,train,66,25.0,224,224
+train/Con gà/023977,Con gà,17,,A,train,train,51,25.0,224,224
+train/Con gà/024577,Con gà,17,,A,train,train,73,25.0,224,224
+test/Con gấu/152727,Con gấu,18,,B,test,train,30,11.57,224,224
+test/Con gấu/452457,Con gấu,18,,B,test,val,30,9.87,224,224
+test/Con gấu/609232,Con gấu,18,,B,test,train,30,14.4,224,224
+test/Con gấu/720644,Con gấu,18,,B,test,train,30,15.3,224,224
+test/Con gấu/812131,Con gấu,18,,B,test,test,22,12.33,224,224
+train/Con gấu/128276,Con gấu,18,,B,train,train,19,10.72,224,224
+train/Con gấu/130434,Con gấu,18,,B,train,train,30,12.64,224,224
+train/Con gấu/242291,Con gấu,18,,B,train,train,30,17.36,224,224
+train/Con gấu/290556,Con gấu,18,,B,train,train,30,12.45,224,224
+train/Con gấu/321941,Con gấu,18,,B,train,train,30,14.97,224,224
+train/Con gấu/372793,Con gấu,18,,B,train,val,30,13.45,224,224
+train/Con gấu/386193,Con gấu,18,,B,train,val,30,20.0,224,224
+train/Con gấu/443254,Con gấu,18,,B,train,train,30,13.54,224,224
+train/Con gấu/453894,Con gấu,18,,B,train,train,30,20.0,224,224
+train/Con gấu/497519,Con gấu,18,,B,train,train,30,14.57,224,224
+train/Con gấu/497542,Con gấu,18,,B,train,test,30,17.31,224,224
+train/Con gấu/523956,Con gấu,18,,B,train,val,30,11.56,224,224
+train/Con gấu/549433,Con gấu,18,,B,train,test,28,11.77,224,224
+train/Con gấu/590094,Con gấu,18,,B,train,train,30,13.37,224,224
+train/Con gấu/660069,Con gấu,18,,B,train,train,30,11.12,224,224
+train/Con gấu/773971,Con gấu,18,,B,train,train,30,12.91,224,224
+train/Con gấu/795205,Con gấu,18,,B,train,train,30,14.05,224,224
+train/Con gấu/801364,Con gấu,18,,B,train,test,30,14.02,224,224
+train/Con gấu/859359,Con gấu,18,,B,train,train,30,11.53,224,224
+train/Con gấu/936912,Con gấu,18,,B,train,train,19,11.15,224,224
+train/Con gấu/981334,Con gấu,18,,B,train,train,30,12.86,224,224
+test/Con heo/000669,Con heo,19,,A,test,train,68,25.0,224,224
+test/Con heo/000670,Con heo,19,,A,test,train,68,25.0,224,224
+test/Con heo/003222,Con heo,19,,A,test,test,68,25.0,224,224
+test/Con heo/004056,Con heo,19,,A,test,train,66,25.0,224,224
+test/Con heo/004896,Con heo,19,,A,test,train,69,25.0,224,224
+test/Con heo/004897,Con heo,19,,A,test,val,58,25.0,224,224
+test/Con heo/006740,Con heo,19,,A,test,test,63,25.0,224,224
+test/Con heo/012291,Con heo,19,,A,test,train,66,25.0,224,224
+test/Con heo/015781,Con heo,19,,A,test,train,69,25.0,224,224
+test/Con heo/016671,Con heo,19,,A,test,val,72,25.0,224,224
+test/Con heo/018410,Con heo,19,,A,test,val,77,25.0,224,224
+test/Con heo/020394,Con heo,19,,A,test,train,59,25.0,224,224
+test/Con heo/020395,Con heo,19,,A,test,val,44,25.0,224,224
+test/Con heo/023100,Con heo,19,,A,test,train,58,25.0,224,224
+test/Con heo/023884,Con heo,19,,A,test,train,78,25.0,224,224
+train/Con heo/001515,Con heo,19,,A,train,train,63,25.0,224,224
+train/Con heo/001516,Con heo,19,,A,train,val,56,25.0,224,224
+train/Con heo/002364,Con heo,19,,A,train,train,53,25.0,224,224
+train/Con heo/002365,Con heo,19,,A,train,train,52,25.0,224,224
+train/Con heo/003223,Con heo,19,,A,train,train,68,25.0,224,224
+train/Con heo/003224,Con heo,19,,A,train,train,63,25.0,224,224
+train/Con heo/003225,Con heo,19,,A,train,train,63,25.0,224,224
+train/Con heo/004055,Con heo,19,,A,train,test,68,25.0,224,224
+train/Con heo/005707,Con heo,19,,A,train,train,72,25.0,224,224
+train/Con heo/005708,Con heo,19,,A,train,train,65,25.0,224,224
+train/Con heo/006737,Con heo,19,,A,train,val,71,25.0,224,224
+train/Con heo/006738,Con heo,19,,A,train,train,79,25.0,224,224
+train/Con heo/006739,Con heo,19,,A,train,train,68,25.0,224,224
+train/Con heo/006741,Con heo,19,,A,train,train,63,25.0,224,224
+train/Con heo/007605,Con heo,19,,A,train,test,63,25.0,224,224
+train/Con heo/007606,Con heo,19,,A,train,train,63,25.0,224,224
+train/Con heo/007607,Con heo,19,,A,train,train,55,25.0,224,224
+train/Con heo/007608,Con heo,19,,A,train,train,59,25.0,224,224
+train/Con heo/008547,Con heo,19,,A,train,train,60,25.0,224,224
+train/Con heo/008548,Con heo,19,,A,train,val,60,25.0,224,224
+train/Con heo/009405,Con heo,19,,A,train,train,63,25.0,224,224
+train/Con heo/009406,Con heo,19,,A,train,test,66,25.0,224,224
+train/Con heo/009407,Con heo,19,,A,train,val,59,25.0,224,224
+train/Con heo/009408,Con heo,19,,A,train,train,61,25.0,224,224
+train/Con heo/010236,Con heo,19,,A,train,train,75,25.0,224,224
+train/Con heo/010237,Con heo,19,,A,train,train,80,25.0,224,224
+train/Con heo/011151,Con heo,19,,A,train,test,63,25.0,224,224
+train/Con heo/011152,Con heo,19,,A,train,train,56,25.0,224,224
+train/Con heo/012289,Con heo,19,,A,train,train,51,25.0,224,224
+train/Con heo/012290,Con heo,19,,A,train,train,51,25.0,224,224
+train/Con heo/012292,Con heo,19,,A,train,test,55,25.0,224,224
+train/Con heo/012293,Con heo,19,,A,train,train,51,25.0,224,224
+train/Con heo/013181,Con heo,19,,A,train,train,70,25.0,224,224
+train/Con heo/013182,Con heo,19,,A,train,train,65,25.0,224,224
+train/Con heo/014008,Con heo,19,,A,train,test,56,25.0,224,224
+train/Con heo/014009,Con heo,19,,A,train,train,56,25.0,224,224
+train/Con heo/014822,Con heo,19,,A,train,train,62,25.0,224,224
+train/Con heo/014823,Con heo,19,,A,train,val,64,25.0,224,224
+train/Con heo/015782,Con heo,19,,A,train,val,59,25.0,224,224
+train/Con heo/015783,Con heo,19,,A,train,train,51,25.0,224,224
+train/Con heo/015784,Con heo,19,,A,train,test,51,25.0,224,224
+train/Con heo/016672,Con heo,19,,A,train,train,74,25.0,224,224
+train/Con heo/017540,Con heo,19,,A,train,train,61,25.0,224,224
+train/Con heo/017541,Con heo,19,,A,train,val,61,25.0,224,224
+train/Con heo/018412,Con heo,19,,A,train,train,75,25.0,224,224
+train/Con heo/018413,Con heo,19,,A,train,train,69,25.0,224,224
+train/Con heo/019272,Con heo,19,,A,train,train,47,25.0,224,224
+train/Con heo/019273,Con heo,19,,A,train,train,51,25.0,224,224
+train/Con heo/020393,Con heo,19,,A,train,train,69,25.0,224,224
+train/Con heo/020396,Con heo,19,,A,train,train,45,25.0,224,224
+train/Con heo/021232,Con heo,19,,A,train,train,67,25.0,224,224
+train/Con heo/021332,Con heo,19,,A,train,train,62,25.0,224,224
+train/Con heo/022116,Con heo,19,,A,train,train,64,25.0,224,224
+train/Con heo/022216,Con heo,19,,A,train,test,73,25.0,224,224
+train/Con heo/023000,Con heo,19,,A,train,train,61,25.0,224,224
+train/Con heo/024584,Con heo,19,,A,train,test,58,25.0,224,224
+test/Con mèo/000654,Con mèo,20,,A,test,train,62,25.0,224,224
+test/Con mèo/002348,Con mèo,20,,A,test,train,53,25.0,224,224
+test/Con mèo/003205,Con mèo,20,,A,test,train,68,25.0,224,224
+test/Con mèo/003206,Con mèo,20,,A,test,train,69,25.0,224,224
+test/Con mèo/004039,Con mèo,20,,A,test,test,73,25.0,224,224
+test/Con mèo/004880,Con mèo,20,,A,test,val,63,25.0,224,224
+test/Con mèo/004881,Con mèo,20,,A,test,train,57,25.0,224,224
+test/Con mèo/005691,Con mèo,20,,A,test,train,63,25.0,224,224
+test/Con mèo/012272,Con mèo,20,,A,test,train,57,25.0,224,224
+test/Con mèo/012273,Con mèo,20,,A,test,train,58,25.0,224,224
+test/Con mèo/021324,Con mèo,20,,A,test,test,57,25.0,224,224
+train/Con mèo/000652,Con mèo,20,,A,train,train,59,25.0,224,224
+train/Con mèo/000653,Con mèo,20,,A,train,train,59,25.0,224,224
+train/Con mèo/001498,Con mèo,20,,A,train,train,62,25.0,224,224
+train/Con mèo/001499,Con mèo,20,,A,train,train,58,25.0,224,224
+train/Con mèo/002349,Con mèo,20,,A,train,val,55,25.0,224,224
+train/Con mèo/004038,Con mèo,20,,A,train,test,72,25.0,224,224
+train/Con mèo/005692,Con mèo,20,,A,train,train,60,25.0,224,224
+train/Con mèo/006721,Con mèo,20,,A,train,train,65,25.0,224,224
+train/Con mèo/006722,Con mèo,20,,A,train,train,64,25.0,224,224
+train/Con mèo/007588,Con mèo,20,,A,train,val,63,25.0,224,224
+train/Con mèo/007589,Con mèo,20,,A,train,train,64,25.0,224,224
+train/Con mèo/008531,Con mèo,20,,A,train,val,59,25.0,224,224
+train/Con mèo/008532,Con mèo,20,,A,train,train,63,25.0,224,224
+train/Con mèo/009389,Con mèo,20,,A,train,val,65,25.0,224,224
+train/Con mèo/009390,Con mèo,20,,A,train,train,59,25.0,224,224
+train/Con mèo/010220,Con mèo,20,,A,train,val,69,25.0,224,224
+train/Con mèo/010221,Con mèo,20,,A,train,train,64,25.0,224,224
+train/Con mèo/011135,Con mèo,20,,A,train,train,61,25.0,224,224
+train/Con mèo/011136,Con mèo,20,,A,train,train,59,25.0,224,224
+train/Con mèo/013164,Con mèo,20,,A,train,test,76,25.0,224,224
+train/Con mèo/013165,Con mèo,20,,A,train,test,69,25.0,224,224
+train/Con mèo/013992,Con mèo,20,,A,train,train,54,25.0,224,224
+train/Con mèo/013993,Con mèo,20,,A,train,train,53,25.0,224,224
+train/Con mèo/014806,Con mèo,20,,A,train,train,59,25.0,224,224
+train/Con mèo/014807,Con mèo,20,,A,train,train,56,25.0,224,224
+train/Con mèo/015764,Con mèo,20,,A,train,train,61,25.0,224,224
+train/Con mèo/015765,Con mèo,20,,A,train,train,60,25.0,224,224
+train/Con mèo/016654,Con mèo,20,,A,train,train,82,25.0,224,224
+train/Con mèo/016655,Con mèo,20,,A,train,test,73,25.0,224,224
+train/Con mèo/017524,Con mèo,20,,A,train,test,60,25.0,224,224
+train/Con mèo/017525,Con mèo,20,,A,train,train,64,25.0,224,224
+train/Con mèo/018394,Con mèo,20,,A,train,train,75,25.0,224,224
+train/Con mèo/018395,Con mèo,20,,A,train,train,65,25.0,224,224
+train/Con mèo/019256,Con mèo,20,,A,train,train,50,25.0,224,224
+train/Con mèo/019257,Con mèo,20,,A,train,train,45,25.0,224,224
+train/Con mèo/020377,Con mèo,20,,A,train,train,68,25.0,224,224
+train/Con mèo/020378,Con mèo,20,,A,train,train,75,25.0,224,224
+train/Con mèo/021224,Con mèo,20,,A,train,val,61,25.0,224,224
+train/Con mèo/022108,Con mèo,20,,A,train,train,65,25.0,224,224
+train/Con mèo/022208,Con mèo,20,,A,train,val,76,25.0,224,224
+train/Con mèo/022992,Con mèo,20,,A,train,train,68,25.0,224,224
+train/Con mèo/023092,Con mèo,20,,A,train,test,62,25.0,224,224
+train/Con mèo/023876,Con mèo,20,,A,train,train,63,25.0,224,224
+train/Con mèo/023976,Con mèo,20,,A,train,train,58,25.0,224,224
+train/Con mèo/024576,Con mèo,20,,A,train,train,68,25.0,224,224
+test/Con rùa/001504,Con rùa,21,,A,test,train,60,25.0,224,224
+test/Con rùa/004045,Con rùa,21,,A,test,train,70,25.0,224,224
+test/Con rùa/006727,Con rùa,21,,A,test,val,79,25.0,224,224
+test/Con rùa/009395,Con rùa,21,,A,test,train,63,25.0,224,224
+test/Con rùa/011141,Con rùa,21,,A,test,train,68,25.0,224,224
+test/Con rùa/015772,Con rùa,21,,A,test,train,64,25.0,224,224
+test/Con rùa/016660,Con rùa,21,,A,test,train,80,25.0,224,224
+test/Con rùa/017531,Con rùa,21,,A,test,train,67,25.0,224,224
+test/Con rùa/018400,Con rùa,21,,A,test,val,77,25.0,224,224
+test/Con rùa/022211,Con rùa,21,,A,test,train,77,25.0,224,224
+test/Con rùa/022995,Con rùa,21,,A,test,test,73,25.0,224,224
+train/Con rùa/000659,Con rùa,21,,A,train,train,61,25.0,224,224
+train/Con rùa/000660,Con rùa,21,,A,train,train,62,25.0,224,224
+train/Con rùa/001505,Con rùa,21,,A,train,train,62,25.0,224,224
+train/Con rùa/002354,Con rùa,21,,A,train,val,71,25.0,224,224
+train/Con rùa/002355,Con rùa,21,,A,train,train,57,25.0,224,224
+train/Con rùa/003212,Con rùa,21,,A,train,train,79,25.0,224,224
+train/Con rùa/003213,Con rùa,21,,A,train,val,74,25.0,224,224
+train/Con rùa/004044,Con rùa,21,,A,train,val,70,25.0,224,224
+train/Con rùa/004046,Con rùa,21,,A,train,val,71,25.0,224,224
+train/Con rùa/004886,Con rùa,21,,A,train,train,70,25.0,224,224
+train/Con rùa/004887,Con rùa,21,,A,train,train,70,25.0,224,224
+train/Con rùa/005697,Con rùa,21,,A,train,train,83,25.0,224,224
+train/Con rùa/005698,Con rùa,21,,A,train,train,75,25.0,224,224
+train/Con rùa/006728,Con rùa,21,,A,train,test,76,25.0,224,224
+train/Con rùa/007594,Con rùa,21,,A,train,train,58,25.0,224,224
+train/Con rùa/007595,Con rùa,21,,A,train,train,55,25.0,224,224
+train/Con rùa/008537,Con rùa,21,,A,train,test,61,25.0,224,224
+train/Con rùa/008538,Con rùa,21,,A,train,train,60,25.0,224,224
+train/Con rùa/009396,Con rùa,21,,A,train,train,63,25.0,224,224
+train/Con rùa/010226,Con rùa,21,,A,train,train,73,25.0,224,224
+train/Con rùa/010227,Con rùa,21,,A,train,train,90,25.0,224,224
+train/Con rùa/011142,Con rùa,21,,A,train,val,70,25.0,224,224
+train/Con rùa/012278,Con rùa,21,,A,train,train,57,25.0,224,224
+train/Con rùa/012279,Con rùa,21,,A,train,train,60,25.0,224,224
+train/Con rùa/013170,Con rùa,21,,A,train,train,77,25.0,224,224
+train/Con rùa/013171,Con rùa,21,,A,train,train,72,25.0,224,224
+train/Con rùa/013172,Con rùa,21,,A,train,val,86,25.0,224,224
+train/Con rùa/013998,Con rùa,21,,A,train,train,61,25.0,224,224
+train/Con rùa/013999,Con rùa,21,,A,train,train,58,25.0,224,224
+train/Con rùa/014812,Con rùa,21,,A,train,train,64,25.0,224,224
+train/Con rùa/014813,Con rùa,21,,A,train,test,60,25.0,224,224
+train/Con rùa/015770,Con rùa,21,,A,train,train,61,25.0,224,224
+train/Con rùa/015771,Con rùa,21,,A,train,train,59,25.0,224,224
+train/Con rùa/016662,Con rùa,21,,A,train,train,79,25.0,224,224
+train/Con rùa/017530,Con rùa,21,,A,train,test,67,25.0,224,224
+train/Con rùa/018401,Con rùa,21,,A,train,train,70,25.0,224,224
+train/Con rùa/019262,Con rùa,21,,A,train,train,48,25.0,224,224
+train/Con rùa/019263,Con rùa,21,,A,train,train,53,25.0,224,224
+train/Con rùa/020383,Con rùa,21,,A,train,test,80,25.0,224,224
+train/Con rùa/020384,Con rùa,21,,A,train,test,69,25.0,224,224
+train/Con rùa/021227,Con rùa,21,,A,train,test,68,25.0,224,224
+train/Con rùa/021327,Con rùa,21,,A,train,val,69,25.0,224,224
+train/Con rùa/022111,Con rùa,21,,A,train,train,73,25.0,224,224
+train/Con rùa/023095,Con rùa,21,,A,train,train,71,25.0,224,224
+train/Con rùa/023879,Con rùa,21,,A,train,train,74,25.0,224,224
+train/Con rùa/023979,Con rùa,21,,A,train,test,65,25.0,224,224
+train/Con rùa/024579,Con rùa,21,,A,train,train,63,25.0,224,224
+test/Con vịt/002353,Con vịt,22,,A,test,train,59,25.0,224,224
+test/Con vịt/004042,Con vịt,22,,A,test,train,64,25.0,224,224
+test/Con vịt/004884,Con vịt,22,,A,test,train,61,25.0,224,224
+test/Con vịt/008536,Con vịt,22,,A,test,train,62,25.0,224,224
+test/Con vịt/009393,Con vịt,22,,A,test,val,64,25.0,224,224
+test/Con vịt/011140,Con vịt,22,,A,test,train,54,25.0,224,224
+test/Con vịt/013168,Con vịt,22,,A,test,test,70,25.0,224,224
+test/Con vịt/013996,Con vịt,22,,A,test,test,56,25.0,224,224
+test/Con vịt/015769,Con vịt,22,,A,test,train,62,25.0,224,224
+test/Con vịt/020381,Con vịt,22,,A,test,train,72,25.0,224,224
+test/Con vịt/022110,Con vịt,22,,A,test,train,68,25.0,224,224
+train/Con vịt/000657,Con vịt,22,,A,train,train,61,25.0,224,224
+train/Con vịt/000658,Con vịt,22,,A,train,test,64,25.0,224,224
+train/Con vịt/001502,Con vịt,22,,A,train,train,61,25.0,224,224
+train/Con vịt/001503,Con vịt,22,,A,train,train,59,25.0,224,224
+train/Con vịt/002352,Con vịt,22,,A,train,test,68,25.0,224,224
+train/Con vịt/003209,Con vịt,22,,A,train,val,63,25.0,224,224
+train/Con vịt/003210,Con vịt,22,,A,train,train,67,25.0,224,224
+train/Con vịt/003211,Con vịt,22,,A,train,train,64,25.0,224,224
+train/Con vịt/004043,Con vịt,22,,A,train,train,65,25.0,224,224
+train/Con vịt/004885,Con vịt,22,,A,train,val,57,25.0,224,224
+train/Con vịt/005695,Con vịt,22,,A,train,train,69,25.0,224,224
+train/Con vịt/005696,Con vịt,22,,A,train,train,63,25.0,224,224
+train/Con vịt/006725,Con vịt,22,,A,train,train,66,25.0,224,224
+train/Con vịt/006726,Con vịt,22,,A,train,train,75,25.0,224,224
+train/Con vịt/007592,Con vịt,22,,A,train,train,57,25.0,224,224
+train/Con vịt/007593,Con vịt,22,,A,train,test,57,25.0,224,224
+train/Con vịt/008535,Con vịt,22,,A,train,train,62,25.0,224,224
+train/Con vịt/009394,Con vịt,22,,A,train,train,64,25.0,224,224
+train/Con vịt/010224,Con vịt,22,,A,train,train,75,25.0,224,224
+train/Con vịt/010225,Con vịt,22,,A,train,train,79,25.0,224,224
+train/Con vịt/012276,Con vịt,22,,A,train,train,58,25.0,224,224
+train/Con vịt/012277,Con vịt,22,,A,train,train,61,25.0,224,224
+train/Con vịt/013169,Con vịt,22,,A,train,test,64,25.0,224,224
+train/Con vịt/013997,Con vịt,22,,A,train,train,60,25.0,224,224
+train/Con vịt/014810,Con vịt,22,,A,train,train,56,25.0,224,224
+train/Con vịt/014811,Con vịt,22,,A,train,train,53,25.0,224,224
+train/Con vịt/015768,Con vịt,22,,A,train,val,64,25.0,224,224
+train/Con vịt/016658,Con vịt,22,,A,train,train,75,25.0,224,224
+train/Con vịt/016659,Con vịt,22,,A,train,test,77,25.0,224,224
+train/Con vịt/017528,Con vịt,22,,A,train,val,61,25.0,224,224
+train/Con vịt/017529,Con vịt,22,,A,train,val,63,25.0,224,224
+train/Con vịt/018398,Con vịt,22,,A,train,train,68,25.0,224,224
+train/Con vịt/018399,Con vịt,22,,A,train,train,65,25.0,224,224
+train/Con vịt/019260,Con vịt,22,,A,train,train,47,25.0,224,224
+train/Con vịt/019261,Con vịt,22,,A,train,train,49,25.0,224,224
+train/Con vịt/020382,Con vịt,22,,A,train,train,68,25.0,224,224
+train/Con vịt/021226,Con vịt,22,,A,train,train,61,25.0,224,224
+train/Con vịt/021326,Con vịt,22,,A,train,test,62,25.0,224,224
+train/Con vịt/022210,Con vịt,22,,A,train,val,65,25.0,224,224
+train/Con vịt/022994,Con vịt,22,,A,train,train,66,25.0,224,224
+train/Con vịt/023094,Con vịt,22,,A,train,train,63,25.0,224,224
+train/Con vịt/023878,Con vịt,22,,A,train,train,62,25.0,224,224
+train/Con vịt/023978,Con vịt,22,,A,train,val,67,25.0,224,224
+train/Con vịt/024578,Con vịt,22,,A,train,train,78,25.0,224,224
+test/Cần/001332,Cần,23,,A,test,val,55,25.0,224,224
+test/Cần/003040,Cần,23,,A,test,val,69,25.0,224,224
+test/Cần/004722,Cần,23,,A,test,train,48,25.0,224,224
+test/Cần/005529,Cần,23,,A,test,train,86,25.0,224,224
+test/Cần/007407,Cần,23,,A,test,train,60,25.0,224,224
+test/Cần/010951,Cần,23,,A,test,train,60,25.0,224,224
+test/Cần/014645,Cần,23,,A,test,test,57,25.0,224,224
+test/Cần/015570,Cần,23,,A,test,train,57,25.0,224,224
+test/Cần/019094,Cần,23,,A,test,train,52,25.0,224,224
+test/Cần/023697,Cần,23,,A,test,train,64,25.0,224,224
+test/Cần/024397,Cần,23,,A,test,train,63,25.0,224,224
+test/Cần/824586,Cần,23,,B,test,train,30,12.01,224,224
+train/Cần/000480,Cần,23,,A,train,train,61,25.0,224,224
+train/Cần/000481,Cần,23,,A,train,train,61,25.0,224,224
+train/Cần/001331,Cần,23,,A,train,test,56,25.0,224,224
+train/Cần/002188,Cần,23,,A,train,test,63,25.0,224,224
+train/Cần/003877,Cần,23,,A,train,train,59,25.0,224,224
+train/Cần/003878,Cần,23,,A,train,train,58,25.0,224,224
+train/Cần/004721,Cần,23,,A,train,train,51,25.0,224,224
+train/Cần/004723,Cần,23,,A,train,test,48,25.0,224,224
+train/Cần/005528,Cần,23,,A,train,train,69,25.0,224,224
+train/Cần/006501,Cần,23,,A,train,train,75,25.0,224,224
+train/Cần/006502,Cần,23,,A,train,train,68,25.0,224,224
+train/Cần/007408,Cần,23,,A,train,train,60,25.0,224,224
+train/Cần/007409,Cần,23,,A,train,train,58,25.0,224,224
+train/Cần/008340,Cần,23,,A,train,train,53,25.0,224,224
+train/Cần/009222,Cần,23,,A,train,train,58,25.0,224,224
+train/Cần/009223,Cần,23,,A,train,val,59,25.0,224,224
+train/Cần/010057,Cần,23,,A,train,train,66,25.0,224,224
+train/Cần/010058,Cần,23,,A,train,train,73,25.0,224,224
+train/Cần/010952,Cần,23,,A,train,train,61,25.0,224,224
+train/Cần/010953,Cần,23,,A,train,val,58,25.0,224,224
+train/Cần/012037,Cần,23,,A,train,val,63,25.0,224,224
+train/Cần/012038,Cần,23,,A,train,val,63,25.0,224,224
+train/Cần/012997,Cần,23,,A,train,train,70,25.0,224,224
+train/Cần/012998,Cần,23,,A,train,train,64,25.0,224,224
+train/Cần/013829,Cần,23,,A,train,train,56,25.0,224,224
+train/Cần/013830,Cần,23,,A,train,train,55,25.0,224,224
+train/Cần/014644,Cần,23,,A,train,train,60,25.0,224,224
+train/Cần/015571,Cần,23,,A,train,train,52,25.0,224,224
+train/Cần/016482,Cần,23,,A,train,train,75,25.0,224,224
+train/Cần/016483,Cần,23,,A,train,test,64,25.0,224,224
+train/Cần/017359,Cần,23,,A,train,train,54,25.0,224,224
+train/Cần/017360,Cần,23,,A,train,val,59,25.0,224,224
+train/Cần/018229,Cần,23,,A,train,val,66,25.0,224,224
+train/Cần/019095,Cần,23,,A,train,train,45,25.0,224,224
+train/Cần/020183,Cần,23,,A,train,train,63,25.0,224,224
+train/Cần/021045,Cần,23,,A,train,test,63,25.0,224,224
+train/Cần/021145,Cần,23,,A,train,train,57,25.0,224,224
+train/Cần/021929,Cần,23,,A,train,train,63,25.0,224,224
+train/Cần/022029,Cần,23,,A,train,train,64,25.0,224,224
+train/Cần/022813,Cần,23,,A,train,train,61,25.0,224,224
+train/Cần/022913,Cần,23,,A,train,test,58,25.0,224,224
+train/Cần/023797,Cần,23,,A,train,test,58,25.0,224,224
+train/Cần/024497,Cần,23,,A,train,test,64,25.0,224,224
+train/Cần/217308,Cần,23,,B,train,val,30,12.86,224,224
+train/Cần/256294,Cần,23,,B,train,train,30,12.01,224,224
+test/Cắm trại/002470,Cắm trại,24,,A,test,val,50,25.0,224,224
+test/Cắm trại/003329,Cắm trại,24,,A,test,train,64,25.0,224,224
+test/Cắm trại/004165,Cắm trại,24,,A,test,train,70,25.0,224,224
+test/Cắm trại/004997,Cắm trại,24,,A,test,train,49,25.0,224,224
+test/Cắm trại/007725,Cắm trại,24,,A,test,val,65,25.0,224,224
+test/Cắm trại/007726,Cắm trại,24,,A,test,train,49,25.0,224,224
+test/Cắm trại/012406,Cắm trại,24,,A,test,train,53,25.0,224,224
+test/Cắm trại/013282,Cắm trại,24,,A,test,train,66,25.0,224,224
+test/Cắm trại/017651,Cắm trại,24,,A,test,train,57,25.0,224,224
+test/Cắm trại/019387,Cắm trại,24,,A,test,test,47,25.0,224,224
+test/Cắm trại/022368,Cắm trại,24,,A,test,train,60,25.0,224,224
+train/Cắm trại/000772,Cắm trại,24,,A,train,test,69,25.0,224,224
+train/Cắm trại/000773,Cắm trại,24,,A,train,train,62,25.0,224,224
+train/Cắm trại/001620,Cắm trại,24,,A,train,test,55,25.0,224,224
+train/Cắm trại/001621,Cắm trại,24,,A,train,test,51,25.0,224,224
+train/Cắm trại/002471,Cắm trại,24,,A,train,train,45,25.0,224,224
+train/Cắm trại/003328,Cắm trại,24,,A,train,train,67,25.0,224,224
+train/Cắm trại/004166,Cắm trại,24,,A,train,train,67,25.0,224,224
+train/Cắm trại/004996,Cắm trại,24,,A,train,train,53,25.0,224,224
+train/Cắm trại/005809,Cắm trại,24,,A,train,train,67,25.0,224,224
+train/Cắm trại/005810,Cắm trại,24,,A,train,train,60,25.0,224,224
+train/Cắm trại/006845,Cắm trại,24,,A,train,train,60,25.0,224,224
+train/Cắm trại/006846,Cắm trại,24,,A,train,test,56,25.0,224,224
+train/Cắm trại/007724,Cắm trại,24,,A,train,val,66,25.0,224,224
+train/Cắm trại/008661,Cắm trại,24,,A,train,train,56,25.0,224,224
+train/Cắm trại/008662,Cắm trại,24,,A,train,train,55,25.0,224,224
+train/Cắm trại/009513,Cắm trại,24,,A,train,train,60,25.0,224,224
+train/Cắm trại/009514,Cắm trại,24,,A,train,train,55,25.0,224,224
+train/Cắm trại/010338,Cắm trại,24,,A,train,train,60,25.0,224,224
+train/Cắm trại/010339,Cắm trại,24,,A,train,train,62,25.0,224,224
+train/Cắm trại/011259,Cắm trại,24,,A,train,val,55,25.0,224,224
+train/Cắm trại/011260,Cắm trại,24,,A,train,train,52,25.0,224,224
+train/Cắm trại/012405,Cắm trại,24,,A,train,test,54,25.0,224,224
+train/Cắm trại/013283,Cắm trại,24,,A,train,train,69,25.0,224,224
+train/Cắm trại/014111,Cắm trại,24,,A,train,train,51,25.0,224,224
+train/Cắm trại/014112,Cắm trại,24,,A,train,train,52,25.0,224,224
+train/Cắm trại/014927,Cắm trại,24,,A,train,train,53,25.0,224,224
+train/Cắm trại/014928,Cắm trại,24,,A,train,train,53,25.0,224,224
+train/Cắm trại/015902,Cắm trại,24,,A,train,train,66,25.0,224,224
+train/Cắm trại/015903,Cắm trại,24,,A,train,train,60,25.0,224,224
+train/Cắm trại/016775,Cắm trại,24,,A,train,train,66,25.0,224,224
+train/Cắm trại/016776,Cắm trại,24,,A,train,val,62,25.0,224,224
+train/Cắm trại/018527,Cắm trại,24,,A,train,test,63,25.0,224,224
+train/Cắm trại/019386,Cắm trại,24,,A,train,train,46,25.0,224,224
+train/Cắm trại/020517,Cắm trại,24,,A,train,train,63,25.0,224,224
+train/Cắm trại/020518,Cắm trại,24,,A,train,val,59,25.0,224,224
+train/Cắm trại/021282,Cắm trại,24,,A,train,test,73,25.0,224,224
+train/Cắm trại/021382,Cắm trại,24,,A,train,train,58,25.0,224,224
+train/Cắm trại/021442,Cắm trại,24,,A,train,train,61,25.0,224,224
+train/Cắm trại/021484,Cắm trại,24,,A,train,train,56,25.0,224,224
+train/Cắm trại/022166,Cắm trại,24,,A,train,val,74,25.0,224,224
+train/Cắm trại/022266,Cắm trại,24,,A,train,test,64,25.0,224,224
+train/Cắm trại/022326,Cắm trại,24,,A,train,train,72,25.0,224,224
+train/Cắm trại/023050,Cắm trại,24,,A,train,train,73,25.0,224,224
+train/Cắm trại/023150,Cắm trại,24,,A,train,train,62,25.0,224,224
+train/Cắm trại/023210,Cắm trại,24,,A,train,val,62,25.0,224,224
+train/Cắm trại/024034,Cắm trại,24,,A,train,val,83,25.0,224,224
+train/Cắm trại/024634,Cắm trại,24,,A,train,train,58,25.0,224,224
+test/Cục tẩy/001148,Cục tẩy,25,,A,test,train,66,25.0,224,224
+test/Cục tẩy/002849,Cục tẩy,25,,A,test,test,60,25.0,224,224
+test/Cục tẩy/004540,Cục tẩy,25,,A,test,test,67,25.0,224,224
+test/Cục tẩy/005352,Cục tẩy,25,,A,test,train,87,25.0,224,224
+test/Cục tẩy/009879,Cục tẩy,25,,A,test,train,64,25.0,224,224
+test/Cục tẩy/012808,Cục tẩy,25,,A,test,train,70,25.0,224,224
+test/Cục tẩy/012809,Cục tẩy,25,,A,test,test,63,25.0,224,224
+test/Cục tẩy/014467,Cục tẩy,25,,A,test,train,64,25.0,224,224
+test/Cục tẩy/018042,Cục tẩy,25,,A,test,train,70,25.0,224,224
+test/Cục tẩy/019975,Cục tẩy,25,,A,test,val,75,25.0,224,224
+test/Cục tẩy/020957,Cục tẩy,25,,A,test,train,63,25.0,224,224
+train/Cục tẩy/000290,Cục tẩy,25,,A,train,train,66,25.0,224,224
+train/Cục tẩy/000291,Cục tẩy,25,,A,train,train,60,25.0,224,224
+train/Cục tẩy/001149,Cục tẩy,25,,A,train,train,59,25.0,224,224
+train/Cục tẩy/002000,Cục tẩy,25,,A,train,train,60,25.0,224,224
+train/Cục tẩy/002001,Cục tẩy,25,,A,train,test,59,25.0,224,224
+train/Cục tẩy/002850,Cục tẩy,25,,A,train,train,64,25.0,224,224
+train/Cục tẩy/002851,Cục tẩy,25,,A,train,train,64,25.0,224,224
+train/Cục tẩy/003692,Cục tẩy,25,,A,train,train,65,25.0,224,224
+train/Cục tẩy/003693,Cục tẩy,25,,A,train,train,66,25.0,224,224
+train/Cục tẩy/004539,Cục tẩy,25,,A,train,val,58,25.0,224,224
+train/Cục tẩy/005353,Cục tẩy,25,,A,train,test,85,25.0,224,224
+train/Cục tẩy/006309,Cục tẩy,25,,A,train,test,96,25.0,224,224
+train/Cục tẩy/006310,Cục tẩy,25,,A,train,train,86,25.0,224,224
+train/Cục tẩy/007212,Cục tẩy,25,,A,train,train,67,25.0,224,224
+train/Cục tẩy/007213,Cục tẩy,25,,A,train,train,63,25.0,224,224
+train/Cục tẩy/008128,Cục tẩy,25,,A,train,train,58,25.0,224,224
+train/Cục tẩy/009038,Cục tẩy,25,,A,train,train,63,25.0,224,224
+train/Cục tẩy/009878,Cục tẩy,25,,A,train,test,67,25.0,224,224
+train/Cục tẩy/010741,Cục tẩy,25,,A,train,train,79,25.0,224,224
+train/Cục tẩy/010742,Cục tẩy,25,,A,train,test,84,25.0,224,224
+train/Cục tẩy/011822,Cục tẩy,25,,A,train,train,69,25.0,224,224
+train/Cục tẩy/013647,Cục tẩy,25,,A,train,train,58,25.0,224,224
+train/Cục tẩy/013648,Cục tẩy,25,,A,train,train,54,25.0,224,224
+train/Cục tẩy/014468,Cục tẩy,25,,A,train,train,60,25.0,224,224
+train/Cục tẩy/015339,Cục tẩy,25,,A,train,val,60,25.0,224,224
+train/Cục tẩy/015340,Cục tẩy,25,,A,train,train,61,25.0,224,224
+train/Cục tẩy/016304,Cục tẩy,25,,A,train,train,68,25.0,224,224
+train/Cục tẩy/016305,Cục tẩy,25,,A,train,train,73,25.0,224,224
+train/Cục tẩy/017177,Cục tẩy,25,,A,train,train,61,25.0,224,224
+train/Cục tẩy/017178,Cục tẩy,25,,A,train,train,66,25.0,224,224
+train/Cục tẩy/018041,Cục tẩy,25,,A,train,val,93,25.0,224,224
+train/Cục tẩy/018906,Cục tẩy,25,,A,train,train,55,25.0,224,224
+train/Cục tẩy/018907,Cục tẩy,25,,A,train,val,49,25.0,224,224
+train/Cục tẩy/020857,Cục tẩy,25,,A,train,val,75,25.0,224,224
+train/Cục tẩy/021741,Cục tẩy,25,,A,train,train,60,25.0,224,224
+train/Cục tẩy/021841,Cục tẩy,25,,A,train,train,83,25.0,224,224
+train/Cục tẩy/022625,Cục tẩy,25,,A,train,train,70,25.0,224,224
+train/Cục tẩy/022675,Cục tẩy,25,,A,train,val,65,25.0,224,224
+train/Cục tẩy/022775,Cục tẩy,25,,A,train,val,61,25.0,224,224
+train/Cục tẩy/023509,Cục tẩy,25,,A,train,train,74,25.0,224,224
+train/Cục tẩy/023609,Cục tẩy,25,,A,train,train,60,25.0,224,224
+test/Cứu/309044,Cứu,26,,B,test,train,30,11.09,224,224
+test/Cứu/596564,Cứu,26,,B,test,val,30,9.19,224,224
+test/Cứu/751517,Cứu,26,,B,test,test,30,11.81,224,224
+test/Cứu/904150,Cứu,26,,B,test,train,30,11.18,224,224
+train/Cứu/126925,Cứu,26,,B,train,train,22,14.06,224,224
+train/Cứu/220096,Cứu,26,,B,train,train,30,13.43,224,224
+train/Cứu/232352,Cứu,26,,B,train,train,30,11.6,224,224
+train/Cứu/259784,Cứu,26,,B,train,train,30,9.86,224,224
+train/Cứu/328552,Cứu,26,,B,train,train,30,10.56,224,224
+train/Cứu/350132,Cứu,26,,B,train,train,30,11.39,224,224
+train/Cứu/368690,Cứu,26,,B,train,train,30,9.99,224,224
+train/Cứu/426147,Cứu,26,,B,train,train,30,11.84,224,224
+train/Cứu/493537,Cứu,26,,B,train,train,30,11.25,224,224
+train/Cứu/691364,Cứu,26,,B,train,train,30,9.02,224,224
+train/Cứu/706794,Cứu,26,,B,train,train,30,14.06,224,224
+train/Cứu/735324,Cứu,26,,B,train,val,30,11.91,224,224
+train/Cứu/810250,Cứu,26,,B,train,train,30,14.06,224,224
+train/Cứu/853252,Cứu,26,,B,train,train,30,11.5,224,224
+train/Cứu/884256,Cứu,26,,B,train,test,30,13.6,224,224
+train/Cứu/915573,Cứu,26,,B,train,train,30,14.29,224,224
+train/Cứu/959099,Cứu,26,,B,train,val,30,11.54,224,224
+train/Cứu/979995,Cứu,26,,B,train,test,24,10.07,224,224
+test/Dài/001667,Dài,27,,A,test,train,51,25.0,224,224
+test/Dài/002516,Dài,27,,A,test,train,60,25.0,224,224
+test/Dài/003379,Dài,27,,A,test,train,71,25.0,224,224
+test/Dài/005042,Dài,27,,A,test,train,56,25.0,224,224
+test/Dài/008716,Dài,27,,A,test,train,58,25.0,224,224
+test/Dài/009561,Dài,27,,A,test,train,53,25.0,224,224
+test/Dài/013328,Dài,27,,A,test,train,69,25.0,224,224
+test/Dài/014158,Dài,27,,A,test,val,55,25.0,224,224
+test/Dài/014975,Dài,27,,A,test,train,60,25.0,224,224
+test/Dài/016824,Dài,27,,A,test,train,65,25.0,224,224
+test/Dài/017698,Dài,27,,A,test,train,59,25.0,224,224
+test/Dài/021305,Dài,27,,A,test,test,68,25.0,224,224
+test/Dài/021405,Dài,27,,A,test,train,64,25.0,224,224
+train/Dài/000823,Dài,27,,A,train,val,68,25.0,224,224
+train/Dài/000824,Dài,27,,A,train,test,60,25.0,224,224
+train/Dài/000825,Dài,27,,A,train,test,65,25.0,224,224
+train/Dài/001666,Dài,27,,A,train,test,55,25.0,224,224
+train/Dài/002517,Dài,27,,A,train,train,71,25.0,224,224
+train/Dài/003377,Dài,27,,A,train,train,72,25.0,224,224
+train/Dài/003378,Dài,27,,A,train,train,70,25.0,224,224
+train/Dài/004211,Dài,27,,A,train,val,59,25.0,224,224
+train/Dài/004212,Dài,27,,A,train,train,60,25.0,224,224
+train/Dài/005043,Dài,27,,A,train,val,60,25.0,224,224
+train/Dài/005857,Dài,27,,A,train,train,73,25.0,224,224
+train/Dài/005858,Dài,27,,A,train,train,60,25.0,224,224
+train/Dài/006894,Dài,27,,A,train,train,70,25.0,224,224
+train/Dài/007777,Dài,27,,A,train,val,54,25.0,224,224
+train/Dài/007778,Dài,27,,A,train,train,59,25.0,224,224
+train/Dài/008714,Dài,27,,A,train,test,53,25.0,224,224
+train/Dài/008715,Dài,27,,A,train,train,61,25.0,224,224
+train/Dài/008717,Dài,27,,A,train,train,69,25.0,224,224
+train/Dài/009562,Dài,27,,A,train,train,54,25.0,224,224
+train/Dài/010387,Dài,27,,A,train,val,73,25.0,224,224
+train/Dài/011311,Dài,27,,A,train,train,63,25.0,224,224
+train/Dài/011312,Dài,27,,A,train,train,85,25.0,224,224
+train/Dài/012462,Dài,27,,A,train,train,48,25.0,224,224
+train/Dài/012463,Dài,27,,A,train,train,56,25.0,224,224
+train/Dài/012464,Dài,27,,A,train,test,59,25.0,224,224
+train/Dài/012465,Dài,27,,A,train,train,52,25.0,224,224
+train/Dài/014159,Dài,27,,A,train,train,59,25.0,224,224
+train/Dài/014974,Dài,27,,A,train,train,59,25.0,224,224
+train/Dài/015962,Dài,27,,A,train,train,65,25.0,224,224
+train/Dài/015963,Dài,27,,A,train,val,60,25.0,224,224
+train/Dài/015964,Dài,27,,A,train,train,51,25.0,224,224
+train/Dài/015965,Dài,27,,A,train,val,58,25.0,224,224
+train/Dài/016825,Dài,27,,A,train,test,60,25.0,224,224
+train/Dài/017697,Dài,27,,A,train,train,64,25.0,224,224
+train/Dài/018573,Dài,27,,A,train,train,71,25.0,224,224
+train/Dài/019437,Dài,27,,A,train,train,51,25.0,224,224
+train/Dài/019438,Dài,27,,A,train,train,52,25.0,224,224
+train/Dài/019439,Dài,27,,A,train,train,62,25.0,224,224
+train/Dài/019440,Dài,27,,A,train,train,49,25.0,224,224
+train/Dài/019441,Dài,27,,A,train,val,51,25.0,224,224
+train/Dài/020578,Dài,27,,A,train,train,59,25.0,224,224
+train/Dài/020579,Dài,27,,A,train,test,51,25.0,224,224
+train/Dài/020580,Dài,27,,A,train,train,49,25.0,224,224
+train/Dài/022189,Dài,27,,A,train,train,75,25.0,224,224
+train/Dài/022289,Dài,27,,A,train,train,76,25.0,224,224
+train/Dài/023073,Dài,27,,A,train,train,68,25.0,224,224
+train/Dài/023173,Dài,27,,A,train,train,62,25.0,224,224
+train/Dài/024057,Dài,27,,A,train,test,62,25.0,224,224
