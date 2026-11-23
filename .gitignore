@@ -1,17 +1,26 @@
-docs
-venv
-.venv
-__pycache__/
-*.mp4
-test_data/
-notebooks
+# Tài liệu riêng (PLAN, STATUS nằm trên Google Drive)
+docs/
 *.md
-*.zip
-runs/
+!README.md
+
+# Môi trường
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+notebooks/
+
+# Dữ liệu và file lớn: không đưa vào git
 data/**
 !data/**/
 !data/**/.gitkeep
-!data/exclude.txt
-!data/reports/review_decisions.csv
-!data/processed/index.csv
-!data/processed/vocab.csv
+*.mp4
+*.zip
+*.npy
+*.npz
+*.pt
+*.onnx
+
+# Kết quả thí nghiệm
+runs/
