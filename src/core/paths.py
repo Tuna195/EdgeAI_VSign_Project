@@ -11,3 +11,5 @@ INDEX_FILE = PROCESSED_DIR / "index.csv"
 VOCAB_FILE = PROCESSED_DIR / "vocab.csv"       
 SEQ_FILE = PROCESSED_DIR / "sequences.npz"     
 WORDS_FILE = ROOT / "words.txt"
+RUNS_DIR = ROOT / "runs"                       # kết quả train 
+MODELS_DIR = ROOT / "models"                   # file .task của MediaPipe 

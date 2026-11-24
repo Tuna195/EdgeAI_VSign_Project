@@ -69,9 +69,22 @@ def prepare_sequence(raw, width, height):
 
 
 
-def sample_positions(length, n):
-    """n vị trí frame cách đều trong chuỗi dài length. Luôn có frame đầu và frame cuối."""
-    return (np.linspace(0, 1, n) * (length - 1)).round().astype(int)
+def sample_positions(length, n, rng=None, speed=(0.8, 1.25)):
+    """n vị trí frame trong chuỗi dài length. Luôn có frame đầu và frame cuối.
+
+    rng = None: cách đều (val, test, chạy camera thật).
+    Có rng (chỉ cho train): đổi tốc độ ký ngẫu nhiên. Chọn một "điểm gãy" m ở khoảng 30-70% video, rồi dời nó
+    tới vị trí m2 -> một nửa video được giãn ra (ký chậm hơn), nửa kia bị dồn lại (ký nhanh hơn).
+    Tốc độ mỗi nửa thay đổi trong khoảng speed. Không xoá frame, chỉ chọn n vị trí khác đi.
+    """
+    u = np.linspace(0, 1, n)                    # n mốc đều nhau trên trục thời gian của MẪU (0..1)
+    if rng is not None:
+        lo, hi = speed
+        m = rng.uniform(0.3, 0.7)               # điểm gãy trên trục thời gian của VIDEO
+        # m2: vị trí mới của điểm gãy trên trục MẪU. Chọn sao cho cả 2 nửa có tỉ lệ co giãn trong [lo, hi]
+        m2 = rng.uniform(max(lo * m, 1 - hi * (1 - m)), min(hi * m, 1 - lo * (1 - m)))
+        u = np.interp(u, [0, m2, 1], [0, m, 1])  # mốc u của mẫu -> vị trí tương ứng trong video
+    return (u * (length - 1)).round().astype(int)
 
 
 def feature_dim(cfg):
