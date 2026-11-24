@@ -270,13 +270,13 @@ def main():
             while True:
                 if a.frames and len(rows) >= a.frames:
                     break
-                t0 = time.perf_counter()
                 if not is_cam:
                     # bỏ qua (stride-1) frame: chỉ grab, không giải nén, không tính giờ
                     for _ in range(a.stride - 1):
                         if not src.cap.grab():
                             break
                         idx += 1
+                t0 = time.perf_counter()
                 ok, frame = src.read()
                 if not ok:
                     break
