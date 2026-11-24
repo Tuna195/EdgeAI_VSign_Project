@@ -45,7 +45,7 @@
   },
   "chua_chot": [
     "running_mode IMAGE hay VIDEO (VIDEO bam theo nen landmark khac IMAGE; Kaggle phai dung cung che do va cung toc do lay mau frame nhu Pi)",
-    "toc do lay mau frame: Pi chay ~8-10 fps, video VSL400 ~30 fps -> Kaggle lay 1/k frame hay noi suy",
+    "toc do lay mau frame: Pi chay ~8-10 fps, video VSL400 25 fps (theo metadata) -> Kaggle lay 1/k frame hay noi suy",
     "nguong phat hien tay (dang bo sot tay)",
     "cach resize video VSL400 ve dau vao",
     "Kaggle co cai duoc mediapipe 0.10.18 + numpy 1.26.4 khong (chua kiem tra)",
