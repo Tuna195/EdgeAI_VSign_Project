@@ -1,0 +1,54 @@
+{
+  "trang_thai": "NHAP - chua chot. Cac muc trong 'chua_chot' se duoc quyet dinh o P2. Nhanh M chua duoc trich landmark toan bo du lieu bang file nay.",
+  "phien_ban": "0.1-nhap",
+  "moi_truong": {
+    "python": "3.12",
+    "mediapipe": "0.10.18",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0 (opencv-contrib-python do mediapipe keo theo, khong cai them ban khac)",
+    "_ly_do": "mediapipe >= 1.x bi 'Illegal instruction' tren Pi 4 (thieu lenh AES ARMv8); 0.10.18 chi co ban cho Python 3.9-3.12; numpy 2.x khong tuong thich mediapipe 0.10.18"
+  },
+  "hand_model": {
+    "file": "hand_landmarker.task",
+    "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task",
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+  },
+  "pose_model": {
+    "file": "pose_landmarker_lite.task",
+    "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task",
+    "sha256": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a"
+  },
+  "num_hands": 2,
+  "num_poses": 1,
+  "running_mode": "CHUA_CHOT",
+  "nguong": {
+    "hand": {"min_hand_detection_confidence": 0.5, "min_hand_presence_confidence": 0.5, "min_tracking_confidence": 0.5},
+    "pose": {"min_pose_detection_confidence": 0.5, "min_pose_presence_confidence": 0.5, "min_tracking_confidence": 0.5},
+    "_ghi_chu": "Gia tri mac dinh, CHUA_CHOT: o baseline MediaPipe bo sot tay ~50% frame du tay luon trong khung"
+  },
+  "dau_vao": {
+    "do_phan_giai": [640, 480],
+    "lat_guong": false,
+    "mau": "RGB (doi tu BGR cua OpenCV truoc khi dua vao MediaPipe)",
+    "_ghi_chu": "Cach dua video VSL400 ve 640x480 (resize/giu ti le) CHUA_CHOT"
+  },
+  "bo_cuc_225": {
+    "thu_tu": [
+      {"ten": "tay_trai", "so_diem": 21, "so_chieu": 3, "chi_so": [0, 63]},
+      {"ten": "tay_phai", "so_diem": 21, "so_chieu": 3, "chi_so": [63, 126]},
+      {"ten": "pose", "so_diem": 33, "so_chieu": 3, "chi_so": [126, 225]}
+    ],
+    "toa_do": "x, y, z chuan hoa theo anh (hand_landmarks / pose_landmarks, KHONG dung world_landmarks)",
+    "khong_thay": "dien 0 cho ca khoi",
+    "nhan_trai_phai": "Giu nguyen category_name ('Left'/'Right') MediaPipe tra ve tren anh KHONG lat guong. MediaPipe gia dinh anh da lat guong, nen tren anh khong lat, nhan 'Left' co the ung voi tay phai that cua nguoi ky. Giu dung quy uoc nay o ca Kaggle va Pi; can kiem chung bang thuc te o P2.",
+    "hai_tay_cung_nhan": "CHUA_CHOT (vd: giu tay co diem tin cay cao hon)"
+  },
+  "chua_chot": [
+    "running_mode IMAGE hay VIDEO (VIDEO bam theo nen landmark khac IMAGE; Kaggle phai dung cung che do va cung toc do lay mau frame nhu Pi)",
+    "toc do lay mau frame: Pi chay ~8-10 fps, video VSL400 ~30 fps -> Kaggle lay 1/k frame hay noi suy",
+    "nguong phat hien tay (dang bo sot tay)",
+    "cach resize video VSL400 ve dau vao",
+    "Kaggle co cai duoc mediapipe 0.10.18 + numpy 1.26.4 khong (chua kiem tra)",
+    "kiem chung quy uoc nhan trai/phai"
+  ]
+}
