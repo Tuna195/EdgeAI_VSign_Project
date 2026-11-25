@@ -6,18 +6,23 @@ Rồi mở trên máy tính (cùng mạng Wi-Fi/LAN):  http://<IP của Pi>:8000
 
 Luồng hoạt động:
     xem trước --(bấm "Bắt đầu quay")--> đếm ngược 5 s --> quay theo kịch bản --> lưu file, thoát
-Kịch bản mặc định (30 s): 5 s để tay xuống | 20 s ký liên tục | 5 s để tay xuống.
-Đổi bằng --script "5:Để tay xuống,20:Ký liên tục,5:Để tay xuống".
+Kịch bản mặc định (36 s): 3 s tay xuống | 5 s giữ hai tay yên trước ngực | 20 s ký liên tục
+                          | 5 s giữ yên | 3 s tay xuống.  Đổi bằng --script "5:...,20:...".
+--shutter <micro giây>: đặt thời gian phơi sáng cố định (vd 8000 = 8 ms) để giảm nhoè khi tay
+    di chuyển nhanh. Mặc định 0 = camera tự chọn (phòng tối sẽ tự phơi lâu -> dễ nhoè).
+    Phơi ngắn làm ảnh tối -> camera tự tăng độ khuếch đại (gain, ảnh nhiễu hơn) -> nên bật đèn.
 
 Đầu ra:
     <out>.mp4  : video gốc, KHÔNG vẽ chữ, KHÔNG lật gương
     <out>.json : thông tin quay + khoảng frame của từng đoạn kịch bản (để benchmark tách
-                 thời gian lúc có tay / không có tay)
+                 thời gian lúc có tay / không có tay) + thời gian phơi sáng / gain thực tế
+    <out>_cam.txt : thông số camera từng frame do rpicam-vid ghi (ExposureTime, AnalogueGain...)
 Nút "Lật gương" trên trang web chỉ lật hình HIỂN THỊ cho dễ nhìn, không ảnh hưởng file.
 """
 import argparse
 import json
 import os
+import re
 import socket
 import threading
 import time
@@ -42,6 +47,19 @@ def parse_script(text):
         sec, label = part.split(":", 1)
         phases.append((float(sec), label.strip()))
     return phases
+
+
+def cam_stat(path, key):
+    """Trung vị một thông số camera (vd ExposureTime) từ file metadata của rpicam-vid."""
+    try:
+        with open(path) as f:
+            vals = [float(v) for v in re.findall(key + r"\W+([0-9.]+)", f.read())]
+    except OSError:
+        return None
+    if not vals:
+        return None
+    vals.sort()
+    return round(vals[len(vals) // 2], 2)
 
 
 def local_ip():
@@ -147,7 +165,9 @@ def main():
     ap.add_argument("--height", type=int, default=480)
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--port", type=int, default=8000)
-    ap.add_argument("--script", default="5:Để tay xuống,20:Ký liên tục (cả hai tay),5:Để tay xuống")
+    ap.add_argument("--script", default="3:Tay xuống,5:Giữ hai tay yên trước ngực,"
+                    "20:Ký liên tục (cả hai tay),5:Giữ hai tay yên trước ngực,3:Tay xuống")
+    ap.add_argument("--shutter", type=int, default=0, help="phơi sáng (micro giây), 0 = tự động")
     args = ap.parse_args()
 
     phases = parse_script(args.script)
@@ -161,7 +181,12 @@ def main():
         bounds.append({"label": label, "seconds": sec,
                        "start_frame": start, "end_frame": int(round(acc * args.fps))})
 
-    cam = open_source(args.source, args.width, args.height, args.fps)
+    cam_meta = os.path.splitext(args.out)[0] + "_cam.txt"
+    extra = ["--metadata", cam_meta, "--metadata-format", "txt"]
+    if args.shutter > 0:
+        extra += ["--shutter", str(args.shutter)]
+    os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+    cam = open_source(args.source, args.width, args.height, args.fps, extra)
     is_file = isinstance(cam, VideoFileSource)
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
 
@@ -246,6 +271,9 @@ def main():
             "fps_requested": args.fps, "fps_measured": round(real_fps, 2),
             "frames": n_written, "complete": n_written >= n_total,
             "mirrored": False, "codec": "mp4v",
+            "shutter_us": args.shutter or "auto",
+            "exposure_us_p50": cam_stat(cam_meta, "ExposureTime"),
+            "analogue_gain_p50": cam_stat(cam_meta, "AnalogueGain"),
             "phases": bounds,
         }
         meta_path = os.path.splitext(args.out)[0] + ".json"
@@ -256,6 +284,7 @@ def main():
                                 "detail": f"{n_written} frame, fps đo được {real_fps:.1f}"}
         print(f"Đã lưu {args.out} ({n_written} frame, fps đo được {real_fps:.1f})")
         print(f"Thông tin đoạn kịch bản: {meta_path}")
+        print(f"Phơi sáng thực tế p50: {meta['exposure_us_p50']} µs | gain p50: {meta['analogue_gain_p50']}")
         time.sleep(1.5)  # để trang web kịp hiện "Đã quay xong"
     server.shutdown()
 

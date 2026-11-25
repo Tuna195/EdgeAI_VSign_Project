@@ -13,6 +13,7 @@ Dùng:
 """
 import shutil
 import subprocess
+import tempfile
 
 import cv2
 import numpy as np
@@ -34,8 +35,10 @@ class RpicamSource:
             "--codec", "yuv420",                     # ảnh thô, không nén
             "-o", "-",                               # ghi ra stdout
         ] + list(extra_args or [])
+        # thông báo của rpicam-vid ghi vào file tạm, để in ra khi camera lỗi
+        self.log = tempfile.NamedTemporaryFile("w+", prefix="rpicam_", suffix=".log", delete=False)
         self.proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
-                                     stderr=subprocess.DEVNULL, bufsize=0)
+                                     stderr=self.log, bufsize=0)
 
     def _read_exact(self, n):
         # Đọc đúng n byte (ống có thể trả về ít hơn mỗi lần đọc)
@@ -52,9 +55,19 @@ class RpicamSource:
     def read(self):
         buf = self._read_exact(self.frame_bytes)
         if buf is None:
+            self.print_log()
             return False, None
         yuv = np.frombuffer(buf, np.uint8).reshape(self.height * 3 // 2, self.width)
         return True, cv2.cvtColor(yuv, cv2.COLOR_YUV2BGR_I420)
+
+    def print_log(self, n=15):
+        try:
+            with open(self.log.name) as f:
+                lines = f.read().strip().splitlines()
+            if lines:
+                print("--- rpicam-vid báo:\n" + "\n".join(lines[-n:]))
+        except OSError:
+            pass
 
     def close(self):
         if self.proc.poll() is None:
@@ -84,8 +97,8 @@ class VideoFileSource:
         self.cap.release()
 
 
-def open_source(source, width=640, height=480, fps=30):
+def open_source(source, width=640, height=480, fps=30, extra_args=None):
     """'cam' -> camera Pi; đường dẫn khác -> file video."""
     if source == "cam":
-        return RpicamSource(width, height, fps)
+        return RpicamSource(width, height, fps, extra_args)
     return VideoFileSource(source)
