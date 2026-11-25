@@ -3,12 +3,14 @@
 Chạy:
     python -m src.pi.bench_parallel --video data/videos/v3_gan_den.mp4
     python -m src.pi.bench_parallel --video ... --hand-workers 1     # chỉ tách hand / pose
+    python -m src.pi.bench_parallel --video ... --pose-every 2       # pose cách 1 frame chạy 1 lần
 
 Cách chia việc:
     tiến trình chính : đọc frame, chia việc, gom kết quả
     N tiến trình hand (IMAGE): frame nào tới, tiến trình nào rảnh thì nhận
                        (IMAGE xử lý mỗi frame độc lập nên chia được)
-    1 tiến trình pose (VIDEO): nhận MỌI frame theo đúng thứ tự (VIDEO cần frame liên tiếp)
+    1 tiến trình pose (VIDEO): nhận frame theo đúng thứ tự (VIDEO cần frame liên tiếp);
+                       --pose-every k: chỉ chạy pose ở frame 0, k, 2k... (frame giữa dùng lại/nội suy)
     Tối đa --max-inflight frame đang xử lý cùng lúc (giống camera: không dồn frame cũ).
 Đo:
     fps thực    = số frame xong (có đủ hand + pose) / thời gian
@@ -75,6 +77,7 @@ def main():
     ap.add_argument("--max-inflight", type=int, default=0, help="mặc định = số tiến trình hand + 1")
     ap.add_argument("--frames", type=int, default=0, help="0 = hết video")
     ap.add_argument("--warmup", type=int, default=10)
+    ap.add_argument("--pose-every", type=int, default=1, help="chạy pose mỗi k frame")
     ap.add_argument("--hand-model", default="data/models/hand_landmarker.task")
     ap.add_argument("--pose-model", default="data/models/pose_landmarker_lite.task")
     ap.add_argument("--note", default="truoc khi lap quat", help="ghi chú (vd: truoc/sau khi lap quat)")
@@ -99,7 +102,7 @@ def main():
     mon = SystemMonitor()
     mon.start()
 
-    sent_t, done_parts, results = {}, {}, []
+    sent_t, done_parts, results, need = {}, {}, [], {}
     hand_ms, pose_ms, hand_pid = [], [], {}
     i_next, n_done, eof = 0, 0, False
     t_start = None
@@ -115,7 +118,10 @@ def main():
                     t_start = time.perf_counter()
                 sent_t[i_next] = time.perf_counter()
                 hand_q.put((i_next, frame))
-                pose_q.put((i_next, frame, int(round(i_next * 1000 / fps_src))))
+                need[i_next] = 1
+                if i_next % a.pose_every == 0:
+                    pose_q.put((i_next, frame, int(round(i_next * 1000 / fps_src))))
+                    need[i_next] = 2
                 i_next += 1
             if eof and not sent_t:
                 break
@@ -130,9 +136,10 @@ def main():
                 (hand_ms if kind == "hand" else pose_ms).append(ms)
                 if kind == "hand":
                     hand_pid[pid] = hand_pid.get(pid, 0) + 1
-            if len(done_parts[i]) == 2:          # đủ hand + pose
+            if len(done_parts[i]) == need[i]:    # đủ hand (+ pose nếu frame này có chạy pose)
                 lat = (time.perf_counter() - sent_t.pop(i)) * 1e3
                 parts = done_parts.pop(i)
+                need.pop(i)
                 if i >= a.warmup:
                     results.append({"frame": i, "latency_ms": lat, "n_hands": parts["hand"]})
                 n_done += 1
@@ -163,7 +170,7 @@ def main():
     summary = {
         "time": datetime.now().isoformat(timespec="seconds"), "note": a.note,
         "video": a.video, "hand_workers": a.hand_workers, "max_inflight": max_inflight,
-        "hand_mode": "IMAGE", "pose_mode": "VIDEO",
+        "hand_mode": "IMAGE", "pose_mode": "VIDEO", "pose_every": a.pose_every,
         "frames": len(results), "wall_s": round(wall, 1), "fps_real": round(fps_real, 2),
         "latency_ms": stats(lat), "hand_ms": stats(hand_ms), "pose_ms": stats(pose_ms),
         "hand_frames_per_worker": list(hand_pid.values()),
@@ -175,12 +182,13 @@ def main():
     }
     out_dir = "runs/pi_parallel"
     os.makedirs(out_dir, exist_ok=True)
-    name = f"{datetime.now():%m%d_%H%M%S}_h{a.hand_workers}"
+    name = f"{datetime.now():%m%d_%H%M%S}_h{a.hand_workers}_pe{a.pose_every}"
     with open(os.path.join(out_dir, name + ".json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
     print("\n" + "=" * 60)
-    print(f"Song song: {a.hand_workers} tiến trình hand (IMAGE) + 1 pose (VIDEO) | {a.note}")
+    print(f"Song song: {a.hand_workers} tiến trình hand (IMAGE) + 1 pose (VIDEO, mỗi "
+          f"{a.pose_every} frame) | {a.note}")
     print(f"{len(results)} frame trong {wall:.1f} s -> fps thực = {fps_real:.2f}")
     s = summary
     for k, lab in (("latency_ms", "độ trễ"), ("hand_ms", "hand"), ("pose_ms", "pose")):

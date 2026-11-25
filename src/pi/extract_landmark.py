@@ -2,7 +2,13 @@
 
 Đây là bộ trích DÙNG CHUNG cho Pi và Kaggle: cả hai chạy đúng file này để landmark giống nhau.
 
-Chạy:
+Chạy (dùng cấu hình đã chốt, KHUYÊN DÙNG):
+    python -m src.pi.extract_landmark --video a.mp4 --config configs/extractor_config.json
+Dùng trong code (vd notebook Kaggle của nhánh M):
+    from src.pi.extract_landmark import load_config, extract_video
+    cfg = load_config("configs/extractor_config.json", model_dir="/kaggle/working/models")
+    res = extract_video("video.mp4", cfg)      # dict mảng numpy, landmarks (T, 225)
+Chạy thử nghiệm (tự chọn tham số, không dùng file cấu hình):
     python -m src.pi.extract_landmark --video data/videos/test_30s.mp4
     python -m src.pi.extract_landmark --video a.mp4 --hand-mode VIDEO --pose-mode VIDEO --stride 3
 
@@ -256,6 +262,36 @@ def extract_video(video, cfg, max_frames=0, log_every=100):
     }
 
 
+def load_config(path="configs/extractor_config.json", model_dir="data/models", check_sha=True):
+    """Đọc configs/extractor_config.json -> cfg cho Extractor / extract_video."""
+    with open(path, encoding="utf-8") as f:
+        c = json.load(f)
+    hand_model = os.path.join(model_dir, c["hand_model"]["file"])
+    pose_model = os.path.join(model_dir, c["pose_model"]["file"])
+    if check_sha:  # bảo đảm đúng file model như Pi
+        for p, want in ((hand_model, c["hand_model"]["sha256"]), (pose_model, c["pose_model"]["sha256"])):
+            got = sha256(p)
+            if got != want:
+                raise RuntimeError(f"sha256 của {p} không khớp cấu hình: {got} != {want}")
+    if mp.__version__ != c["moi_truong"]["mediapipe"]:
+        print(f"CẢNH BÁO: mediapipe {mp.__version__} khác cấu hình {c['moi_truong']['mediapipe']}")
+    th, tp = c["nguong"]["hand"], c["nguong"]["pose"]
+    return {
+        "hand_mode": c["hand_running_mode"], "pose_mode": c["pose_running_mode"],
+        "stride": c["lay_mau_frame"]["kaggle_stride"], "num_hands": c["num_hands"],
+        "fit": c["dau_vao"]["fit"], "enhance": c["dau_vao"]["enhance"],
+        "input_size": c["dau_vao"]["do_phan_giai"], "mirrored": c["dau_vao"]["lat_guong"],
+        "hand_model": hand_model, "pose_model": pose_model,
+        "hand_thresholds": {"detection": th["min_hand_detection_confidence"],
+                            "presence": th["min_hand_presence_confidence"],
+                            "tracking": th["min_tracking_confidence"]},
+        "pose_thresholds": {"detection": tp["min_pose_detection_confidence"],
+                            "presence": tp["min_pose_presence_confidence"],
+                            "tracking": tp["min_tracking_confidence"]},
+        "config_file": os.path.basename(path), "config_version": c.get("phien_ban"),
+    }
+
+
 def make_cfg(a):
     return {
         "hand_mode": a.hand_mode, "pose_mode": a.pose_mode, "stride": a.stride,
@@ -269,6 +305,8 @@ def make_cfg(a):
 def main():
     ap = argparse.ArgumentParser(description="Trích landmark MediaPipe từ video -> .npz")
     ap.add_argument("--video", required=True)
+    ap.add_argument("--config", default="", help="file cấu hình (bỏ qua các tham số chế độ/ngưỡng bên dưới)")
+    ap.add_argument("--model-dir", default="data/models")
     ap.add_argument("--out", default="", help="mặc định runs/landmarks/<video>__h.._p.._s...npz")
     ap.add_argument("--hand-mode", choices=["IMAGE", "VIDEO"], default="IMAGE")
     ap.add_argument("--pose-mode", choices=["IMAGE", "VIDEO"], default="IMAGE")
@@ -287,7 +325,11 @@ def main():
     ap.add_argument("--max-frames", type=int, default=0)
     a = ap.parse_args()
 
-    cfg = make_cfg(a)
+    cfg = load_config(a.config, a.model_dir) if a.config else make_cfg(a)
+    if a.config:  # tên file / thông báo lấy theo cấu hình
+        a.hand_mode, a.pose_mode, a.stride = cfg["hand_mode"], cfg["pose_mode"], cfg["stride"]
+        a.fit, a.enhance = cfg["fit"], cfg["enhance"]
+        a.hand_det = cfg["hand_thresholds"]["detection"]
     stem = os.path.splitext(os.path.basename(a.video))[0]
     out = a.out or os.path.join(
         "runs/landmarks", f"{stem}__h{a.hand_mode[0]}_p{a.pose_mode[0]}_s{a.stride}"
