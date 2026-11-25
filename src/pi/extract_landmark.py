@@ -9,6 +9,7 @@ Chạy:
 Các bước cho mỗi frame được xử lý:
     1. Đọc frame (bỏ qua stride-1 frame giữa hai lần xử lý)
     2. Đưa về 640x480, GIỮ tỉ lệ khung hình (--fit letterbox: thêm viền đen; crop: cắt giữa)
+    2b. (tuỳ chọn --enhance) làm sáng / tăng tương phản ảnh tối
     3. BGR -> RGB, KHÔNG lật gương
     4. Hand và Pose (mỗi cái có running_mode riêng: IMAGE hoặc VIDEO)
     5. Xếp vào vector 225 số: tay trái 21x3 | tay phải 21x3 | pose 33x3, không thấy thì 0
@@ -23,6 +24,8 @@ Nội dung file .npz:
     pose_vis     (T, 33)  float32 : độ chắc chắn từng điểm pose
     pose_hand_px (T, 2)   float32 : cỡ bàn tay ước lượng từ pose (cổ tay -> ngón trỏ), có cả khi sót tay
     hand_ms, pose_ms (T,) float32 : thời gian xử lý
+    enh_ms       (T,)     float32 : thời gian làm sáng ảnh (0 nếu không dùng)
+    brightness   (T,)     float32 : độ sáng TB ảnh TRƯỚC khi làm sáng (0-255)
     meta         str (JSON)       : cấu hình, phiên bản, sha256 model, thông tin video
 """
 import argparse
@@ -75,6 +78,38 @@ def fit_frame(frame, mode="letterbox", w=IN_W, h=IN_H):
         x0, y0 = (nw - w) // 2, (nh - h) // 2
         return big[y0:y0 + h, x0:x0 + w]
     raise ValueError(f"fit không hợp lệ: {mode}")
+
+
+GAMMA_TARGET = 110.0   # độ sáng TB mong muốn sau khi làm sáng
+_clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+
+
+def enhance(frame, mode="none"):
+    """Làm sáng ảnh tối trước khi đưa vào MediaPipe.
+
+    gamma : gamma TỰ ĐỘNG theo độ sáng TB của frame, chỉ làm SÁNG (ảnh đã đủ sáng thì
+            gần như không đổi -> video VSL400 quay studio ít bị ảnh hưởng).
+            out = 255 * (in/255)^g, chọn g sao cho độ sáng TB ~ GAMMA_TARGET, g trong [0.4, 1].
+    clahe : cân bằng tương phản theo từng ô 8x8 trên kênh độ sáng L (không đổi màu).
+    gamma_clahe : gamma rồi CLAHE.
+    """
+    if mode == "none":
+        return frame
+    out = frame
+    if mode in ("gamma", "gamma_clahe"):
+        gray = cv2.cvtColor(out, cv2.COLOR_BGR2GRAY)
+        px = gray[gray > 2]                      # bỏ viền đen letterbox khi tính độ sáng
+        m = max(float(px.mean()) if px.size else 0.0, 1.0)
+        g = 1.0 if m >= GAMMA_TARGET else np.log(GAMMA_TARGET / 255.0) / np.log(m / 255.0)
+        g = float(np.clip(g, 0.4, 1.0))
+        if g < 0.999:
+            lut = (255.0 * (np.arange(256) / 255.0) ** g).clip(0, 255).astype(np.uint8)
+            out = cv2.LUT(out, lut)
+    if mode in ("clahe", "gamma_clahe"):
+        lab = cv2.cvtColor(out, cv2.COLOR_BGR2LAB)
+        lab[:, :, 0] = _clahe.apply(lab[:, :, 0])
+        out = cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
+    return out
 
 
 class Extractor:
@@ -163,7 +198,7 @@ def extract_video(video, cfg, max_frames=0, log_every=100):
     ex = Extractor(cfg)
     stride = cfg["stride"]
     keys = ["vec", "n_hands", "score", "same_label", "hand_px", "pose_vis",
-            "pose_hand_px", "hand_ms", "pose_ms"]
+            "pose_hand_px", "hand_ms", "pose_ms", "enh_ms", "brightness"]
     out = {k: [] for k in keys}
     frame_idx = []
     idx = -1
@@ -177,7 +212,14 @@ def extract_video(video, cfg, max_frames=0, log_every=100):
                 continue
             # timestamp theo thời gian trong video -> giống nhau ở Pi và Kaggle
             ts_ms = int(round(idx * 1000.0 / fps))
-            r = ex.process(fit_frame(frame, cfg["fit"]), ts_ms)
+            img = fit_frame(frame, cfg["fit"])
+            bright = float(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).mean())
+            te = time.perf_counter()
+            img = enhance(img, cfg.get("enhance", "none"))
+            enh_ms = (time.perf_counter() - te) * 1e3
+            r = ex.process(img, ts_ms)
+            r["enh_ms"] = enh_ms
+            r["brightness"] = bright
             for k in keys:
                 out[k].append(r[k])
             frame_idx.append(idx)
@@ -208,6 +250,8 @@ def extract_video(video, cfg, max_frames=0, log_every=100):
         "pose_hand_px": np.array(out["pose_hand_px"], np.float32).reshape(-1, 2),
         "hand_ms": np.array(out["hand_ms"], np.float32),
         "pose_ms": np.array(out["pose_ms"], np.float32),
+        "enh_ms": np.array(out["enh_ms"], np.float32),
+        "brightness": np.array(out["brightness"], np.float32),
         "meta": json.dumps(meta, ensure_ascii=False),
     }
 
@@ -215,7 +259,7 @@ def extract_video(video, cfg, max_frames=0, log_every=100):
 def make_cfg(a):
     return {
         "hand_mode": a.hand_mode, "pose_mode": a.pose_mode, "stride": a.stride,
-        "num_hands": a.num_hands, "fit": a.fit, "input_size": [IN_W, IN_H], "mirrored": False,
+        "num_hands": a.num_hands, "fit": a.fit, "enhance": a.enhance, "input_size": [IN_W, IN_H], "mirrored": False,
         "hand_model": a.hand_model, "pose_model": a.pose_model,
         "hand_thresholds": {"detection": a.hand_det, "presence": a.hand_pres, "tracking": a.hand_track},
         "pose_thresholds": {"detection": a.pose_det, "presence": a.pose_pres, "tracking": a.pose_track},
@@ -230,6 +274,7 @@ def main():
     ap.add_argument("--pose-mode", choices=["IMAGE", "VIDEO"], default="IMAGE")
     ap.add_argument("--stride", type=int, default=1)
     ap.add_argument("--fit", choices=["letterbox", "crop"], default="letterbox")
+    ap.add_argument("--enhance", choices=["none", "gamma", "clahe", "gamma_clahe"], default="none")
     ap.add_argument("--num-hands", type=int, default=2)
     ap.add_argument("--hand-model", default="data/models/hand_landmarker.task")
     ap.add_argument("--pose-model", default="data/models/pose_landmarker_lite.task")
@@ -246,10 +291,10 @@ def main():
     stem = os.path.splitext(os.path.basename(a.video))[0]
     out = a.out or os.path.join(
         "runs/landmarks", f"{stem}__h{a.hand_mode[0]}_p{a.pose_mode[0]}_s{a.stride}"
-                          f"_d{a.hand_det:g}.npz")
+                          f"_d{a.hand_det:g}" + ("" if a.enhance == "none" else f"_e{a.enhance}") + ".npz")
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
 
-    print(f"Trích {a.video}: hand={a.hand_mode} pose={a.pose_mode} stride={a.stride} fit={a.fit}")
+    print(f"Trích {a.video}: hand={a.hand_mode} pose={a.pose_mode} stride={a.stride} fit={a.fit} enhance={a.enhance} hand_det={a.hand_det}")
     t0 = time.perf_counter()
     res = extract_video(a.video, cfg, a.max_frames)
     np.savez_compressed(out, **res)
@@ -261,6 +306,8 @@ def main():
     print(f"Xong {T} frame trong {time.perf_counter() - t0:.1f} s -> {out}")
     print(f"  thấy >=1 tay: {np.mean(nh >= 1):.2f} | thấy 2 tay: {np.mean(nh == 2):.2f} | "
           f"thấy pose: {np.mean(res['pose_vis'].max(1) > 0):.2f} | 2 tay cùng nhãn: {res['same_label'].sum()} frame")
+    print(f"  độ sáng TB trước làm sáng {res['brightness'].mean():.0f} | làm sáng p50 "
+          f"{np.percentile(res['enh_ms'], 50):.1f} ms")
     print(f"  hand p50 {np.percentile(res['hand_ms'], 50):.0f} ms | "
           f"pose p50 {np.percentile(res['pose_ms'], 50):.0f} ms")
     hp = res["hand_px"][res["hand_px"] > 0]

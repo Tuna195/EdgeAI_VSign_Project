@@ -18,7 +18,7 @@ import os
 import cv2
 import numpy as np
 
-from src.pi.extract_landmark import IN_H, IN_W, POSE_INDEX, POSE_WRIST, fit_frame
+from src.pi.extract_landmark import IN_H, IN_W, POSE_INDEX, POSE_WRIST, enhance, fit_frame
 
 HAND_EDGES = [(0, 1), (1, 2), (2, 3), (3, 4), (0, 5), (5, 6), (6, 7), (7, 8), (5, 9), (9, 10),
               (10, 11), (11, 12), (9, 13), (13, 14), (14, 15), (15, 16), (13, 17), (0, 17),
@@ -151,7 +151,8 @@ def main():
         i = row_of.get(idx)
         if i is None:
             continue
-        img = fit_frame(frame, fit)
+        # vẽ trên đúng ảnh MediaPipe đã thấy (đã làm sáng nếu có)
+        img = enhance(fit_frame(frame, fit), meta["config"].get("enhance", "none"))
         phase = next((ascii_phase(p["label"]) for p in phases
                       if p["start_frame"] <= idx < p["end_frame"]), "")
         missed = draw_frame(img, idx, d, i, expected[i], found[i], phase)
