@@ -1,5 +1,5 @@
 {
-  "trang_thai": "DUNG DUOC CHO M2. Da chot running_mode, nguong, lay mau frame. Con 3 muc 'chua_chot' (xem cuoi file); cach resize 'letterbox' la TAM CHOT.",
+  "trang_thai": "DUNG DUOC CHO M2 (CHI CHAY THU vai tram video). Len 1.0 khi xong 3 muc dau trong chua_chot. Da chot running_mode, nguong, lay mau frame. Con 3 muc 'chua_chot' (xem cuoi file); cach resize 'letterbox' la TAM CHOT.",
   "phien_ban": "0.2",
   "cach_dung": "Kaggle va Pi deu goi src/pi/extract_landmark.py: cfg = load_config('configs/extractor_config.json', model_dir=...); res = extract_video(video, cfg). Khong tu viet lai buoc trich.",
   "moi_truong": {
@@ -51,12 +51,13 @@
     ],
     "toa_do": "x, y, z chuan hoa theo anh 640x480 SAU letterbox (hand_landmarks / pose_landmarks, KHONG dung world_landmarks). Khuyen nghi features.py chuan hoa theo co the (tam/do rong vai) de khong phu thuoc khung hinh.",
     "khong_thay": "dien 0 cho ca khoi",
-    "nhan_trai_phai": "Giu nguyen category_name ('Left'/'Right') MediaPipe tra ve tren anh KHONG lat guong. MediaPipe gia dinh anh da lat guong, nen tren anh khong lat, nhan 'Left' co the ung voi tay phai that cua nguoi ky. Giu dung quy uoc nay o ca Kaggle va Pi.",
+    "nhan_trai_phai": "Giu nguyen category_name ('Left'/'Right') MediaPipe tra ve tren anh KHONG lat guong. LUU Y KHI PHAN TICH: MediaPipe gia dinh anh selfie da lat guong, nen tren anh khong lat nhan 'Left' (o 0) thuc ra la TAY PHAI cua nguoi ky, 'Right' (o 1) la TAY TRAI. Khong doi nhan vi Kaggle va Pi nhat quan.",
     "hai_tay_cung_nhan": "Tay co diem tin cay cao hon giu nhan, tay con lai sang o con lai (co danh dau same_label trong .npz). Xay ra ~1-4% frame."
   },
   "chua_chot": [
-    "fit letterbox hay crop: can so co ban tay VSL400 voi video Pi (cho video VSL400)",
-    "Kaggle cai duoc mediapipe 0.10.18 + numpy 1.26.4 va cho landmark giong Pi tren cung 1 video (chua kiem tra)",
-    "kiem chung quy uoc nhan trai/phai bang thuc te"
+    "fit letterbox hay crop: so co ban tay (px) VSL400 sau resize voi video Pi (cho video VSL400)",
+    "Kaggle: kiem tra phien ban Python; neu > 3.12 thi can moi truong rieng Python 3.12 (uv/conda) de cai mediapipe 0.10.18 + numpy 1.26.4 -> ghi cach lam vao day",
+    "Sai lech landmark Kaggle - Pi tren cung 1 video",
+    "kiem chung bang thuc te: 'Left' = tay phai nguoi ky (khong chan M2)"
   ]
 }
