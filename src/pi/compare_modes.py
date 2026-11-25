@@ -164,19 +164,27 @@ def main():
             "thay_2": round(see2, 2) if see2 is not None else None,
             "rung_px_p50": jit, "so_cap_rung": n_jit,
             f"lech_s1_s{s2}_px_p50": diff, f"khop_phat_hien_s1_s{s2}": agree,
+            "ms_tb": round(float(np.mean(ms)), 1),
             "ms_p50": round(float(np.percentile(ms, 50)), 1),
             "ms_p95": round(float(np.percentile(ms, 95)), 1),
         })
 
     print(f"\n{'phần':<6}{'chế độ':<8}{'thấy≥1':>8}{'thấy 2':>8}{'rung px':>9}"
-          f"{f'lệch s1-s{s2}':>12}{'khớp':>7}{'ms p50':>8}{'ms p95':>8}")
+          f"{f'lệch s1-s{s2}':>12}{'khớp':>7}{'ms TB':>8}{'ms p50':>8}{'ms p95':>8}")
     for r in rows:
         f = lambda v: "-" if v is None else v
         print(f"{r['phan']:<6}{r['che_do']:<8}{f(r['thay_>=1']):>8}{f(r['thay_2']):>8}"
               f"{f(r['rung_px_p50']):>9}{f(r[f'lech_s1_s{s2}_px_p50']):>12}"
-              f"{f(r[f'khop_phat_hien_s1_s{s2}']):>7}{r['ms_p50']:>8}{r['ms_p95']:>8}")
+              f"{f(r[f'khop_phat_hien_s1_s{s2}']):>7}{r['ms_tb']:>8}{r['ms_p50']:>8}{r['ms_p95']:>8}")
     print("(pose: 'thấy' = tỉ lệ frame thấy người; 'khớp' = tỉ lệ frame chung mà s1 và s3 "
           "cùng thấy/cùng không thấy)")
+    # fps ước tính khi chạy hand rồi pose LẦN LƯỢT trên 1 nhân (như hiện tại)
+    tb = {(r["phan"], r["che_do"]): r["ms_tb"] for r in rows}
+    print("\nfps ước tính nếu chạy lần lượt (1000 / (ms TB hand + ms TB pose)):")
+    for hm in ("IMAGE", "VIDEO"):
+        for pm in ("IMAGE", "VIDEO"):
+            tot = tb[("hand", hm)] + tb[("pose", pm)]
+            print(f"  hand {hm:<5} + pose {pm:<5}: {tot:6.0f} ms -> {1000 / tot:.1f} fps")
     if not frame_mask(R[("hI_pV", 1)]["frame_idx"], phases, ["Giữ"]).any():
         print("Không có đoạn 'Giữ...' trong kịch bản -> không đo được độ rung.")
     with open(os.path.join(out_dir, f"summary_e{a.enhance}.json"), "w", encoding="utf-8") as fh:
