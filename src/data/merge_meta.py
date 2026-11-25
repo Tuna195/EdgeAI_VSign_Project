@@ -192,7 +192,7 @@ def main():
     df = df.sort_values(["part", "_split_num", "video_id"]).reset_index(drop=True)
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    df[cols].to_csv(out, index=False)
+    df[cols].to_csv(out, index=False, encoding="utf-8-sig")  # có BOM để Excel đọc đúng tiếng Việt
     print(f"\nĐã ghi {len(df)} dòng → {out}")
 
 

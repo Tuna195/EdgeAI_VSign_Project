@@ -1,4 +1,4 @@
-part,split_dir,video_id,signer_id,gloss,label,num_frames,fps,length_seconds,resolution,path,exists,vid_width,vid_height,vid_fps,vid_frames,vid_aspect
+﻿part,split_dir,video_id,signer_id,gloss,label,num_frames,fps,length_seconds,resolution,path,exists,vid_width,vid_height,vid_fps,vid_frames,vid_aspect
 1,split_1,000000,001,Anh,0,65,25.0,2.6,1080,Part_1/split_1/front_view/000000.mp4,True,1080,1080,25.0,65,1.0
 1,split_1,000001,001,Anh,0,56,25.0,2.24,1080,Part_1/split_1/front_view/000001.mp4,True,1080,1080,25.0,56,1.0
 1,split_1,000002,001,Chị,50,62,25.0,2.48,1080,Part_1/split_1/front_view/000002.mp4,True,1080,1080,25.0,62,1.0
