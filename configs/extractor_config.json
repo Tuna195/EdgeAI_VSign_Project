@@ -1,0 +1,62 @@
+{
+  "trang_thai": "DUNG DUOC CHO M2. Da chot running_mode, nguong, lay mau frame. Con 3 muc 'chua_chot' (xem cuoi file); cach resize 'letterbox' la TAM CHOT.",
+  "phien_ban": "0.2",
+  "cach_dung": "Kaggle va Pi deu goi src/pi/extract_landmark.py: cfg = load_config('configs/extractor_config.json', model_dir=...); res = extract_video(video, cfg). Khong tu viet lai buoc trich.",
+  "moi_truong": {
+    "python": "3.12",
+    "mediapipe": "0.10.18",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0 (opencv-contrib-python do mediapipe keo theo, khong cai them ban khac)",
+    "_ly_do": "mediapipe >= 1.x bi 'Illegal instruction' tren Pi 4 (thieu lenh AES ARMv8); 0.10.18 chi co ban cho Python 3.9-3.12; numpy 2.x khong tuong thich mediapipe 0.10.18"
+  },
+  "hand_model": {
+    "file": "hand_landmarker.task",
+    "url": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task",
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+  },
+  "pose_model": {
+    "file": "pose_landmarker_lite.task",
+    "url": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task",
+    "sha256": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a"
+  },
+  "num_hands": 2,
+  "num_poses": 1,
+  "hand_running_mode": "IMAGE",
+  "pose_running_mode": "VIDEO",
+  "_ly_do_running_mode": "Do tren video v3 (du sang, 1080 frame): hand IMAGE/VIDEO thay tay 0.94/0.95 nhu nhau; hand VIDEO phu thuoc stride (khop 0.89) con IMAGE khop 1.0, va IMAGE cho phep chia frame cho nhieu tien trinh. Pose VIDEO nhanh hon (94 so voi 206 ms), it rung hon (0.52 so voi 2.88 px), lech theo stride 2.17 px < do rung tu nhien cua IMAGE.",
+  "lay_mau_frame": {
+    "kaggle_stride": 1,
+    "timestamp_ms": "round(frame_idx * 1000 / fps_video) (pose VIDEO can timestamp tang dan; moi video tao landmarker moi)",
+    "_ghi_chu": "Kaggle trich MOI frame (25 fps) mot lan. Hand IMAGE khong phu thuoc stride; pose VIDEO lech ~2 px khi Pi chay 8-10 fps (nho hon do rung tu nhien) -> nhanh M lay 1/k frame tu ket qua 25 fps de mo phong fps cua Pi (E5), khong can trich lai."
+  },
+  "nguong": {
+    "hand": {"min_hand_detection_confidence": 0.5, "min_hand_presence_confidence": 0.5, "min_tracking_confidence": 0.5},
+    "pose": {"min_pose_detection_confidence": 0.5, "min_pose_presence_confidence": 0.5, "min_tracking_confidence": 0.5},
+    "_ly_do": "Ha nguong 0.3 khong thay them tay (v2: 0.46 so voi 0.47) ma tang so frame 2 tay cung nhan (21 so voi 2)."
+  },
+  "dau_vao": {
+    "do_phan_giai": [640, 480],
+    "fit": "letterbox",
+    "_fit": "TAM CHOT. letterbox = thu nho giu ti le, them vien den (khong cat mat tay o 2 ben). Khong keo gian. Video Pi 640x480 khong doi.",
+    "enhance": "none",
+    "_enhance": "Lam sang bang gamma/CLAHE khong giup (v2: 0.47 -> 0.47 / 0.41). Can anh sang that: khi chay tren Pi, do sang TB anh nen >= ~100 (v3 co den: thay tay 0.81 so voi 0.47 khi toi).",
+    "lat_guong": false,
+    "mau": "RGB (doi tu BGR cua OpenCV truoc khi dua vao MediaPipe)"
+  },
+  "bo_cuc_225": {
+    "thu_tu": [
+      {"ten": "tay_nhan_Left", "so_diem": 21, "so_chieu": 3, "chi_so": [0, 63]},
+      {"ten": "tay_nhan_Right", "so_diem": 21, "so_chieu": 3, "chi_so": [63, 126]},
+      {"ten": "pose", "so_diem": 33, "so_chieu": 3, "chi_so": [126, 225]}
+    ],
+    "toa_do": "x, y, z chuan hoa theo anh 640x480 SAU letterbox (hand_landmarks / pose_landmarks, KHONG dung world_landmarks). Khuyen nghi features.py chuan hoa theo co the (tam/do rong vai) de khong phu thuoc khung hinh.",
+    "khong_thay": "dien 0 cho ca khoi",
+    "nhan_trai_phai": "Giu nguyen category_name ('Left'/'Right') MediaPipe tra ve tren anh KHONG lat guong. MediaPipe gia dinh anh da lat guong, nen tren anh khong lat, nhan 'Left' co the ung voi tay phai that cua nguoi ky. Giu dung quy uoc nay o ca Kaggle va Pi.",
+    "hai_tay_cung_nhan": "Tay co diem tin cay cao hon giu nhan, tay con lai sang o con lai (co danh dau same_label trong .npz). Xay ra ~1-4% frame."
+  },
+  "chua_chot": [
+    "fit letterbox hay crop: can so co ban tay VSL400 voi video Pi (cho video VSL400)",
+    "Kaggle cai duoc mediapipe 0.10.18 + numpy 1.26.4 va cho landmark giong Pi tren cung 1 video (chua kiem tra)",
+    "kiem chung quy uoc nhan trai/phai bang thuc te"
+  ]
+}
