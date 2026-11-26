@@ -34,6 +34,10 @@ import platform
 import time
 from pathlib import Path
 
+# Kernel Kaggle đặt MPLBACKEND=module://matplotlib_inline..., venv không có backend này;
+# mediapipe import matplotlib -> lỗi. Ép backend không giao diện TRƯỚC khi import mediapipe.
+os.environ["MPLBACKEND"] = "Agg"
+
 import cv2
 import numpy as np
 
